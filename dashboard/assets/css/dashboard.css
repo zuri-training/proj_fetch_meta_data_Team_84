@@ -22,12 +22,13 @@
 .nav-button {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
+    /* align-items: flex-end; */
     padding: 0px;
-    gap: 40px;
+    gap: 64px;
 
-    width: 310px;
-    height: 24px;
+    width: 332px;
+    height: 22px;
 
 
     /* Inside auto layout */
@@ -35,29 +36,55 @@
     flex: none;
     order: 1;
     flex-grow: 0;
+
+    /* border: 2px solid red; */
 }
 
-.nav-button>button {
-    border: none;
+.home {
+    width: 50px;
+    height: 22px;
+    
+    /* Body/paragraph_2: Medium */
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+    
+    /* Greyish Colour/1100 */
+    
+    color: #2E2E2E;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    /* margin-right: 20px; */
 }
+.faqs {
+    width: 45px;
+    height: 22px;
 
-
-.nav-button>a {
-    width: 44px;
-    height: 24px;
-
-    /* Body/Paragraph_1: Medium */
+    /* Body/paragraph_2: Medium */
 
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
 
     display: flex;
     align-items: center;
-    letter-spacing: 0.25px;
+    letter-spacing: 0.5px;
 
     /* Greyish Colour/1100 */
 
@@ -67,8 +94,40 @@
     /* Inside auto layout */
 
     flex: none;
-    order: 0;
+    order: 1;
     flex-grow: 0;
+}
+.res {
+    width: 85px;
+    height: 22px;
+
+    /* Body/paragraph_2: Medium */
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    /* Greyish Colour/1100 */
+
+    color: #2E2E2E;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.nav-button>button {
+    border: none;
 }
 
 .avatar {
@@ -111,7 +170,8 @@ a:active {
 
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    /* align-items: flex-start; */
     padding: 12px;
     gap: 10px;
 
@@ -129,6 +189,41 @@ a:active {
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+
+
+
+.search-input {
+    width: 223px;
+    height: 16px;
+
+    /* Body/Small/text_1: Regular */
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    /* identical to box height */
+
+    letter-spacing: 0.4px;
+
+    /* Greyish Colour/900 */
+
+    background: transparent;
+    /* background: #FFFFFF; */
+    color: #737373;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    border: none;
+    outline: none;
 }
 
 
@@ -447,6 +542,8 @@ a:active {
     /* Greyish Colour/900 */
 
     color: #737373;
+    background: transparent;
+
 
 
     /* Inside auto layout */
@@ -496,6 +593,60 @@ a:active {
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+
+.disp-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5px 5px;
+    gap: 10px;
+
+    position: absolute;
+    width: 122px;
+    height: 40px;
+    /* left: 1238px; */
+    left: 1213px;
+    top: 955px;
+
+    /* Primary/600 */
+
+    background: #064ACB;
+    border-radius: 8px;
+}
+.file-btn {
+    width: 100px;
+    height: 24px;
+
+    /* Body/Paragraph_1: Regular */
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.5px;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    border: none;
+    background: transparent;
+}
+.file-btn>a {
+    background: transparent;
+    color: #FFFFFF;
+
 }
 
 
@@ -704,12 +855,10 @@ a:active {
     .css-treeview {
         -webkit-animation: webkit-adjacent-element-selector-bugfix infinite 1s;
     }
-
     @-webkit-keyframes webkit-adjacent-element-selector-bugfix {
         from {
             padding: 0;
         }
-
         to {
             padding: 0;
         }
