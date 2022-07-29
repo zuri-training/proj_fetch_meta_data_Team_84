@@ -1,6 +1,9 @@
 * {
     margin: 0px;
+}
+body {
     background: #FAFAFA;
+
 }
 
 .nav-bar {
@@ -70,6 +73,8 @@
     order: 0;
     flex-grow: 0;
     /* margin-right: 20px; */
+
+
 }
 .faqs {
     width: 45px;
@@ -488,7 +493,7 @@ a:active {
     margin-left: 125px;
     margin-top: -14px;
     background: transparent;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .icon1 {
     /* background: url(/dashboard/assets/img/Vector\ \(3\).png); */
@@ -496,7 +501,7 @@ a:active {
     width: 80px;
     height: 80px;
     left: 81px;
-    top: 0px;
+    top: 10px;
     
 
     /* Primary/ 100 */
@@ -516,7 +521,7 @@ a:active {
     width: 25px;
     height: 25px;
     left: 254px;
-    top: 28px;
+    top: 38px;
 
     /* position: absolute;
     left: 9.38%;
@@ -559,7 +564,7 @@ a:active {
     background: transparent;
     margin-top: 90px;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .bottom-text1 {
     width: 27px;
@@ -700,7 +705,7 @@ a:active {
     margin-left: 75px;
     margin-top: 23px;
     background: transparent;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .down {
@@ -822,7 +827,7 @@ a:active {
     flex-grow: 0;
 }
 
-.table {
+.table-cont {
     /* Auto layout */
 
     display: flex;
@@ -840,8 +845,128 @@ a:active {
     top: 549px;
 
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
+.table-body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+/* .table-body td, .table-body th {
+    border: 1px solid #ddd;
+    padding: 8px;
+} */
+
+  
+/* .table-body tr:hover {background-color: #ddd;} */
+  
+.table-body th {
+    /* padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white; */
+
+    /* display: flex; */
+    flex-direction: row;
+    /* align-items: flex-start; */
+    padding: 12px 24px;
+    gap: 96px;
+
+
+    width: 177.17px;
+    height: 48px;
+
+    /* Primary/ 800 */
+
+    background: #043187;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+/* 
+    width: 72px;
+    height: 24px; */
+
+    /* Body/Paragraph_1: Regular */
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    align-items: center;
+    letter-spacing: 0.5px;
+
+    /* Primary/ 100 */
+
+    color: #CDDBF5;
+
+}
+
+.table-body td {
+    /* display: flex; */
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 24px;
+    gap: 96px;
+    text-align: left;
+
+    width: 177.17px;
+    height: 40px;
+
+    /* Greyish Colour/100 */
+
+    /* background: #FAFAFA; */
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    
+    /* Body/Paragraph_1: Regular */
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    /* align-items: center; */
+    letter-spacing: 0.5px;
+
+    /* Greyish Colour/1100 */
+
+    color: #2E2E2E;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+tr:nth-child(odd) {
+    background-color: #CDDBF5;
+}
+
+
+
+
+
+
 
 .files {
     
