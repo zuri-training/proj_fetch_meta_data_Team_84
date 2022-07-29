@@ -17,6 +17,8 @@
     left: 297px;
     top: 24px;
 
+    
+
 }
 
 .nav-button {
@@ -401,44 +403,49 @@ a:active {
 
 
 
+
 .drop-zone {
-    box-sizing: border-box;
-
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    gap: 10px;
-
-    position: absolute;
     width: 522px;
+    /* max-width: 200px; */
     height: 317px;
-    /* width: 510.58px;
-    height: 310.66px; */
+    /* height: 200px; */
+    padding: 12px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* font-family: "Quicksand", sans-serif; */
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #cccccc;
+    /* border: 4px dashed #009578; */
+    border: 1.5px dashed #064ACB;
+    background: #FFFFFF;
+
     left: 287px;
     top: 160px;
 
-    background: #FFFFFF;
-    /* Primary/600 */
-
-    border: 1.5px dashed #064ACB;
     border-radius: 24px;
-    cursor: pointer;
-}
+    /* border-radius: 10px; */
 
 
-.drop-zone--over {
+
+    box-sizing: border-box;
+    /* flex-direction: column; */
+    /* gap: 10px; */
+    position: absolute;
+  }
+  
+  .drop-zone--over {
     border-style: solid;
-}
-
-.drop-zone__input {
+  }
+  
+  .drop-zone__input {
     display: none;
-}
-
-.drop-zone__thumb {
+  }
+  
+  .drop-zone__thumb {
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -446,9 +453,9 @@ a:active {
     background-color: #cccccc;
     background-size: cover;
     position: relative;
-}
-
-.drop-zone__thumb::after {
+  }
+  
+  .drop-zone__thumb::after {
     content: attr(data-label);
     position: absolute;
     bottom: 0;
@@ -459,11 +466,242 @@ a:active {
     background: rgba(0, 0, 0, 0.75);
     font-size: 14px;
     text-align: center;
+  }
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 11px;
+
+    width: 242px;
+    height: 115px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    margin-left: 125px;
+    margin-top: -14px;
+    background: transparent;
+    border: 2px solid red;
+}
+.icon1 {
+    /* background: url(/dashboard/assets/img/Vector\ \(3\).png); */
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 81px;
+    top: 0px;
+    
+
+    /* Primary/ 100 */
+
+    background: #CDDBF5;
+
+    margin-left: 145px;
+    border-radius: 50px;
+
+}
+.icon2 {
+    background: url(/dashboard/assets/img/Vector\ \(3\).png);
+    background-size: contain;
+    /* background-repeat: none; */
+    
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 254px;
+    top: 28px;
+
+    /* position: absolute;
+    left: 9.38%;
+    right: 9.37%;
+    top: 9.38%;
+    bottom: 9.37%; */
+
+    /* Primary/600 */
+
+    /* background: #064ACB; */
+}
+.top-text {
+    width: 242px;
+    height: 24px;
+
+    /* Body/Paragraph_1: Medium */
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25px;
+
+    /* Greyish Colour/900 */
+
+    color: #737373;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    background: transparent;
+    margin-top: 90px;
+
+    border: 1px solid red;
+}
+.bottom-text1 {
+    width: 27px;
+    height: 22px;
+
+    /* Body/paragraph_2: Bold */
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    /* Greyish Colour/900 */
+
+    color: #737373;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    background: transparent;
+
+}
+.bottom-text2 {
+    width: 148px;
+    height: 24px;
+
+    /* Body/Paragraph_1: Regular */
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    /* Greyish Colour/900 */
+
+    color: #737373;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+    background: transparent;
+
+}
+.bottom-text3 {
+    width: 344px;
+    height: 24px;
+
+    /* Body/Paragraph_1: Regular */
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    /* Greyish Colour/800 */
+
+    color: #999999;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+    background: transparent;
+
 }
 
-/* .drop-zone__prompt::after {
-    display: none;
-} */
+
+
+
+
+.middle {
+    
+    width: 497px;
+    height: 0px;
+
+    /* Primary/ 200 */
+
+    border: 1px solid #ACC3EE;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    margin-top: 35px;
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+
+    width: 344px;
+    height: 130px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+
+    margin-left: 75px;
+    margin-top: 23px;
+    background: transparent;
+    border: 2px solid red;
+}
 
 .down {
     box-sizing: border-box;
@@ -517,6 +755,8 @@ a:active {
     order: 1;
     flex-grow: 0;
     z-index: 1;
+
+    border: none;
 }
 
 .down>p {
@@ -552,6 +792,34 @@ a:active {
     order: 0;
     flex-grow: 0;
     z-index: 0;
+}
+
+.down-btn>a {
+    background: transparent;
+
+    
+    width: 76px;
+    height: 24px;
+
+    /* Body/Paragraph_1: Regular */
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.5px;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .table {

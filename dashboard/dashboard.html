@@ -102,25 +102,34 @@
 
 
             <div class="drop-zone">
-                <div>
-                    <span class="drop-zone__prompt">Drop file here or click to upload</span>
-                </div>
-                <div>
-                    <span class="drop-zone__prompt">Drop file here or click to upload</span>
-                </div>
-                <div>
-                    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                <div class="top">
+                    <span class="icon1"></span>
+                    <span class="icon2"></span>
+                    <span class="top-text">Click the upload icon to add a file</span>
+                    <!-- <span class="drop-zone__prompt">Click the upload icon to add a file</span> -->
                 </div>
 
+                <div class="middle"></div>
+
+                <div class="bottom">
+                    <span class="bottom-text1">OR</span>
+                    <span class="bottom-text2">Drag and drop a file</span>
+                    <span class="bottom-text3">only jpg, png, csv, pdf, json files are supported</span>
+                </div>
+                
                 <input type="file" name="myFile" class="drop-zone__input">
-            <!-- <input type="file" name="myFile" class="drop-zone__input" multiple>
+            </div>
+           
+            
+            
+                <!-- <input type="file" name="myFile" class="drop-zone__input" multiple>
                             Add "multiple" attribute to input to support multiple files -->
                 <!-- <div class="drop-zone__thumb" data-label="myfile.txt"></div> -->
-            </div>
+            
 
             <div class="down">
                 <p>Extracted Metadata</p>
-                <button>Download</button>
+                <button class="down-btn"><a style="color: #FFFFFF;" href="">Download</a></button>
             </div>
 
             <div class="table">
