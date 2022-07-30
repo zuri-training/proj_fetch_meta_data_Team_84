@@ -332,4 +332,7 @@ button, a{
 
     .nav-btn{
         display:none;
+    }
+    .nav-links{
+        display:none;
 }    
