@@ -53,7 +53,7 @@ body {
     
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */
@@ -84,7 +84,7 @@ body {
 
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */
@@ -112,7 +112,7 @@ body {
 
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */
@@ -137,7 +137,7 @@ body {
     border: none;
 }
 
-.avatar {
+.profile {
     width: 40px;
     height: 40px;
 
@@ -148,17 +148,199 @@ body {
     flex: none;
     order: 2;
     flex-grow: 0;
+
+    /* float: left;
+    overflow: hidden */
 }
+
+
+
+/* .navbar {
+  overflow: hidden;
+  background-color: #333;
+} */
+
+/* .profile a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} */
+
+
+
+/* .dropdown {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  float: left;
+  overflow: hidden;
+} */
+
+.profile:hover .profile-btn {
+  background-color: red;
+}
+
+.profile-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 230px;
+  height: 366px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: -165px;
+
+  border-radius: 30px;
+
+  align-items: center;
+
+}
+.content-top {
+    width: 185px;
+    height: 112px;
+    border-bottom: 2px solid #E6E6E6;;
+    /* align-items: center; */
+    margin-left: 22px;
+}
+
+.avatar {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 24px;
+    top: 24px;
+
+    background: url(/dashboard/assets/img/Ellipse\ 22.png) no-repeat;
+
+}
+.content-bottom {
+    width: 207px;
+    height: 250px;
+    margin-left: 22px;
+}
+.link1 {
+    /* display: flex; */
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    position: absolute;
+    width: 73px;
+    height: 43px;
+    left: 14px;
+    top: 134px;
+}
+.link2 {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    position: absolute;
+    width: 191px;
+    height: 43px;
+    left: 14px;
+    top: 186.62px;
+}
+.link3 {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    position: absolute;
+    width: 74px;
+    height: 43px;
+    left: 14px;
+    top: 238.88px;
+}
+.link4 {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    
+    position: absolute;
+    width: 67px;
+    height: 43px;
+    left: 14px;
+    top: 291px;
+    
+}
+
+.content-bottom a {
+  /* float: none; */
+  /* color: black; */
+  padding: 12px 16px;
+  padding-left: 0;
+
+  
+  /* text-decoration: none; */
+  /* display: block; */
+  /* text-align: left; */
+
+
+    width: 171px;
+    height: 23px;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+
+    /* Primary/ 800 */
+
+    color: #043187;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.profile-content a:hover {
+    background-color: #CDDBF5;
+    /* background-color: #ddd; */
+}
+
+.profile:hover .profile-content {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 a:link {
     text-decoration: none;
-    color: #2E2E2E;
+    /* color: #2E2E2E; */
 
 }
 
 a:visited {
     text-decoration: none;
-    color: #2E2E2E;
+    /* color: #2E2E2E; */
 }
 
 a:hover {

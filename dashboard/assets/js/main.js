@@ -78,4 +78,9 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
       thumbnailElement.style.backgroundImage = null;
     }
   }
+
+// let text = new Date()
+let text = document.lastModified
+document.getElementById('datePicker').innerHTML = text;
+// document.getElementById('datePicker').value = new Date().toDateInputValue();
   
