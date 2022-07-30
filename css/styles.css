@@ -297,9 +297,10 @@ button, a{
     }
 
     .input-question{
-        width:15rem;
+        width:10rem;
         height:3rem;
         padding-left:10px;
+        font-size:16px;
     }
 
     .question-button{
@@ -309,7 +310,7 @@ button, a{
     
     .meta-question{
         font-weight: 700;
-        font-size: 15px;
+        font-size: 17px;
     }
     .open{
         margin-left:10px;
