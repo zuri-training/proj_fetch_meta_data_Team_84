@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/1f5aa4ec6b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static.css">
+    <script src="static.js" defer></script>
+    <title>Document</title>
+</head>
+<body title="index" class="index-body" id="indexBody">
+    <header class="index-header">
+        <nav class="nav">
+            <img src="images/Logo.png" alt="Logo" class="logo">
+            <div class="nav-links" title="links" id="navMenu">
+                <a href="#" class="nav-link" title="index">Home</a>
+                <a href="about-us.html" class="nav-link" title="about-us">About Us</a>
+                <a href="faqs.html" class="nav-link" title="faq">FAQs</a>
+                <a href="contact-us.html" class="nav-link" title="contact-us">Contact Us</a>
+            </div>
+            <div class="nav-btns" id="navBtn">
+                <button type="submit" class="nav-btn">Sign Up</button>
+                <button type="submit" class="nav-btn">Log In</button>
+            </div>
+            <div class="profile-circle">
+                <i class="fa-solid fa-circle-user" id="profile"></i>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div class="toggle-item"></div>
+                <div class="toggle-item"></div>
+                <div class="toggle-item"></div>
+            </div>
+        </nav>
+        <section class="index-hero-container">
+            <section class="index-hero-main" id="slideOne">
+                <div class="index-hero-text">
+                    <h1>Get All Metadata Information Of Your Files</h1>
+                    <p>Uncover hidden information from your files, with just a simple upload, sign up and started.</p>
+                    <button type="submit" class="index-hero-btn">Sign Up</button>
+                </div>
+                <div class="index-hero-media">
+                    <video  width="400" controls>
+                        <source src="images/metadata-demo.MP4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+            <section class="index-hero-main" id="slideTwo">
+                <div class="index-hero-text">
+                    <h1>Easy Forensic tool</h1>
+                    <p>Your entire data forensic journey starts with a simple click & drop</p>
+                </div>
+                <div class="index-hero-media">
+                    <img src="images/mouse.png" alt="" class="index-hero-img" >
+                </div>
+            </section>
+            <section class="index-hero-main" id="slideThree">
+                <div class="index-hero-text">
+                    <h1>Metadata extraction made easy</h1>
+                    <p>Extract Metadata easily in 3 simple steps, Upload data, download metadata and share metadata.</p>
+                </div>
+                <div class="index-hero-media">
+                    <img src="images/boyonchair.png" alt="" class="index-hero-img">
+                </div>
+            </section>
+            <section class="index-hero-main"id="slideFour">
+                <div class="index-hero-text">
+                    <h1>#1 Metadata Extraction tool</h1>
+                    <p>2023 Digital Forensic tool award winner, 84 meta gives you absolute control on data, providing you with information on data of data </p>
+                </div>
+                <div class="index-hero-media">
+                    <img src="images/trophy_img.png" alt="" class="index-hero-img">
+                </div>
+            </section>
+            <div class="circles">
+                <div class="circle" id="dotone" onclick="myCurrent(1)"></div>
+                <div class="circle" id="dottwo" onclick="myCurrent(2)"></div>
+                <div class="circle" id="dotthree" onclick="myCurrent(3)"></div>
+                <div class="circle" id="dotfour" onclick="myCurrent(4)"></div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="why-use">
+            <h1>Why Use 84 Meta?</h1>
+            <div class="why-use-body">
+                <div class="why-use-content"><img src="images/Folder.png" alt="Folder icon" class="why-use-img"><p>Upload ranging file sizes</p></div>
+                <div class="why-use-content"><img src="images/Uploading.png" alt="Upload icon" class="why-use-img"><p>Extract metadata of files and images </p></div>
+                <div class="why-use-content"><img src="images/File transfer.png" alt="File Transfer icon" class="why-use-img"><p>Multiple File Format</p></div>
+            </div>
+        </section>
+        <section class="what-is">
+            <h1>What is EXIF Metadata?</h1>
+            <article class="what-is-upper-content">
+                <div class="upper-what-is">
+                    <p>EXIF stands for Exchangeable Image File Format.  a standard for storing supplemental metadata in digital photos. </p>
+                    <p>Each time you take a picture, your phone or camera saves a file (typically a JPEG) to your device's storage.</p>
+                    <p> This file contains all the data dedicated to the actual picture (pixels which you can see). Such metadata can hold date, time, camera settings, copyright information.</p>
+                </div>
+                <div class="lower-what-is">
+                    <h3>File Formats we work with</h3>
+                   <div class="lower-what-is-content">
+                        <img src="images/exifimage.png" alt="">
+                        <ul>
+                            <li>JPEG</li>
+                            <li>JPG</li>
+                            <li>PNG</li>
+                            <li>HEIC</li>
+                            <li>DOCX</li>
+                            <li>PDF</li>
+                            <li>CSV</li>
+                            <li>JSON</li>
+                        </ul>
+                   </div>
+                </div>
+            </article>
+            <article class="what-is-lower-content">
+                <div class="exif-what-is">
+                    <h3><img src="images/bi_camera-fill.png" alt=""> Camera Info</h3>
+                    <ul>
+                        <li>Make and model</li>
+                        <li>Lens</li>
+                        <li>Focal length</li>
+                        <li>Aperture</li>
+                        <li>Exposure</li>
+                        <li>ISO Speed</li>
+                        <li>Flash</li>
+                        <li>Shutter count</li>
+                    </ul>
+                </div>
+                <div class="exif-what-is">
+                    <h3><img src="images/bi_camera-fill.png" alt="">Image Properties</h3>
+                    <ul>
+                        <li>File name</li>
+                        <li>File size</li>
+                        <li>Date created</li>
+                        <li>Date modified</li>
+                        <li>Time</li>
+                    </ul>
+                </div>
+                <div class="exif-what-is">
+                    <h3><img src="images/bi_camera-fill.png" alt="">GPS Data</h3>
+                    <ul>
+                        <li>Latitude</li>
+                        <li>Longitude</li>
+                        <li>Altitude</li>
+                        <li>Direction</li>
+                        <li>Speed</li>
+                    </ul>
+                </div>
+                <div class="exif-what-is">
+                    <h3><img src="images/bi_camera-fill.png" alt="">Copyright Info</h3>
+                    <ul>
+                        <li>Creator</li>
+                        <li>Copyright</li>
+                        <li>Right holder</li>
+                        <li>Legal notice</li>
+                        <li>Permission</li>
+                    </ul>
+                </div>
+                <div class="exif-what-is">
+                    <h3><img src="images/bi_camera-fill.png" alt="">Other Data</h3>
+                    <ul>
+                        <li>Thumbnail</li>
+                        <li>Processing softwares</li>
+                        <li>Resolution unit</li>
+                        <li>X Resolution</li>
+                        <li>Y Resolution</li>
+                        <li>and many more</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="how-to-view">
+            <h1>How to view Metadata from your Files</h1>
+            <article class="how-to-view-content">
+                <div>
+                    <h2>1</h2>
+                    <h3>Upload a file</h3>
+                    <p>Upload the URL of your file or drag and drop the file, we'll read its metadata and show you</p>
+                </div>
+                <div>
+                    <h2>2</h2>
+                    <h3>View the metadata</h3>
+                    <p>See the metadata recorded in the files such as date created, file name, file size, file type, file type extension and much more.</p>
+                </div>
+                <div>
+                    <h2>3</h2>
+                    <h3>Export, Save, Download</h3>
+                    <p>Upload the URL of your file or drag and drop the file. We'll read it's metadata and show you</p>
+                </div>
+            </article>
+        </section>
+        <section class="reviews-and-awards">
+            <article class="reviews">
+                <h1>Reviews</h1>
+                <div class="review-content">
+                    <div class="review" onclick="myPresentDiv(1)"><img src="images/Profile Squarevictoria.png" alt="customer review" class="review-image"><h3>Victoria Justice</h3><h4>Data Forensicist</h4><p>84 Meta has been the easiest platform.</p></div>
+                    <div class="review" onclick="myPresentDiv(2)"><img src="images/Profile Square.png" alt="customer review" class="review-image"><h3>George Banks</h3><h4>Digital Manager</h4><p>84 Meta has the best Tool to View Metadata Information of all images that i work with.</p></div>
+                    <div class="review" onclick="myPresentDiv(3)"><img src="images/Profile Squarejohn.png" alt="customer review" class="review-image"><h3>John Doe</h3><h4>Product Manager</h4><p>With little to no skill you can use the platform and do magic</p></div>
+                </div>
+            </article>
+            <article class="awards">
+                <h1>Awards</h1>
+                <div class="awards-content">
+                    <img src="images/awards-1.png" alt="awards" class="awards-img">
+                    <img src="images/awards-2.png" alt="awards" class="awards-img">
+                    <img src="images/awards-3.png" alt="awards" class="awards-img">
+                </div>
+            </article>
+        </section>
+        <section class="service-team">
+            <div class="service-team-text">
+                <h1>24/7 Support Team Readily Available</h1>
+                <h4>84 Meta team is here to answer your questions and assist you every step of the way</h4>
+                <a><img src="images/call-calling.png" alt=""> 186-1623-813</a>
+                <br>
+                <a><img src="images/SMS 1.png" alt="">  support@84meta.com</a>
+                <h3>Find out why we have a 90% customer rating.</h3>
+            </div>
+            <div class="service-team-img-container">
+                <img class="service-img" src="images/customer-support.png" alt="">
+            </div>
+        </section>
+        <section class="start">
+            <div class="start-text">
+                <h1>Start 84 Meta Today  </h1>
+                <h3>Get started for free and experience the amazing treats we offer.</h3>
+                <button class="start-btn-left" type="submit">Get Started</button>
+            </div>
+            <div  class="start-btns-right">
+                <button class="start-btn-right" type="submit">Get In Touch</button>
+                <button class="start-btn-right" type="submit">Join A webinar</button>
+            </div>
+        </section>
+    </main>
+        <section class="footer-links">
+            <div class="footer-link">
+                <h2>COMPANY</h2>
+                <ul>
+                    <li>Product Features</li>
+                    <li>Brand Intelligence</li>
+                    <li>What's New</li>
+                    <li>Leadership</li>
+                </ul>
+            </div>
+            <div class="footer-link">
+                <h2>RESOURCES</h2>
+                <ul>
+                    <li>Workbench</li>
+                    <li>Chat</li>
+                    <li>Reviews</li>
+                    <li>API</li>
+                </ul>
+            </div>
+            <div class="footer-link">
+                <h2>COMMUNITY</h2>
+                <ul>
+                    <li>Events</li>
+                    <li>Partnerships</li>
+                    <li>Documentation</li>
+                </ul>
+            </div>
+            <div class="footer-link">
+                <h2>LEARN MORE</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Security</li>
+                    <li>Get in Touch</li>
+                </ul>
+            </div>
+            
+        </section>
+        <footer class="index-footer">
+            <section class="footer-icons">
+                <div class="index-copyright">
+                    <p>Copyright of I4GXZURI Team 84 2022<img src="images/bi_c-circle.png" alt="copyright">
+                    </p>
+                </div>
+                <div>
+                    <img src="images/ci_mail.png" alt="">
+                    <img src="images/twitter-vector.png" alt="">
+                    <img src="images/insta-vector.png" alt="">
+                    <img src="images/facebook-vector.png" alt="">
+                </div>
+                <div class='index-terms-and-privacy'>
+                    <p>Terms and Condition</p>
+                    <p>Privacy Policy</p>
+                </div>
+            </section>
+        </footer>
+    
+</body>
+</html>
