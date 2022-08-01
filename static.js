@@ -88,6 +88,7 @@ vid.onclick = ()=>{
     overLay.style.display = 'flex';
     indexHero.classList.add('blur')
     indexMain.style.display = 'none'
+    indexMain.nextElementSibling.style.display = 'none'
 }
 
 closeVid.onclick = ()=> {
