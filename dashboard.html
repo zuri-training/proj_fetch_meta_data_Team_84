@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Team 84 | Dashboard</title>
+        <link rel="stylesheet" href="/dashboard.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <div class="search">
+                    <img  style="background: transparent;" src="/img/Vector (2).png" alt="">
+                    <input class="search-input" type="text" placeholder= "Search file names, extensions, folder">
+                </div>
+                
+                <div class="nav-button">
+                    <a class="home" href="index.html">Home</a>
+                    <a class="faqs" href="faqs.html">FAQs</a>
+                    <a class="res" href="Resources.html">Resources</a>
+                </div>
+
+                <div class="profile">
+                    <!-- <a class="profile-btn"></a> -->
+                    <div class="profile-content">
+                        <div class="content-box">
+                            <div class="content-top">
+                                <div class="avatar"></div>
+                                <div class="user"></div>
+                            </div>
+
+                            <div class="content-bottom">
+                                <div class="link1">
+                                    <a href="">Settings</a>
+                                </div>
+                                <div class="link2">
+                                    <a href="">Review and Suggestions</a>
+                                </div>
+                                <div class="link3">
+                                    <a href="">Support</a>
+                                </div>
+                                <div class="link4">
+                                    <a href="">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+        <main>
+            <div class="side-bar">
+                <div class="logo"></div>
+            </div>
+            <div class="css-treeview">
+                <ul>
+                    <li><input type="checkbox" id="item-dash"/><label class="parent" for="item-dash"><p><img src="img/dashboardIcon.png" alt="">  Dashboard</p></label>
+                        <ul>
+                            <li><input type="checkbox" id="item-images"/><label class="child" for="item-images"><p><img src="img/Image.png" alt="">  Images</p></label></li>
+                            <!-- <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a> -->
+                            </li>
+
+                            <li><input type="checkbox" id="item-images"/><label class="child" for="item-json"><p><img src="img/json.png" alt="">  JSON files</p></label></li>
+                            <!-- <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a> -->
+                            </li>
+                            
+                            <li><input type="checkbox" id="item-images"/><label class="child" for="item-csv"><p><img src="img/csv.png" alt="">  CSV files</p></label></li>
+                            <!-- <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a> -->
+                            </li>
+
+                            <li><input type="checkbox" id="item-images"/><label class="child" for="item-pdf"><p><img src="img/json.png" alt="">  PDF files</p></label></li>
+                            <!-- <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a> -->
+                            </li>
+
+                            <li><input type="checkbox" id="item-images"/><label class="child" for="item-web"><p><img src="img/Website.png" alt="">  Web project</p></label></li>
+                            <!-- <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a> -->
+                            </li>
+                        </ul>
+                    </li>
+                    <li><input type="checkbox" id="item-dash"/><label class="parent" for="item-saves"><p><img src="img/Vector.png" alt="">  Saved files</p></label>
+                    <li><input type="checkbox" id="item-dash"/><label class="parent" for="item-new"><p><img src="img/newFolder.png" alt="">  Create new folder</p></label>
+                    <li><input type="checkbox" id="item-dash"/><label class="parent" for="item-trash"><p><img src="img/Delete 2.png" alt="">  Trash</p></label>
+                </ul>
+            </div>
+       
+            <div class="session">
+                <div class="time">
+                    <p>Last session:</p>
+                    <p></p>
+                </div>
+            </div>
+            
+
+
+            <div class="drop-zone">
+                <div class="top">
+                    <span class="icon1"></span>
+                    <span class="icon2"></span>
+                    <span class="top-text">Click the upload icon to add a file</span>
+                    <!-- <span class="drop-zone__prompt">Click the upload icon to add a file</span> -->
+                </div>
+
+                <div class="middle"></div>
+
+                <div class="bottom">
+                    <span class="bottom-text1">OR</span>
+                    <span class="bottom-text2">Drag and drop a file</span>
+                    <span class="bottom-text3">only jpg, png, csv, pdf, json files are supported</span>
+                </div>
+                
+                <input type="file" name="myFile" class="drop-zone__input">
+            </div>
+           
+            
+            
+                <!-- <input type="file" name="myFile" class="drop-zone__input" multiple>
+                            Add "multiple" attribute to input to support multiple files -->
+                <!-- <div class="drop-zone__thumb" data-label="myfile.txt"></div> -->
+            
+
+            <div class="down">
+                <p>Extracted Metadata</p>
+                <!-- <button class="down-btn">
+                    <a>Download
+                        
+                    </a>
+                </button> -->
+
+
+                <!-- <button class="openButton" onclick="myFunction()">Open Form</button> -->
+                <!-- <button class="openButton" onclick="myFunction()"><a href=# target=_self onClick="pop()">Open Form</a></button> -->
+                <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
+               
+               
+                <!-- <div class="cover">
+                    <div class="contents">
+                        <h1>Contents</h1>
+                        <span class="close">Close</span>
+                    </div>
+                </div> -->
+                <button>Download</button>
+            
+            
+            </div>
+
+
+            <div class="table-cont">
+                <div class="files">
+                    <p>Files</p>
+                </div>
+                
+                <table class="table-body">
+                    <tr>
+                      <th>File name</th>
+                      <th>File size</th>
+                      <th>Folder</th>
+                      <th>Date created</th>
+                      <th>Status</th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="disp-all">
+                <button class="file-btn"><a href="">Show all</a></button>
+            </div>
+        <main>
+
+        <footer></footer>
+        <script src="main.js"></script>
+    </body>
+</html>
