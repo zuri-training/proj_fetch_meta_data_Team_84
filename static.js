@@ -81,11 +81,8 @@ var indexHero = document.getElementById('indexHeader')
 var indexMain = document.getElementById('indexMain')
 var vidDuration = vid.duration;
 
-
-/*VIDEO END*/
-
-
-
+/*if user clicks on video thumbnail, video appears in pop up
+ and background gets blurred to account for slideshow in the background and not to interrupt slide timing*/
 vid.onclick = ()=>{
     vidPop.play()
     overLay.style.display = 'flex';
@@ -102,13 +99,13 @@ closeVid.onclick = ()=> {
     
 }
 
-
+/*VIDEO END*/
 
 var slideInterval = setInterval( 
     function myTimer(){
         index++
         myShows(index)
-    },100000)
+    },10000)
 
 
 window.onscroll = () => {
@@ -117,18 +114,7 @@ window.onscroll = () => {
     }
 }
 
-  
-
-    /*var timeOut = 5000;
-
-if(!(vid.ended) || !(vid.paused)){
-    timeOut = vid.duration
-    timeOut = parseInt(timeOut * 1000)
-    console.log (vid.currentTime)
-} */
-
 /*This section creates the collapsible menu controls*/
-
 
 
 /*This section is for the review section on landing page */
