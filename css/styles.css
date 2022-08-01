@@ -104,6 +104,7 @@ button, a{
 
 
 
+
 /* ...............#######################.............. */
 
 .questions {
@@ -138,10 +139,7 @@ button, a{
     font-size: var(--regular-font-size);
     color:var(--index-hero-circle);
     padding-left: 50px;
-    /* background-image: url("../images/search.png")
-    background-repeat: no-repeat;
-    background-position: 10px 10px;  */
-    /* border-radius: 12px 0px 0px 12px;  */
+
     
 }
 
@@ -185,7 +183,7 @@ button, a{
     color: var(--primary-blue-active-focus);
     font-weight: 700;
     font-size: 32px;
-    /* padding: 15px 0 15px 64px; */
+
     margin-top:17px;
 }
 
@@ -218,17 +216,10 @@ button, a{
   .answer-question .metadata .open.active,
   .answer-question .metadata .close.active {
     opacity: 1;
-    /* transform: translateY(0); */
+
   }
 
-  .answer-question .content {
-    /* padding: 0 32px; */
-    /* background: #fdfffc; */
-    /* line-height: 2;
-    max-height: 0;
-    /* overflow: hidden; */
-    /* transition: all 500ms; */
-  }
+ 
 
   .content{
     font-weight: 400;
@@ -249,7 +240,7 @@ button, a{
 /* #####################,,,,,,,,,,......................############### */
 
 .in-touch{
-    height:27.813rem;
+    height:450px;
     background-color: var(--hero-section-blue);
     text-align: center; 
     margin-top: 80px;  
@@ -281,6 +272,44 @@ button, a{
     color: var(--slightly-white);
     font-weight: var(--heavy-font-weight);
     font-size: var(--regular-font-size);
+}
+
+.touch-button:hover{
+    box-shadow: 2px 2px 6px dimgray;
+    color: white;
+    background-color: var(--primary-blue-hover);
+}
+
+
+/* /////////.........................@################################################################ */
+
+
+.faq-footer-icons{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--hero-section-blue);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--slightly-white);
+}
+
+.faq-footer-content{
+    display:flex;
+    margin: 10px;
+}
+
+.faq-footer-p{
+    margin-right: 50px;
+}
+.faq-footer-img{
+    width:30px;
+    height:30px;
+    margin: 10px;
+}
+
+.faq-copy{
+    width:24px;
+    height:24px;
 }
 
 
@@ -328,7 +357,7 @@ button, a{
         height: 3.625rem;
     }
     .in-touch{
-        height:20rem;
+        height:450px;
     }
 
     .nav-btn{
@@ -336,4 +365,17 @@ button, a{
     }
     .nav-links{
         display:none;
+    }
+
+    .faq-footer-icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+    }
+    .faq-footer-content{
+        display:flex;
+        
+        align-items: center;
+    
 }    

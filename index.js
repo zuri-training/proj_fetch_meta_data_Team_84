@@ -1,13 +1,4 @@
-// const dropUp = document.querySelectorAll(".metadata")
 
-// const dropDown = document.querySelectorAll(".meta-answer")
-
-
-
-
-
-
-// Number 3................
 
 const faqHeaders = document.querySelectorAll(".answer-question .metadata");
 
