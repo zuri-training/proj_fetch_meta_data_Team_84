@@ -73,7 +73,12 @@ function myShows(){
 
 /*VIDEO*/
 
-var vid = document.querySelector('video')
+var vid = document.getElementById('vidHero')
+var vidPop = document.querySelector('#videoPop')
+var overLay = document.getElementById('vidWrap')
+var closeVid = document.getElementById('close')
+var indexHero = document.getElementById('indexHeader')
+var indexMain = document.getElementById('indexMain')
 var vidDuration = vid.duration;
 
 
@@ -81,18 +86,40 @@ var vidDuration = vid.duration;
 
 
 
+vid.onclick = ()=>{
+    vidPop.play()
+    overLay.style.display = 'flex';
+    indexHero.classList.add('blur')
+    indexMain.style.display = 'none'
+}
 
-
-vid.onpause = ()=>{
-    setInterval( 
-        function myTimer(){
-            index++
-            myShows(index)
-        },10000)
+closeVid.onclick = ()=> {
+    vidPop.pause()
+    overLay.style.display = 'none';
+    indexHero.classList.remove('blur')
+    indexMain.style.display = 'block'
+    indexMain.nextElementSibling.style.display = 'flex'
+    
 }
 
 
-/*var timeOut = 5000;
+
+var slideInterval = setInterval( 
+    function myTimer(){
+        index++
+        myShows(index)
+    },100000)
+
+
+window.onscroll = () => {
+    if (overLay.style.display == 'flex'){
+        vidPop.pause()
+    }
+}
+
+  
+
+    /*var timeOut = 5000;
 
 if(!(vid.ended) || !(vid.paused)){
     timeOut = vid.duration

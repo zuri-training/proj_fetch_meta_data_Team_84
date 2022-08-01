@@ -11,4 +11,6 @@
 -change img icon to linkable icon from font-awesome
 
 3 - Active and Hover states not yet set
+
+4 - replace video on hero section with picture
 *****************END LANDING PAGE [ISIOMA]************************
