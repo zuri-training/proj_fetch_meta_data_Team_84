@@ -9,6 +9,7 @@
     </head>
     <body>
         <header>
+            <!-- navigation bar -->
             <nav class="nav-bar">
                 <div class="search">
                     <img  style="background: transparent;" src="img/Vector (2).png" alt="">
@@ -22,7 +23,6 @@
                 </div>
 
                 <div class="profile">
-                    <!-- <a class="profile-btn"></a> -->
                     <div class="profile-content">
                         <div class="content-box">
                             <div class="content-top">
@@ -47,14 +47,15 @@
                         </div>
                     </div>
                 </div>
-
             </nav>
         </header>
 
         <main>
+            <!-- side bar -->
             <div class="side-bar">
                 <div class="logo"></div>
             </div>
+
             <div class="css-treeview">
                 <ul>
                     <li><input type="checkbox" id="item-dash"/><label class="parent" for="item-dash"><p><img src="img/dashboardIcon.png" alt="">  Dashboard</p></label>
@@ -95,22 +96,22 @@
                     <li><input type="checkbox" id="item-dash"/><label class="parent" for="item-trash"><p><img src="img/Delete 2.png" alt="">  Trash</p></label>
                 </ul>
             </div>
-       
-            <div class="session">
-                <div class="time">
-                    <p>Last session:</p>
-                    <p></p>
+            
+            <div class="session-box">
+                <div class="session">
+                    <div class="time">
+                        <p>Last session:</p>
+                        <p></p>
+                    </div>
                 </div>
             </div>
-            
-
-
+         
+            <!-- drag and drop file for upload od click to upload -->
             <div class="drop-zone">
                 <div class="top">
                     <span class="icon1"></span>
                     <span class="icon2"></span>
                     <span class="top-text">Click the upload icon to add a file</span>
-                    <!-- <span class="drop-zone__prompt">Click the upload icon to add a file</span> -->
                 </div>
 
                 <div class="middle"></div>
@@ -123,40 +124,29 @@
                 
                 <input type="file" name="myFile" class="drop-zone__input">
             </div>
-           
-            
-            
-                <!-- <input type="file" name="myFile" class="drop-zone__input" multiple>
+           <!-- <input type="file" name="myFile" class="drop-zone__input" multiple>
                             Add "multiple" attribute to input to support multiple files -->
-                <!-- <div class="drop-zone__thumb" data-label="myfile.txt"></div> -->
+            <!-- <div class="drop-zone__thumb" data-label="myfile.txt"></div> -->
             
 
+            <!-- download, share, export etc.  -->
             <div class="down">
                 <p>Extracted Metadata</p>
-                <!-- <button class="down-btn">
-                    <a>Download
-                        
-                    </a>
-                </button> -->
-
-
-                <!-- <button class="openButton" onclick="myFunction()">Open Form</button> -->
-                <!-- <button class="openButton" onclick="myFunction()"><a href=# target=_self onClick="pop()">Open Form</a></button> -->
-                <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
                
-               
-                <!-- <div class="cover">
-                    <div class="contents">
-                        <h1>Contents</h1>
-                        <span class="close">Close</span>
-                    </div>
-                </div> -->
-                <button>Download</button>
-            
-            
+                <a href="#overlay" id="open-overlay">Download</a>
+
+                <div id="overlay">
+                    <div class="share"><a href="">Share</a></div>
+                    <div class="copy"><a href="">Copy</a></div>
+                    <div class="export"><a href="">Export</a></div>
+                    <div class="embed"><a href="">Embed</a></div>
+                    <div class="save"><a href="">Save</a></div>
+                </div>
+
+                <div id="mask" onclick="document.location='#';"></div>
             </div>
 
-
+            <!-- table section -->
             <div class="table-cont">
                 <div class="files">
                     <p>Files</p>
@@ -207,6 +197,7 @@
 
             </div>
 
+            <!-- display remaining content in table -->
             <div class="disp-all">
                 <button class="file-btn"><a href="">Show all</a></button>
             </div>
