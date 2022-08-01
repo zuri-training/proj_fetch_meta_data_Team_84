@@ -15,7 +15,7 @@
     --error-red-hover:#d40000;
     --error-red-active-focus:#aa0000;
     --border-radius:10px;
-    --login-border-radius:5px;
+    --login-border-radius:8px;
     --hero-section-blue:#cddbf5;
     --regular-font-size:24px;
     --large-font-size:56px;
@@ -94,7 +94,7 @@ button{
     width: 30vw;
     margin: auto;
     background-color: white;
-    border-radius: var(--login-border-radius);
+    border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
     padding:  5% 3%;
@@ -193,7 +193,16 @@ input:focus{
 @media screen and (max-width:290px){
     .log-in-nav{
         align-items: center;
-        height: fit-content;
+        height: 15vh;
+        font-size: .9em;
+    }
+
+}
+@media screen and (max-width:250px){
+    .log-in-nav{
+        align-items: center;
+        height: 30vh;
+        font-size: .9em;
     }
 
 }
@@ -256,5 +265,9 @@ input:focus{
     }
         
 }
-
+@media screen and (min-width:200px) and (max-width:1000px) and (orientation:landscape){
+    .log-in-nav{
+        height: 20vh;
+    }
+}
 
