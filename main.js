@@ -1,5 +1,4 @@
 // DRAG AND DROP ZONE
-
 document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
     const dropZoneElement = inputElement.closest(".drop-zone");
   
@@ -82,12 +81,7 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
   }
 
 
-/*
-Steps / article on my website:
-https://henryegloff.com/how-to-code-a-simple-dark-mode-toggle/
-
-*/
-
+// LIGHT/DARK MODE 
 function toggle_light_mode() {
     var app = document.getElementsByTagName("BODY")[0];
     if (localStorage.lightMode == "dark") {
@@ -110,16 +104,3 @@ window.addEventListener(
     },
     false
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
