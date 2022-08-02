@@ -1,3 +1,5 @@
+// DRAG AND DROP ZONE
+
 document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
     const dropZoneElement = inputElement.closest(".drop-zone");
   
@@ -80,45 +82,41 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
   }
 
 
+/*
+Steps / article on my website:
+https://henryegloff.com/how-to-code-a-simple-dark-mode-toggle/
 
+*/
 
-// display date and time 
-// let text = new Date()
-let text = document.lastModified
-document.getElementById('datePicker').innerHTML = text;
-// document.getElementById('datePicker').value = new Date().toDateInputValue();
+function toggle_light_mode() {
+    var app = document.getElementsByTagName("BODY")[0];
+    if (localStorage.lightMode == "dark") {
+        localStorage.lightMode = "light";
+        app.setAttribute("light-mode", "light");
+    } else {
+        localStorage.lightMode = "dark";
+        app.setAttribute("light-mode", "dark");
+    }
+}
 
-
-
-// button share function
-
-// function openForm() {
-//   document.getElementById("myForm").style.display = "block";
-// }
-
-// function closeForm() {
-//   document.getElementById("myForm").style.display = "none";
-// }
-
-
-
-
-
-
-
-
-
-// When the user clicks on div, open the popup
-// function myFunction() {
-  // var openButton = document.getElementById("myPopup").style.display = "block";
-  // var popup = document.getElementById("myPopup");
-  // openButton.classList.toggle("show");
-// }
-// click outside to close form 
+window.addEventListener(
+    "storage",
+    function () {
+        if (localStorage.lightMode == "dark") {
+            app.setAttribute("light-mode", "dark");
+        } else {
+            app.setAttribute("light-mode", "light");
+        }
+    },
+    false
+);
 
 
 
-// function pop() { window.open('http://www.example.com','pop',"height=590,width=450,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=auto,resizable=yes,copyhistory=no"); }
+
+
+
+
 
 
 

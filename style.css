@@ -146,7 +146,7 @@ body {
     /* Inside auto layout */
 
     flex: none;
-    order: 2;
+    order: 3;
     flex-grow: 0;
 
     /* float: left;
@@ -433,6 +433,7 @@ a:active {
     top: 0px;
     border-right: 1px solid #EAEAEA;
     /* border: 1px solid red; */
+    z-index: -1;
 }
 
 .logo {
@@ -1652,6 +1653,7 @@ tr:nth-child(odd) {
     align-self: stretch;
     flex-grow: 0;
 
+    
     /* border-right: 1px solid #EAEAEA; */
     /* border-bottom: 1px solid red; */
 }
@@ -1861,70 +1863,125 @@ tr:nth-child(odd) {
 
 
 
-/* Button used to open the contact form - fixed at the bottom of the page */
-.openButton {
-    background-color: #555;
-    color: white;
-    padding: 16px 20px;
-    border: none;
+
+.toggle {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    /* height: 30px; */
+    position: relative;
+    /* position: absolute; */
+    /* top: -8px; */
+
+
+/* border: 1px solid red; */
+    /* flex: none; */
+    order: 3;
+    flex-grow: 0;
+    /* z-index: 0; */
+    margin-left: -250px;
+}
+
+/* Light Mode Button Styles
+--------------------------- */
+
+.light-mode-btn {
+    box-sizing: border-box;
     cursor: pointer;
-    opacity: 0.8;
-    position: fixed;
-    bottom: 23px;
-    right: 28px;
-    width: 280px;
-  }
-  
-  /* The popup form - hidden by default */
-  .form-popup {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    right: 15px;
-    border: 3px solid #f1f1f1;
-    z-index: 9;
-  }
-  
-  /* Add styles to the form container */
-  .form-container {
-    max-width: 300px;
-    padding: 10px;
-    background-color: white;
-  }
-  
-  /* Full-width input fields */
-  .form-container input[type=text], .form-container input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
+    height: 15px;
+    width: 25px;
+    position: absolute;
+    /* border: 1px solid rgba(255, 255, 255, 0); */
+    /* margin-top: 20px; */
+    border-radius: 27.375px;
     border: none;
-    background: #f1f1f1;
-  }
-  
-  /* When the inputs get focus, do something */
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  /* Set a style for the submit/login button */
-  .form-container .btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.8;
-  }
-  
-  /* Add a red background color to the cancel button */
-  .form-container .cancel {
-    background-color: red;
-  }
-  
-  /* Add some hover effects to buttons */
-  .form-container .btn:hover, .open-button:hover {
-    opacity: 1;
-  }
+
+    /* background: blue; */
+    margin-top: -3px;
+    margin-left: 200px;
+}
+
+.light-mode-btn:focus {
+    outline: none; /* Not ideal for accessibility */
+}
+
+.light-mode-btn span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 15px;
+    box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+    transition: 0.3s;
+
+
+    background: #D8DAE4;
+    border-radius: 27.375px;
+}
+
+.light-mode-btn span:nth-child(2) {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 7.5px;
+    height: 7.5px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+    transition: 0.3s;
+}
+
+/* Light & Dark Mode Styles
+		--------------------------- */
+
+body {
+    /* background-color: #f6f6f6; */
+    transition: background-color 0.5s;
+}
+
+body[light-mode="dark"] {
+    background-color: #4d4d4d;
+    /* background-color: #141516; */
+    /* color: #ced4e2; */
+}
+/* 
+body[light-mode="dark"] .light-mode-btn span:nth-child(1) {
+    background-color: #ced4e2;
+    color: #141516;
+} */
+
+body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
+    left: 15px;
+    /* left: 65px; */
+    /* background-color: forestgreen; */
+    background-color: #141516;
+}
+
+/* body[light-mode="dark"] a {
+    color: #141516;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

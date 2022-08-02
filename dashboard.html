@@ -22,6 +22,14 @@
                     <a class="res" href="Resources.html">Resources</a>
                 </div>
 
+                <div class="toggle">
+                    <button class="light-mode-btn" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                
+
                 <div class="profile">
                     <div class="profile-content">
                         <div class="content-box">
@@ -201,9 +209,21 @@
             <div class="disp-all">
                 <button class="file-btn"><a href="">Show all</a></button>
             </div>
+
+
+
+
+
+            
         <main>
 
         <footer></footer>
         <script src="main.js"></script>
+        <script>
+            var app = document.getElementsByTagName("BODY")[0];
+            if (localStorage.lightMode == "dark") {
+                app.setAttribute("light-mode", "dark");
+            }
+        </script>
     </body>
 </html>
