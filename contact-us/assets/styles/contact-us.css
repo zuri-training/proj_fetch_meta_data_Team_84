@@ -2,14 +2,9 @@
 
 ::-webkit-scrollbar-thumb {
     background-color: #2E2E2E;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: white;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 4px;
 }

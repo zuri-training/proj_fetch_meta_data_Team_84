@@ -16,6 +16,7 @@
           colors: {
             'secondary-800': '#A27137',
             'greyish-1100': '#2E2E2E',
+            'greyish-700': '#BFBFBF',
             'primary-800': '#043187',
             'primary-300': '#82A4E5',
           }
@@ -35,26 +36,26 @@
     </a>
     <nav class="flex space-x-6 ml-[60px]">
       <a href="index.html" class="flex w-[149px] h-[54px]">
-        <span class="font-bold text-primary-800 hover:text-secondary-800 text-2xl m-auto">Home</span>
+        <span class="font-bold text-primary-800 hover:text-secondary-800 text-2xl leading-7 m-auto">Home</span>
       </a>
       <a href="about-us.html" class="flex w-[149px] h-[54px]">
-        <span class="font-bold text-primary-800 hover:text-secondary-800 text-2xl m-auto">About Us</span>
+        <span class="font-bold text-primary-800 hover:text-secondary-800 text-2xl leading-7 m-auto">About Us</span>
       </a>
       <a href="faqs.html" class="flex w-[149px] h-[54px]">
-        <span class="font-bold text-primary-800 hover:text-secondary-800 text-2xl m-auto">FAQs</span>
+        <span class="font-bold text-primary-800 hover:text-secondary-800 text-2xl leading-7 m-auto">FAQs</span>
       </a>
       <a href="contact-us.html" class="flex w-[149px] h-[54px]">
-        <span class="font-bold text-secondary-800 text-2xl m-auto">Contact Us</span>
+        <span class="font-bold text-secondary-800 text-2xl leading-7 m-auto">Contact Us</span>
       </a>
     </nav>
-    <div class="flex space-x-6 ml-[84px]">
-      <button class="flex bg-primary-800 hover:bg-white hover:border-2 hover:border-primary-800 rounded-lg text-white hover:text-primary-800 w-[149px] h-[54px]">
-        <span class="font-bold text-2xl m-auto">Sign Up</span>
+    <aside class="flex space-x-6 ml-[84px]">
+      <button class="flex bg-primary-800 rounded-lg text-white w-[149px] h-[54px]">
+        <span class="font-bold text-2xl leading-7 m-auto">Sign Up</span>
       </button>
       <button class="flex bg-white hover:bg-primary-800 border-2 border-primary-800 rounded-lg text-primary-800 hover:text-white w-[149px] h-[54px]">
-        <span class="font-bold text-2xl m-auto">Log In</span>
+        <span class="font-bold text-2xl leading-7 m-auto">Log In</span>
       </button>
-    </div>
+    </aside>
   </header>
 
   <main class="flex flex-col">
@@ -79,11 +80,34 @@
         <p class="font-medium text-greyish-1100 text-[32px] leading-[38px] text-center">186-1623-813 <br/> Monday - Friday <br/>8am - 5pm</p>
       </article>
     </section>
-    <section class="mt-[88px]">
+    <section class="flex flex-col items-center mt-[88px]">
+      <h2 class="font-bold text-greyish-1100 text-5xl leading-[58px] capitalize">get in touch</h2>
+      <p class="text-greyish-1100 text-[32px] leading-[38px] mt-6">We would love to hear from you. Fill out the form so we can get started</p>
+      <form action="#" class="flex flex-col items-center mt-12">
+        <fieldset class="flex justify-center space-x-10">
+          <fieldset class="flex flex-col">
+            <label for="first-name" class="font-bold text-greyish-1100 text-2xl leading-7 mb-2">First Name</label>
+            <input type="text" id="first-name" name="firstName" placeholder="e.g. John" class="border border-greyish-1100 focus:border-greyish-1100 focus:ring-0 text-greyish-1100 placeholder:text-greyish-700 text-2xl placeholder:text-2xl leading-7 placeholder:leading-7 w-[568px] p-4"/>
+            <label for="email-address" class="font-bold text-greyish-1100 text-2xl leading-7 mt-8 mb-2">Email Address</label>
+            <input type="email" id="email-address" name="emailAddress" placeholder="Enter your email address" class="border border-greyish-1100 focus:border-greyish-1100 focus:ring-0 text-greyish-1100 placeholder:text-greyish-700 text-2xl placeholder:text-2xl leading-7 placeholder:leading-7 w-[568px] p-4"/>
+            <label for="phone-number" class="font-bold text-greyish-1100 text-2xl leading-7 mt-10 mb-2">Phone Number</label>
+            <input type="tel" id="phone-number" name="phoneNumber" placeholder="e.g. +123-4567-871" class="border border-greyish-1100 focus:border-greyish-1100 focus:ring-0 text-greyish-1100 placeholder:text-greyish-700 text-2xl placeholder:text-2xl leading-7 placeholder:leading-7 w-[568px] p-4"/>
+          </fieldset>
+          <fieldset class="flex flex-col">
+            <label for="last-name" class="font-bold text-greyish-1100 text-2xl leading-7 mb-2">Last Name</label>
+            <input type="text" id="last-name" name="lastName" placeholder="e.g. Doe" class="border border-greyish-1100 focus:border-greyish-1100 focus:ring-0 text-greyish-1100 placeholder:text-greyish-700 text-2xl placeholder:text-2xl leading-7 placeholder:leading-7 w-[568px] p-4"/>
+            <label for="contact-message" class="font-bold text-greyish-1100 text-2xl leading-7 mt-8 mb-2">Contact Message</label>
+            <textarea rows="6" type="text" id="contact-message" name="contactMessage" placeholder="Enter your message" class="resize-none border border-greyish-1100 focus:border-greyish-1100 focus:ring-0 text-greyish-1100 placeholder:text-greyish-700 text-2xl placeholder:text-2xl leading-7 placeholder:leading-7 w-[568px] p-4"></textarea>
+          </fieldset>
+        </fieldset>
+        <button class="flex bg-primary-800 rounded-lg text-white w-[230px] h-[54px] mt-[88px]">
+          <span class="font-bold text-2xl leading-7 m-auto">Send a message</span>
+        </button>
+      </form>
     </section>
   </main>
 
-  <footer class="">
+  <footer class="bg-primary-300 h-[132px] mt-[104px]">
   </footer>
 </body>
 
