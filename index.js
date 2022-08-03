@@ -5,18 +5,18 @@ const faqHeaders = document.querySelectorAll(".answer-question .metadata");
 console.log(document.querySelectorAll(".answer-question .metadata"));
 faqHeaders.forEach((header, i) => {
   header.addEventListener("click", () => {
-    header.nextElementSibling.classList.toggle("active");
+    header.nextElementSibling.classList.toggle("f-active");
     console.log(header.nextElementSibling);
     
     const open = header.querySelector(".open");
     const close = header.querySelector(".close");
 
-    if (header.nextElementSibling.classList.contains("active")) {
-      open.classList.remove("active");
-      close.classList.add("active");
+    if (header.nextElementSibling.classList.contains("f-active")) {
+      open.classList.remove("f-active");
+      close.classList.add("f-active");
     } else {
-      open.classList.add("active");
-      close.classList.remove("active");
+      open.classList.add("f-active");
+      close.classList.remove("f-active");
     }
   });
 });
@@ -29,10 +29,10 @@ faqHeaders.forEach((header, i) => {
   
   //   answerQuestions.forEach((dropUp, i) => {
   //     dropUp.addEventListener("click",()=>{
-  //         dropDown.classList.toggle("active")
+  //         dropDown.classList.toggle("f-active")
   //         const imageUpArrow = document.querySelector(".metadata img")
           
-  //         if(dropDown.classList.contains("active")){
+  //         if(dropDown.classList.contains("f-active")){
   //           imageUpArrow.setAttribute("src","./images/down-circle.png")
   //         }
   //         else{
@@ -58,14 +58,14 @@ faqHeaders.forEach((header, i) => {
 
 //   answerQuestions.forEach((dropUp, i) => {
 //     dropUp.addEventListener("click",()=>{
-//         dropDown.classList.toggle("active");
+//         dropDown.classList.toggle("f-active");
         
  
         
         
 //         const imageUpArrow = document.querySelector(".metadata img")
         
-//         if(dropDown.classList.contains("active")){
+//         if(dropDown.classList.contains("f-active")){
 //           imageUpArrow.setAttribute("src","./images/down-circle.png")
 //         }
 //         else{
@@ -84,10 +84,10 @@ faqHeaders.forEach((header, i) => {
   
   //   answerQuestions.forEach((dropUp, i) => {
   //     dropUp.addEventListener("click",()=>{
-  //         dropDown.classList.toggle("active")
+  //         dropDown.classList.toggle("f-active")
   //         const imageUpArrow = document.querySelector(".metadata img")
           
-  //         if(dropDown.classList.contains("active")){
+  //         if(dropDown.classList.contains("f-active")){
   //           imageUpArrow.setAttribute("src","./images/down-circle.png")
   //         }
   //         else{
