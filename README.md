@@ -1,5 +1,5 @@
 # proj_fetch_meta_data_Team_84
-## ABOUT THE PROJECT
+# ABOUT THE PROJECT
   A platform that collects and displays metadata of uploaded file
 ### Working Team Name
   - 84Meta
