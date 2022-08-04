@@ -97,9 +97,9 @@ A platform that collects and displays metadata of uploaded file
     3. Wait for our reviewers to approve pull request for merging
   
    #### CHECKLIST
-     1. Ensure you have dependencies installed.
-     2. List extra dependencies in branch readMe and create requirements.txt file is pushed along with other files.
-     3. Ensure secret keys  are kept secret and virtual environment is placed in git ignore files 
+     [] Ensure you have dependencies installed.
+     [] List extra dependencies in branch readMe and create requirements.txt file is pushed along with other files.
+     [] Ensure secret keys  are kept secret and virtual environment is placed in git ignore files 
   
   ### REQUIREMENTS
   KNOWLEDGE OF:
