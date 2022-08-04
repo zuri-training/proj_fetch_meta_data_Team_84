@@ -81,7 +81,7 @@ A platform that collects and displays metadata of uploaded file
  2. Clone the forked repository to local 
     - [ ] **git clone <forked-repo-address>**
  3. Set this repo as upstream to ensure your repository is up to date
-    - [ ] **git remote add upstream <our-repo-address>**
+    - [ ] **git remote add upstream [https://github.com/zuri-training/proj_fetch_meta_data_Team_84.git](https://github.com/zuri-training/proj_fetch_meta_data_Team_84.git)**
  4. Pull changes from our repo
     - [ ] **git fetch upstream**
  5. Pull changes from our repo to your remote repo
