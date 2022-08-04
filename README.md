@@ -27,6 +27,7 @@
       - [PULL REQUESTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#pull-requests)
       - [CHECKLIST](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#checklist)
       - [REQUIREMENTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#requirements)
+   - [ACKNOWLEDGEMENTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#acknowledments)
    - [README CONTRIBUTING AUTHORS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#readme-contributing-authors)
    - [REFERENCES/FOOTER](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#referencesfooter)
 
@@ -194,8 +195,9 @@
   - [Mbugua Wanjiru](https://github.com/mbuguaellen)
   
  ### ACKNOWLEDMENTS
- - We'd like to thank the entire [Zuri Team] and [Ingressive for Good community] for this opportunity to learn and grow as developers and designers.
- - It's an honour to work with such a decicated group of mentors
+ - We'd like to thank the entire [Zuri Team](https://training.zuri.team/) and [Ingressive for Good community](https://ingressive.org/) for this opportunity to learn and grow as developers and designers.
+ - It's an honour to work with such a decicated group of mentors.
+ - Special Thanks to our project mentor [Tolu Folorunsho](https://www.linkedin.com/in/tolufolorunso/). Thanks for all you do.
 
 ### REFERENCES/FOOTER
   
