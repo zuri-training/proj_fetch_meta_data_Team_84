@@ -12,7 +12,7 @@
 ## FEATURES
   - Require User Authentication to perform extraction of metadata
   - Allows File upload
-  - Extract metadata from *PDF, *Images (Jpeg, Jpg, Png etc.), *JSON, *CSV
+  - Extract metadata from *PDF*,  *Images (Jpeg, Jpg, Png etc.)*,  *JSON*,  *CSV*
   - Validate file type
   - Validate file size
   - Save uploaded files for further use
