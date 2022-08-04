@@ -7,9 +7,30 @@
   ![Logo](https://res.cloudinary.com/issie/image/upload/v1659619070/Logo_1_eeynk2.png)
 ### Team Members
   - See list Here[^1]
+### TABLE OF CONTENTS
+  - [FEATURES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/blob/main/README.md#fixing-an-issue)
+  - [DESIGN DOCUMENTATION](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#design-documentation)
+  - [DEVELOPER DOCUMENTATION](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#developer-documentation)
+    - [LANGUAGES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#languages)
+    - [DATABASE](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#database)
+    - [DEPENDENCIES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#dependencies)
+    - [FRONTEND FUNCTIONALITIES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#frontend-functionalities)
+    - [BACKEND FUNCTIONALITIES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#backend-functionalities)
+      - [DJANGO](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#django)
+      - [DATABASE SCHEMA](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#database-schema)
+  - [GETTING STARTED AND USAGE REQUIREMENTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#getting-started-and-usage-requirements)
+    - [ISSUES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#issues)
+      - [REPORTING AN ISSUE](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#reporting-an-issue)
+      - [FIXING AN ISSUE](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#fixing-an-issue)
+    - [CONTRIBUTING](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#contributing)
+      - [CONNECTING REPOSITORY AND SETTING UPSTREAM](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#connecting-repository-and-setting-upstream)
+      - [PULL REQUESTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#pull-requests)
+      - [CHECKLIST](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#checklist)
+      - [REQUIREMENTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#requirements)
+   - [README CONTRIBUTING AUTHORS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#readme-contributing-authors)
+   - [REFERENCES/FOOTER](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#referencesfooter)
 
-
-## FEATURES
+# FEATURES
   - Require User Authentication to perform extraction of metadata
   - Allows File upload
   - Extract metadata from *PDF*,  *Images (Jpeg, Jpg, Png etc.)*,  *JSON*,  *CSV*
@@ -94,11 +115,11 @@
       - If you are a base developer in the project or you're working on the same repository. Reference issue by keyword e.g. resolves #12, closes #13
         - If you are contributing from external repository, reference issue by repository name and issue number e.g. proj_fetch_meta_data_Team_84 closes #13
     
- ### CONTRIBUTIONS
+ ### CONTRIBUTING
  #### Project is Open Source
    - Contributions and Feedback are welcome
    
- #### To Contribute
+ #### CONNECTING REPOSITORY AND SETTING UPSTREAM
  1. Fork the main branch of the repository
  2. Clone the forked repository to local 
     - [ ] **git clone forked-repo-address**
@@ -132,14 +153,34 @@
    5. Python
 
   INSTALLATION
-  1. An IDE
-  2. Python 3.10 or higher [Latest version 4/8/2022](https://www.python.org/downloads/release/python-3106/)
-  3. Installation of dependencies [See Dependencies above](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#dependencies)
-  4. Virtual Environment
+  1. An Integrated development environment [IDE]
+  - Examples
+    - [Visual Studio](https://visualstudio.microsoft.com/)
+    - [Sublime Text](https://www.sublimetext.com/3)
+  3. Git  
+   - [WindowsOS](https://git-scm.com/download/win)
+   - [MacOS](https://git-scm.com/download/mac)
+  4. Git Desktop for collaboration **Optional** 
+   - [WindowsOS](https://central.github.com/deployments/desktop/desktop/latest/win32)
+   - [MacOS](https://central.github.com/deployments/desktop/desktop/latest/darwin)
+   - [Windows MSI](https://central.github.com/deployments/desktop/desktop/latest/win32?format=msi)
+  5. Python 3.10 or higher 
+   - [WindowsOS](https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe)
+   - [MacOS](https://www.python.org/ftp/python/3.10.4/python-3.10.4-macos11.pkg)
+  6. Installation of dependencies [See Dependencies above](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#dependencies)
+  7. Virtual Environment
+    
+    ****
+    Latest version(maintained builds) for all installation requirements as at 4/8/2022
+    
+    Windows versions are for 64bit
+    ****
   
- ### README CONTRIBUTORS
+ ### README CONTRIBUTING AUTHORS
   - [Ekwemuka Isioma](https://github.com/Issiedoesit)
   - [Mbugua Wanjiru](https://github.com/mbuguaellen)
+
+### REFERENCES/FOOTER
   
 [^1]:
     - https://github.com/mbuguaellen TEAM LEAD and DESIGNER
