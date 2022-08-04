@@ -3,6 +3,8 @@
   A platform that collects and displays metadata of uploaded file
 ### Working Team Name
   - 84Meta
+### Team Logo
+  ![Logo](https://res.cloudinary.com/issie/image/upload/v1659619070/Logo_1_eeynk2.png)
 ### Team Members
   - [See list Here][^1]
 
