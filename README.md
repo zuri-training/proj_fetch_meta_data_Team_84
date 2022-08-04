@@ -79,17 +79,17 @@ A platform that collects and displays metadata of uploaded file
    Contributions and feedback are welcome
    1. Fork the main branch of the repository
    2. Clone the forked repository to local 
-      git clone <forked-repo-address>
+      -**git clone <forked-repo-address>**
    3. Set this repo as upstream to ensure your repository is up to date
-      git remote add upstream <our-repo-address>
+      -**git remote add upstream <our-repo-address>**
    4. Pull changes from our repo
-      git fetch upstream
+      -**git fetch upstream**
    5. Pull changes from our repo to your remote repo
-      git pull upstream main
+      -**git pull upstream main**
    6. Write descriptive commit message
-      git commit -m 'example change to example issue on example file'
+      -**git commit -m 'example change to example issue on example file'**
     7. Push your changes to your remote repo
-      git push
+      -**git push**
   
    ### PULL REQUESTS
     1. Create a pull request on our main branch
