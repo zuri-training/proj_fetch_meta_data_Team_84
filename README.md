@@ -11,11 +11,11 @@ A platform that collects and displays metadata of uploaded file
   - Share to social media
   - Download metadata
   - Export Metadata
-## DESIGN
+# DESIGN DOCUMENTATION
   - [Low fidelity designs](https://www.figma.com/file/JQtpoNpLc7SeBEHpormEqh/Team84_fetch_metadata-collaboration?node-id=0%3A1)
   - [High Fidelity designs](https://www.figma.com/file/JQtpoNpLc7SeBEHpormEqh/Team84_fetch_metadata-collaboration?node-id=2%3A3)
   - [Style guide](https://www.figma.com/file/JQtpoNpLc7SeBEHpormEqh/Team84_fetch_metadata-collaboration?node-id=2%3A2)
-## DEVELOPER DOCUMENTATION
+# DEVELOPER DOCUMENTATION
 ## LANGUAGES
 ### FRONTEND
    1. HTML
