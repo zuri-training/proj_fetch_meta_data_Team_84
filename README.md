@@ -1,5 +1,11 @@
 # proj_fetch_meta_data_Team_84
-A platform that collects and displays metadata of uploaded file
+## ABOUT THE PROJECT
+  A platform that collects and displays metadata of uploaded file
+### Working Team Name
+  - 84Meta
+### Team Members
+  - [See list Here][^1]
+
 
 ## FEATURES
   - Require User Authentication to perform extraction of metadata
@@ -111,5 +117,33 @@ A platform that collects and displays metadata of uploaded file
   2. Python 3.10 or higher [Latest version 4/8/2022](https://www.python.org/downloads/release/python-3106/)
   3. Installation of dependencies [See Dependencies above](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#dependencies)
   4. Virtual Environment
-        
-         
+  
+  
+[^1]:
+    - https://github.com/Issiedoesit
+    - https://github.com/topnics
+    - https://GitHub.com/samuelgodson55
+    - https://github.com/olawoyintosin
+    - http://github.com/Wuraola-Omotoyosi
+    - https://github.com/mbuguaellen
+    - https://github.com/OreoluwaDahunsi
+    - https://github.com/Nonso-hub
+    - https://github.com/Berseet
+    - https://github.com/ugoostanleyibe
+    - https://github.com/olamijulo2
+    - https://GitHub.com/vic-designs
+    - https://github.com/Ade-Bani/
+    - https://Github.com/Shalomking
+    - https://github.com/adesinna
+    - https://github.com/geonerd777
+    - http://github.com/Enojay
+    - https://github.com/SirIyanu
+    - http://GitHub.com/Tarielenz
+    - https://github.com/sholigezy
+    - https://github.com/preshwhyte
+    - https://github.com/Lyon689
+    - https://github.com/taiyeabiri
+
+
+
+  
