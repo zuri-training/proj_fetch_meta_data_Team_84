@@ -41,16 +41,16 @@
    1. Dependent on ZURI
    
 ## MODULES
-   1. PasswordResetTokenGenerator
-   2. account_activation_token
-   3. EmailMessage
+   - PasswordResetTokenGenerator
+   - account_activation_token
+   - EmailMessage
    
 ## DEPENDENCIES
-   1. Pillow Library from PIL
-   2. Python Magic library
-   3. Six
-   4. Twitter share API
-   5. Facebook share API
+   - Pillow Library from PIL
+   - Python Magic library
+   - Six
+   - Twitter share API
+   - Facebook share API
    
 ## FRONTEND FUNCTIONALITIES
   ### PAGES/ TEMPLATES
