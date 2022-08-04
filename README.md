@@ -122,17 +122,30 @@
  #### CONNECTING REPOSITORY AND SETTING UPSTREAM
  1. Fork the main branch of the repository
  2. Clone the forked repository to local 
-    - [ ] **git clone forked-repo-address**
+
+        git clone forked-repo-address
  3. Set this repo as upstream to ensure your repository is up to date
-    - [ ] **git remote add upstream [https://github.com/zuri-training/proj_fetch_meta_data_Team_84.git](https://github.com/zuri-training/proj_fetch_meta_data_Team_84.git)**
+
+        git remote add upstream https://github.com/zuri-training/proj_fetch_meta_data_Team_84.git
  4. Pull changes from our repo
-    - [ ] **git fetch upstream**
+    
+        git fetch upstream
  5. Pull changes from our repo to your remote repo
-    - [ ] **git pull upstream main**
- 6. Write descriptive commit message
-    - [ ] **git commit -m 'example change to example issue on example file'**
- 7. Push your changes to your remote repo
-    - [ ] **git push**
+        
+        git pull upstream main
+ 6. Stage your changes
+    - For all files
+    
+          git add -A 
+    - For specific file
+        
+          git add 'example.html'
+ 7. Write descriptive commit message
+
+        git commit -m 'example change to example issue on example file'
+ 8. Push your changes to your remote repo
+ 
+        git push
   
   ### PULL REQUESTS
   1. Create a pull request on our main branch
