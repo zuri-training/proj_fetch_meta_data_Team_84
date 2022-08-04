@@ -130,6 +130,7 @@
   3. Installation of dependencies [See Dependencies above](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#dependencies)
   4. Virtual Environment
   
+ ### README CONTRIBUTORS[^2]
   
 [^1]:
     - https://github.com/mbuguaellen TEAM LEAD and DESIGNER
@@ -156,6 +157,8 @@
     - https://github.com/Lyon689 DEVELOPER
     - https://github.com/taiyeabiri DEVELOPER
 
-
+[^2]:
+    - https://github.com/Issiedoesit 
+    - https://github.com/mbuguaellen
 
   
