@@ -16,7 +16,6 @@
                         <button class="go" type="submit"><img src="img/Vector (2).png"></button>
                         <input class="search-input" type="text" placeholder= "Search file names, extensions, folder">
                     </form>
-                    
                 </div>
                 
                 <div class="nav-button">
@@ -119,23 +118,31 @@
             </div>
          
             <!-- drag and drop file for upload od click to upload -->
-            <div class="drop-zone">
-                <div class="top">
-                    <span class="icon1"></span>
-                    <span class="icon2"></span>
-                    <span class="top-text">Click the upload icon to add a file</span>
-                </div>
-
-                <div class="middle"></div>
-
-                <div class="bottom">
-                    <span class="bottom-text1">OR</span>
-                    <span class="bottom-text2">Drag and drop a file</span>
-                    <span class="bottom-text3">only jpg, png, csv, pdf, json files are supported</span>
-                </div>
-                
-                <input type="file" name="myFile" class="drop-zone__input">
+            <div class="upload">
+                <form action="#">
+                    <div class="drop-zone">
+                        <div class="top">
+                            <span class="icon1"></span>
+                            <span class="icon2"></span>
+                            <span class="top-text">Click the upload icon to add a file</span>
+                        </div>
+        
+                        <div class="middle"></div>
+        
+                        <div class="bottom">
+                            <span class="bottom-text1">OR</span>
+                            <span class="bottom-text2">Drag and drop a file</span>
+                            <span class="bottom-text3">only jpg, png, csv, pdf, json files are supported</span>
+                        </div>
+                        
+                        <input type="file" name="myFile" class="drop-zone__input">
+                    </div>
+                    <input class="send" type="submit">
+                </form>
             </div>
+
+            
+            
            <!-- <input type="file" name="myFile" class="drop-zone__input" multiple>
                             Add "multiple" attribute to input to support multiple files -->
             <!-- <div class="drop-zone__thumb" data-label="myfile.txt"></div> -->
@@ -145,17 +152,9 @@
             <div class="down">
                 <p>Extracted Metadata</p>
 
-
-
-
-
-
-
                 <div class="down-btn">
                     <a href="">Download</a>
                 </div>
-
-
 
                <!-- ANOTHER METHOD TO SHARE WITH DIFFERENT OPTIONS -->
 

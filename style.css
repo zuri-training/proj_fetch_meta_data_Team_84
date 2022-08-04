@@ -449,6 +449,47 @@ a:active {
 }
 
 /* DRAG AND DROP TO UPLOAD FILES  */
+.upload {
+    width: 526px;
+    /* border: 1.5px solid red; */
+    height: 321px;
+    left: 287px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 160px;
+}
+.send {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px 30px; */
+    gap: 10px;
+
+    position: absolute;
+    width: 136px;
+    height: 40px;
+    left: 373px;
+    top: 238px;
+    /* top: 317px; */
+    /* background: transparent; */
+    background: #064ACB;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
 .drop-zone {
     width: 522px;
     height: 317px;
@@ -462,8 +503,8 @@ a:active {
     color: #cccccc;
     border: 1.5px dashed #064ACB;
     background: #FFFFFF;
-    left: 287px;
-    top: 160px;
+    /* left: 287px; */
+    /* top:px; */
     border-radius: 24px;
     box-sizing: border-box;
     position: absolute;
@@ -832,7 +873,7 @@ LINKS IN POPUP
     width: 136px;
     height: 40px;
     left: 362px;
-    top: 249px;
+    top: 238px;
     background: #064ACB;
     border-radius: 8px;
     flex: none;

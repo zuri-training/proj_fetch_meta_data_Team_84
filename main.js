@@ -55,7 +55,7 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
         dropZoneElement.querySelector(".bottom").remove();
     }
   
-    // First time - there is no thumbnail element, so lets create it
+    // First time - create thumbnail element
     if (!thumbnailElement) {
       thumbnailElement = document.createElement("div");
       thumbnailElement.classList.add("drop-zone__thumb");
@@ -106,15 +106,3 @@ window.addEventListener(
     },
     false
 );
-
-
-
-
-// $(function () {
-//   $('[data-toggle="popover"]').popover()
-// })
-
-
-// $('.popover-dismiss').popover({
-//   trigger: 'focus'
-// })
