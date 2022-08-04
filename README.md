@@ -8,28 +8,28 @@
 ### Team Members
   - See list Here[^1]
 ### TABLE OF CONTENTS
-  - [FEATURES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/blob/main/README.md#fixing-an-issue)
-  - [DESIGN DOCUMENTATION](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#design-documentation)
-  - [DEVELOPER DOCUMENTATION](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#developer-documentation)
-    - [LANGUAGES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#languages)
-    - [DATABASE](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#database)
-    - [DEPENDENCIES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#dependencies)
-    - [FRONTEND FUNCTIONALITIES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#frontend-functionalities)
-    - [BACKEND FUNCTIONALITIES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#backend-functionalities)
-      - [DJANGO](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#django)
-      - [DATABASE SCHEMA](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#database-schema)
-  - [GETTING STARTED AND USAGE REQUIREMENTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#getting-started-and-usage-requirements)
-    - [ISSUES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#issues)
-      - [REPORTING AN ISSUE](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#reporting-an-issue)
-      - [FIXING AN ISSUE](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#fixing-an-issue)
-    - [CONTRIBUTING](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#contributing)
-      - [CONNECTING REPOSITORY AND SETTING UPSTREAM](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#connecting-repository-and-setting-upstream)
-      - [PULL REQUESTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#pull-requests)
-      - [CHECKLIST](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#checklist)
-      - [REQUIREMENTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#requirements)
-   - [ACKNOWLEDGEMENTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#acknowledments)
-   - [README CONTRIBUTING AUTHORS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#readme-contributing-authors)
-   - [REFERENCES/FOOTER](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#referencesfooter)
+  - [FEATURES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#features)
+  - [DESIGN DOCUMENTATION](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#design-documentation)
+  - [DEVELOPER DOCUMENTATION](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#developer-documentation)
+    - [LANGUAGES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#languages)
+    - [DATABASE](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#database)
+    - [DEPENDENCIES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#dependencies)
+    - [FRONTEND FUNCTIONALITIES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#frontend-functionalities)
+    - [BACKEND FUNCTIONALITIES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#backend-functionalities)
+      - [DJANGO](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#django)
+      - [DATABASE SCHEMA](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#database-schema)
+  - [GETTING STARTED AND USAGE REQUIREMENTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#getting-started-and-usage-requirements)
+    - [ISSUES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#issues)
+      - [REPORTING AN ISSUE](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#reporting-an-issue)
+      - [FIXING AN ISSUE](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#fixing-an-issue)
+    - [CONTRIBUTING](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#contributing)
+      - [CONNECTING REPOSITORY AND SETTING UPSTREAM](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#connecting-repository-and-setting-upstream)
+      - [PULL REQUESTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#pull-requests)
+      - [CHECKLIST](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#checklist)
+      - [REQUIREMENTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#requirements)
+   - [ACKNOWLEDGEMENTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#acknowledments)
+   - [README CONTRIBUTING AUTHORS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#readme-contributing-authors)
+   - [REFERENCES/FOOTER](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#referencesfooter)
 
 # FEATURES
   - Require User Authentication to perform extraction of metadata
@@ -150,7 +150,7 @@
   
   ### PULL REQUESTS
   1. Create a pull request on our main branch
-  2. Give detailed description on your pull request and link to approriate issue [See Fixing an Issue above](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/blob/main/README.md#fixing-an-issue)
+  2. Give detailed description on your pull request and link to approriate issue [See Fixing an Issue above](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#fixing-an-issue)
   3. Wait for our reviewers to approve pull request for merging
   
   #### CHECKLIST
@@ -181,7 +181,7 @@
   5. Python 3.10 or higher 
    - [WindowsOS](https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe)
    - [MacOS](https://www.python.org/ftp/python/3.10.4/python-3.10.4-macos11.pkg)
-  6. Installation of dependencies [See Dependencies above](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/edit/main/README.md#dependencies)
+  6. Installation of dependencies [See Dependencies above](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#dependencies)
   7. Virtual Environment
     
     ****
