@@ -57,12 +57,12 @@ A platform that collects and displays metadata of uploaded file
         
 ## GETTING STARTED AND USAGE REQUIREMENTS
   ### ISSUES
-  A. REPORTING AN ISSUE
+  - REPORTING AN ISSUE
     1. On noticing any issues with code
       - Search through existing issues to find out if issue has been logged by another contributor
       - Please create a new issue that's detailed for the developers to understand and fix.
     2. Label the issue correctly for appropriate handling
-   B. FIXING AN ISSUE
+   - FIXING AN ISSUE
     
   ### CONTRIBUTIONS
    Contributions and feedback are welcome
