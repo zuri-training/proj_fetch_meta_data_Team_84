@@ -63,6 +63,12 @@ A platform that collects and displays metadata of uploaded file
       - Please create a new issue that's detailed for the developers to understand and fix.
     2. Label the issue correctly for appropriate handling
    - FIXING AN ISSUE
+    1. Search for an issue you can fix
+      - Note the tasks that need fixing within the issue
+    2. Fork repo and work on the issue in order to keep development area secure
+    3. Create pull request on finished fix and ensure it is linked to corresponding issue by attaching the appropriate keyword
+      - If you are a base developer in the project or you're working on the same repository. Reference issue by keyword e.g. **resolves #12**, **closes #13**
+      - If you are contributing from external repository, reference issue by repository name nad issue number e.g. **proj_fetch_meta_data_Team_84 closes #13**
     
   ### CONTRIBUTIONS
    Contributions and feedback are welcome
