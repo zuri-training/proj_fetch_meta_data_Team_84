@@ -76,20 +76,20 @@ A platform that collects and displays metadata of uploaded file
       - If you are contributing from external repository, reference issue by repository name and issue number e.g. *proj_fetch_meta_data_Team_84 closes #13*
     
   ### CONTRIBUTIONS
-   Contributions and feedback are welcome
-   1. Fork the main branch of the repository
-   2. Clone the forked repository to local 
-      -**git clone <forked-repo-address>**
-   3. Set this repo as upstream to ensure your repository is up to date
-      -**git remote add upstream <our-repo-address>**
-   4. Pull changes from our repo
-      -**git fetch upstream**
-   5. Pull changes from our repo to your remote repo
-      -**git pull upstream main**
-   6. Write descriptive commit message
-      -**git commit -m 'example change to example issue on example file'**
-    7. Push your changes to your remote repo
-      -**git push**
+ Contributions and feedback are welcome
+ 1. Fork the main branch of the repository
+ 2. Clone the forked repository to local 
+       -**git clone <forked-repo-address>**
+ 3. Set this repo as upstream to ensure your repository is up to date
+       -**git remote add upstream <our-repo-address>**
+ 4. Pull changes from our repo
+       -**git fetch upstream**
+ 5. Pull changes from our repo to your remote repo
+       -**git pull upstream main**
+ 6. Write descriptive commit message
+       -**git commit -m 'example change to example issue on example file'**
+  7. Push your changes to your remote repo
+       -**git push**
   
    ### PULL REQUESTS
     1. Create a pull request on our main branch
@@ -97,9 +97,9 @@ A platform that collects and displays metadata of uploaded file
     3. Wait for our reviewers to approve pull request for merging
   
    #### CHECKLIST
-     [] Ensure you have dependencies installed.
-     [] List extra dependencies in branch readMe and create requirements.txt file is pushed along with other files.
-     [] Ensure secret keys  are kept secret and virtual environment is placed in git ignore files 
+   [] Ensure you have dependencies installed.
+   [] List extra dependencies in branch readMe and create requirements.txt file is pushed along with other files.
+   [] Ensure secret keys  are kept secret and virtual environment is placed in git ignore files 
   
   ### REQUIREMENTS
   KNOWLEDGE OF:
