@@ -11,7 +11,10 @@ A platform that collects and displays metadata of uploaded file
   - Share to social media
   - Download metadata
   - Export Metadata
-
+# DESIGN
+  - [Low fidelity designs](https://www.figma.com/file/JQtpoNpLc7SeBEHpormEqh/Team84_fetch_metadata-collaboration?node-id=0%3A1)
+  - [High Fidelity designs](https://www.figma.com/file/JQtpoNpLc7SeBEHpormEqh/Team84_fetch_metadata-collaboration?node-id=2%3A3)
+  - [Style guide](https://www.figma.com/file/JQtpoNpLc7SeBEHpormEqh/Team84_fetch_metadata-collaboration?node-id=2%3A2)
 # DEVELOPER DOCUMENTATION
 # LANGUAGES
   ## FRONTEND
@@ -33,14 +36,31 @@ A platform that collects and displays metadata of uploaded file
        1. Pillow Library from PIL
        2. Python Magic library
        3. Six
+       4. Twitter share API
+       5. Facebook share API
 # FRONTEND FUNCTIONALITIES
-  
+    ## PAGES
+        - Home page/ Landing page
+        - Dashboard [Extraction space]
+        - About Us Page
+        - Contact us page
+        - Login Page
+        - Sign up Page
+        - Forgot password page
+        - Frequently asked questions [FAQ] page
 # BACKEND FUNCTIONALITIES
+   ## DJANGO
+   ## DATABASE SCHEMA
+    - Link to [Schema]()
+        
 # GETTING STARTED AND USAGE REQUIREMENTS
   ## ISSUES
+      1. On noticing any issues with code, please create a new issue that's detailed for the developers to understand and fix.
+      2. Label the issue correctly for appropriate handling
+      3. 
     
   ## CONTRIBUTIONS
-       ## Contributions and feedback are welcome
+       Contributions and feedback are welcome
        1. Fork the main branch of the repository
        2. 
   ## REQUIREMENTS
