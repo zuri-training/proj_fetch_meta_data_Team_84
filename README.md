@@ -125,8 +125,11 @@
   
   ### REQUIREMENTS
   KNOWLEDGE OF:
-   1. Django Class based views and Function based views, Authentication, Forms
-   2. Python
+   1. HTML5
+   2. CSS
+   3. Javascript
+   4. Django including Class based views and Function based views, Authentication, Forms
+   5. Python
 
   INSTALLATION
   1. An IDE
