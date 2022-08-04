@@ -101,7 +101,7 @@
  #### To Contribute
  1. Fork the main branch of the repository
  2. Clone the forked repository to local 
-    - [ ] **git clone <forked-repo-address>**
+    - [ ] **git clone forked-repo-address**
  3. Set this repo as upstream to ensure your repository is up to date
     - [ ] **git remote add upstream [https://github.com/zuri-training/proj_fetch_meta_data_Team_84.git](https://github.com/zuri-training/proj_fetch_meta_data_Team_84.git)**
  4. Pull changes from our repo
@@ -113,14 +113,14 @@
  7. Push your changes to your remote repo
     - [ ] **git push**
   
-   ### PULL REQUESTS
-    1. Create a pull request on our main branch
-    2. Give detailed description on your pull request and link to approriate issue [See Fixing an Issue above]
-    3. Wait for our reviewers to approve pull request for merging
+  ### PULL REQUESTS
+  1. Create a pull request on our main branch
+  2. Give detailed description on your pull request and link to approriate issue [See Fixing an Issue above](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/blob/main/README.md#fixing-an-issue)
+  3. Wait for our reviewers to approve pull request for merging
   
   #### CHECKLIST
    - [ ] Ensure you have dependencies installed.
-   - [ ] List extra dependencies in branch readMe and create requirements.txt file is pushed along with other files.
+   - [ ] List extra dependencies in branch readMe and create requirements.txt file with dependencies which is pushed along with other files.
    - [ ] Ensure secret keys  are kept secret and virtual environment is placed in git ignore files 
   
   ### REQUIREMENTS
