@@ -6,7 +6,7 @@
 ### Team Logo
   ![Logo](https://res.cloudinary.com/issie/image/upload/v1659619070/Logo_1_eeynk2.png)
 ### Team Members
-  - [See list Here][^1]
+  - See list Here[^1]
 
 
 ## FEATURES
@@ -52,7 +52,7 @@
    5. Facebook share API
    
 ## FRONTEND FUNCTIONALITIES
-  ### PAGES
+  ### PAGES/ TEMPLATES
    - Home page/ Landing page
    - Dashboard [Extraction space]
    - About Us Page
@@ -63,9 +63,15 @@
    - Frequently asked questions [FAQ] page
 
 ## BACKEND FUNCTIONALITIES
-   ### DJANGO
-   ### DATABASE SCHEMA
-   - Link to [Schema](https://www.figma.com/file/aI8937bo1V25WH5bRGaBZx/Team-84_fetch-metadata-_schema?node-id=0%3A1)
+ ### DJANGO
+   - User Authentication using Django Authentication Systems
+   - Database management for user profile and user uploads
+   - File type and size validation
+   - File metadata extraction
+   - Communication with frontend using Django Templates
+   
+ ### DATABASE SCHEMA
+ - Link to [Schema](https://www.figma.com/file/aI8937bo1V25WH5bRGaBZx/Team-84_fetch-metadata-_schema?node-id=0%3A1)
         
 ## GETTING STARTED AND USAGE REQUIREMENTS
   ### ISSUES
@@ -83,8 +89,11 @@
       - If you are a base developer in the project or you're working on the same repository. Reference issue by keyword e.g. resolves #12, closes #13
         - If you are contributing from external repository, reference issue by repository name and issue number e.g. proj_fetch_meta_data_Team_84 closes #13
     
-  ### CONTRIBUTIONS
- Contributions and feedback are welcome
+ ### CONTRIBUTIONS
+ #### Project is Open Source
+   - Contributions and Feedback are welcome
+   
+ #### To Contribute
  1. Fork the main branch of the repository
  2. Clone the forked repository to local 
     - [ ] **git clone <forked-repo-address>**
