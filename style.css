@@ -1,10 +1,6 @@
 * {
     margin: 0px;
 }
-body {
-    background: #FAFAFA;
-
-}
 
 /* NAVIGATION BAR */
 .nav-bar {
@@ -92,7 +88,7 @@ body {
     align-items: center;
     padding: 12px;
     gap: 10px;
-    width: 273px;
+    width: 300px;
     height: 40px;
     background: #FFFFFF;
     border: 1px solid #E6E6E6;
@@ -100,10 +96,18 @@ body {
     flex: none;
     order: 0;
     flex-grow: 0;
+    justify-content: center;
 }
+.go button {
+    margin-left: -10px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
 .search-input {
     width: 223px;
-    height: 16px;
+    height: 20px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -117,6 +121,20 @@ body {
     flex-grow: 0;
     border: none;
     outline: none;
+}
+::placeholder {
+    width: 223px;
+    height: 16px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: #737373;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
 /* PROFILE */
@@ -256,12 +274,12 @@ a:active {
     z-index: -1;
 }
 .logo {
-    background: url(img/Logo.png);
+    background: url(img/LogoNew.png);
     margin-left: 69.84px;
     margin-right: 69.84px;
     margin-top: 64px;
-    width: 136.33px;
-    height: 75px;
+    width: 91px;
+    height: 50px;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -628,9 +646,9 @@ a:active {
     border-radius: 24px;
 }
 
-/* POPUP BOX */
-/* @import "compass/css3"; */
-#overlay{ /* we set all of the properties for our overlay */
+/* CHECK DOWNLOAD SECTION IN DASHBOARD.HTML FOR A DIFFERENT METHOD TO POPUP BOX */
+
+/* #overlay{ 
     width: 142px;
     height: 324px;
     display: none;
@@ -689,7 +707,7 @@ a:active {
     color: #FFFFFF;
 }
 
-/* LINKS IN POPUP */
+LINKS IN POPUP
 .share {
     display: flex;
     flex-direction: row;
@@ -800,7 +818,29 @@ a:active {
     display: flex;
     align-items: center;
     color: #043187;
+} */
+
+.down-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px 30px; */
+    gap: 10px;
+
+    position: absolute;
+    width: 136px;
+    height: 40px;
+    left: 362px;
+    top: 249px;
+    background: #064ACB;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
 }
+
 .down>p {
     position: absolute;
     width: 120px;
@@ -930,23 +970,243 @@ tr:nth-child(odd) {
     flex-grow: 0;
 }
 
-/* SHOW ALL BUTTON  */
-.disp-all {
+
+/* SHARE FILES */
+.tabs {
+    position: relative;
+    clear: both;
+    margin: 50px;
+}
+.tab {
+    float: left;
+    position: relative;
+}
+.tab label {
+    background: transparent;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+}
+.tab [type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+.content {
+    width: 122px;
+    height: 220px;
+    position: absolute;
+    opacity: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 50px;
+    margin-top: -130px;
+    border-radius: 15px;
+}
+.content a {
+    color: #043187;
+    display: flex;
+    width: 98px;
+    height: 23px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 23px;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    justify-content: center;
+}
+.shLink {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    position: absolute;
+    width: 100px;
+    height: 23px;
+    left: 0px;
+    top: 13px;
+    align-content: center;
+}
+.cLink {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    position: absolute;
+    width: 100px;
+    height: 23px;
+    left: 0px;
+    top: 63px;
+}
+.eLink {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    position: absolute;
+    width: 100px;
+    height: 23px;
+    left: 0px;
+    top: 112px;
+}
+.sLink {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    position: absolute;
+    width: 100px;
+    height: 23px;
+    left: 0px;
+    top: 162px;
+}
+[type="radio"]:checked ~ label {
+    z-index: 2;
+}
+[type="radio"]:checked ~ label ~ .content {
+    z-index: 1;
+    opacity: 1;
+}
+.close-tab {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.close-tab label {
+    color: white;
+}
+[type="radio"]:checked ~ label ~ .close-tab {
+    z-index: 3;
+}
+
+/* STATUS */
+.saved {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 2.5px 5px;
+    padding: 8px 10px;
+    gap: 10px;
+    width: 61px;
+    height: 39px;
+    background: #AAFFAA;
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.saved p {
+    width: 41px;
+    height: 23px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #00D500;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.trashed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    gap: 10px;
+    width: 72px;
+    height: 39px;
+    background: #FFCCCC;
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.trashed p {
+    width: 52px;
+    height: 23px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #FF0000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.not-saved {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    gap: 10px;
+    width: 90px;
+    height: 39px;
+    background: #FBE2C6;
+    border-radius: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.not-saved p {
+    width: 67px;
+    height: 23px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #F3A953;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+/* SHOW ALL BUTTON  */
+.disp-all {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
     gap: 10px;
     position: absolute;
     width: 122px;
     height: 40px;
-    left: 1213px;
-    top: 955px;
-    background: #064ACB;
+    left: 1220px;
+    top: 995px;
+    border: 1px solid #043187;
     border-radius: 8px;
 }
-.file-btn {
+/* .file-btn {
     width: 100px;
     height: 24px;
     font-family: 'Lato';
@@ -961,10 +1221,32 @@ tr:nth-child(odd) {
     flex-grow: 0;
     border: none;
     background: transparent;
-}
-.file-btn>a {
-    background: transparent;
-    color: #FFFFFF;
+} */
+.disp-all > a {
+    width: 62px;
+    height: 24px;
+    
+    /* Body/Paragraph_1: Regular */
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    letter-spacing: 0.5px;
+    
+    /* Primary/ 800 */
+    
+    color: #043187;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 /* DARK/LIGHT MODE  */
@@ -1026,3 +1308,17 @@ body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
     left: 15px;
     background-color: #141516;
 }
+
+
+
+
+
+
+/* 
+@media only screen and (max-width: 600px){}
+
+
+@media screen and (max-width:1023px) and (orientation:landscape){}
+@media screen and (min-width:1024px) {}
+@media screen and (max-width:767px){} */
+

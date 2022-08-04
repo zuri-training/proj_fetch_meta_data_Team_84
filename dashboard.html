@@ -12,8 +12,11 @@
             <!-- navigation bar -->
             <nav class="nav-bar">
                 <div class="search">
-                    <img  style="background: transparent;" src="img/Vector (2).png" alt="">
-                    <input class="search-input" type="text" placeholder= "Search file names, extensions, folder">
+                    <form action="https://www.google.com/search" method="get" class="go">
+                        <button class="go" type="submit"><img src="img/Vector (2).png"></button>
+                        <input class="search-input" type="text" placeholder= "Search file names, extensions, folder">
+                    </form>
+                    
                 </div>
                 
                 <div class="nav-button">
@@ -22,6 +25,7 @@
                     <a class="res" href="Resources.html">Resources</a>
                 </div>
 
+                <!-- Dark/Light theme -->
                 <div class="toggle">
                     <button class="light-mode-btn" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
                         <span></span>
@@ -29,7 +33,7 @@
                     </button>
                 </div>
                 
-
+                <!-- Profile avatar  -->
                 <div class="profile">
                     <div class="profile-content">
                         <div class="content-box">
@@ -92,11 +96,11 @@
                             <li><a href=""></a> -->
                             </li>
 
-                            <li><input type="checkbox" id="item-web"/><label class="child" for="item-web"><p><img src="img/Website.png" alt="">  Web project</p></label></li>
+                            <!-- <li><input type="checkbox" id="item-web"/><label class="child" for="item-web"><p><img src="img/Website.png" alt="">  Web project</p></label></li> -->
                             <!-- <li><a href=""></a></li>
                             <li><a href=""></a></li>
                             <li><a href=""></a> -->
-                            </li>
+                            <!-- </li> -->
                         </ul>
                     </li>
                     <li><input type="checkbox" id="item-saves"/><label class="parent" for="item-saves"><p><img src="img/Vector (5).png" alt="">  Saved files</p></label>
@@ -140,8 +144,22 @@
             <!-- download, share, export etc.  -->
             <div class="down">
                 <p>Extracted Metadata</p>
-               
-                <a href="#overlay" id="open-overlay">Download</a>
+
+
+
+
+
+
+
+                <div class="down-btn">
+                    <a href="">Download</a>
+                </div>
+
+
+
+               <!-- ANOTHER METHOD TO SHARE WITH DIFFERENT OPTIONS -->
+
+                <!-- <a href="#overlay" id="open-overlay">Download</a>
 
                 <div id="overlay">
                     <div class="share"><a href="">Share</a></div>
@@ -151,7 +169,7 @@
                     <div class="save"><a href="">Save</a></div>
                 </div>
 
-                <div id="mask" onclick="document.location='#';"></div>
+                <div id="mask" onclick="document.location='#';"></div> -->
             </div>
 
             <!-- table section -->
@@ -162,63 +180,167 @@
                 
                 <table class="table-body">
                     <tr>
-                      <th>File name</th>
-                      <th>File size</th>
-                      <th>Folder</th>
-                      <th>Date created</th>
-                      <th>Status</th>
-                      <th></th>
+                        <th>File name</th>
+                        <th>File size</th>
+                        <th>Folder</th>
+                        <th>Date created</th>
+                        <th>Status</th>
+                        <th></th>
                     </tr>
                     <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
+                        <td>23456JJ.json <br>JSON</td>
+                        <td>456KB</td>
+                        <td>json folder</td>
+                        <td>02/08/22</td>
+                        <td>
+                            <div class="saved">
+                                <p>Saved</p>
+                            </div>
+                        </td>
+                        <td class="tabs">
+                            <div class="tab">
+                                <input type="radio" id="tab-1" name="tab-group-1" />
+                                <label for="tab-1"><img src="img/Vector (6).png" alt=""></label>
+                                <div class="tab close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1" />
+                                    <label for="tab-close"><img src="img/Vector (6).png" alt=""></label>
+                                </div>
+                            
+                                <div class="content">
+                                    <div class="shLink">
+                                        <a href="#">Share</a>
+                                    </div>
+                                    <div class="cLink">
+                                        <a href="#">Copy</a>
+                                    </div>
+                                    <div class="eLink">
+                                        <a href="#">Export</a>
+                                    </div>
+                                    <div class="sLink">
+                                        <a href="#">Save</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
+                        <td>23456JJ.png <br>PNG</td>
+                        <td>456KB</td>
+                        <td>image folder</td>
+                        <td>02/08/22</td>
+                        <td>
+                            <div class="trashed">
+                                <p>Trashed</p>
+                            </div>
+                        </td>
+                        <td class="tabs">
+                            <div class="tab">
+                                <input type="radio" id="tab-1" name="tab-group-1" />
+                                <label for="tab-1"><img src="img/Vector (6).png" alt=""></label>
+                                <div class="tab close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1" />
+                                    <label for="tab-close"><img src="img/Vector (6).png" alt=""></label>
+                                </div>
+                            
+                                <div class="content">
+                                    <div class="shLink">
+                                        <a href="#">Share</a>
+                                    </div>
+                                    <div class="cLink">
+                                        <a href="#">Copy</a>
+                                    </div>
+                                    <div class="eLink">
+                                        <a href="#">Export</a>
+                                    </div>
+                                    <div class="sLink">
+                                        <a href="#">Save</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
+                        <td>23456JJ.csv <br>CSV</td>
+                        <td>456KB</td>
+                        <td>csv folder</td>
+                        <td>02/08/22</td>
+                        <td>
+                            <div class="not-saved">
+                                <p>Not Saved</p>
+                            </div>
+                        </td>
+                        <td class="tabs">
+                            <div class="tab">
+                                <input type="radio" id="tab-1" name="tab-group-1" />
+                                <label for="tab-1"><img src="img/Vector (6).png" alt=""></label>
+                                <div class="tab close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1" />
+                                    <label for="tab-close"><img src="img/Vector (6).png" alt=""></label>
+                                </div>
+                            
+                                <div class="content">
+                                    <div class="shLink">
+                                        <a href="#">Share</a>
+                                    </div>
+                                    <div class="cLink">
+                                        <a href="#">Copy</a>
+                                    </div>
+                                    <div class="eLink">
+                                        <a href="#">Export</a>
+                                    </div>
+                                    <div class="sLink">
+                                        <a href="#">Save</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
+                        <td>23456JJ.pdf <br>PDF</td>
+                        <td>456KB</td>
+                        <td>pdf folder</td>
+                        <td>02/08/22</td>
+                        <td>
+                            <div class="saved">
+                                <p>Saved</p>
+                            </div>
+                        </td>
+                        <td class="tabs">
+                            <div class="tab">
+                                <input type="radio" id="tab-1" name="tab-group-1" />
+                                <label for="tab-1"><img src="img/Vector (6).png" alt=""></label>
+                                <div class="tab close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1" />
+                                    <label for="tab-close"><img src="img/Vector (6).png" alt=""></label>
+                                </div>
+                            
+                                <div class="content">
+                                    <div class="shLink">
+                                        <a href="#">Share</a>
+                                    </div>
+                                    <div class="cLink">
+                                        <a href="#">Copy</a>
+                                    </div>
+                                    <div class="eLink">
+                                        <a href="#">Export</a>
+                                    </div>
+                                    <div class="sLink">
+                                        <a href="#">Save</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                 </table>
-
             </div>
 
             <!-- display remaining content in table -->
             <div class="disp-all">
-                <button class="file-btn"><a href="">Show all</a></button>
+                <a href="">Show all</a>
             </div>
         <main>
 
         <footer></footer>
-        
         <script src="main.js"></script>
-        <script>
-            var app = document.getElementsByTagName("BODY")[0];
-            if (localStorage.lightMode == "dark") {
-                app.setAttribute("light-mode", "dark");
-            }
-        </script>
     </body>
 </html>
