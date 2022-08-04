@@ -131,29 +131,29 @@
   
   
 [^1]:
-    - https://github.com/Issiedoesit
-    - https://github.com/topnics
-    - https://GitHub.com/samuelgodson55
-    - https://github.com/olawoyintosin
-    - http://github.com/Wuraola-Omotoyosi
-    - https://github.com/mbuguaellen
-    - https://github.com/OreoluwaDahunsi
-    - https://github.com/Nonso-hub
-    - https://github.com/Berseet
-    - https://github.com/ugoostanleyibe
-    - https://github.com/olamijulo2
-    - https://GitHub.com/vic-designs
-    - https://github.com/Ade-Bani/
-    - https://Github.com/Shalomking
-    - https://github.com/adesinna
-    - https://github.com/geonerd777
-    - http://github.com/Enojay
-    - https://github.com/SirIyanu
-    - http://GitHub.com/Tarielenz
-    - https://github.com/sholigezy
-    - https://github.com/preshwhyte
-    - https://github.com/Lyon689
-    - https://github.com/taiyeabiri
+    - https://github.com/mbuguaellen TEAM LEAD and DESIGNER
+    - https://github.com/Issiedoesit ASSISTANT TEAM LEAD and DEVELOPER
+    - https://github.com/topnics ASSISTANT TEAM LEAD and DEVELOPER
+    - https://GitHub.com/samuelgodson55 DEVELOPER
+    - https://github.com/olawoyintosin DESIGNER
+    - http://github.com/Wuraola-Omotoyosi DESIGNER
+    - https://github.com/OreoluwaDahunsi DESIGNER
+    - https://github.com/Nonso-hub DESIGNER
+    - https://github.com/Berseet DESIGNER
+    - https://github.com/ugoostanleyibe DEVELOPER
+    - https://github.com/olamijulo2 DEVELOPER
+    - https://GitHub.com/vic-designs DESIGNER
+    - https://github.com/Ade-Bani/ DESIGNER
+    - https://Github.com/Shalomking DEVELOPER
+    - https://github.com/adesinna DEVELOPER
+    - https://github.com/geonerd777 DESIGNER
+    - http://github.com/Enojay DESIGNER
+    - https://github.com/SirIyanu DEVELOPER
+    - http://GitHub.com/Tarielenz DEVELOPER
+    - https://github.com/sholigezy DESIGNER
+    - https://github.com/preshwhyte DEVELOPER
+    - https://github.com/Lyon689 DEVELOPER
+    - https://github.com/taiyeabiri DEVELOPER
 
 
 
