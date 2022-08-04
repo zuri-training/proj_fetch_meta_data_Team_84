@@ -71,9 +71,11 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
       reader.readAsDataURL(file);
       reader.onload = () => {
         thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
+        document.getElementById("save").style.display = "block";
       };
     } else {
       thumbnailElement.style.backgroundImage = null;
+      document.getElementById("save").style.display = "block";
     }
   }
 

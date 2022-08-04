@@ -458,7 +458,7 @@ a:active {
     position: absolute;
     top: 160px;
 }
-.send {
+#save {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -743,6 +743,7 @@ a:active {
     flex: none;
     order: 0;
     flex-grow: 0;
+    margin-left: 40px;
 }
 
 /* MODAL OVERLAY */
@@ -1298,17 +1299,3 @@ body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
     left: 15px;
     background-color: #141516;
 }
-
-
-
-
-
-
-/* 
-@media only screen and (max-width: 600px){}
-
-
-@media screen and (max-width:1023px) and (orientation:landscape){}
-@media screen and (min-width:1024px) {}
-@media screen and (max-width:767px){} */
-
