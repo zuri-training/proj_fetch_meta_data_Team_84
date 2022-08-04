@@ -687,188 +687,14 @@ a:active {
     border-radius: 24px;
 }
 
-/* CHECK DOWNLOAD SECTION IN DASHBOARD.HTML FOR A DIFFERENT METHOD TO POPUP BOX */
 
-/* #overlay{ 
-    width: 142px;
-    height: 324px;
-    display: none;
-    margin-left: 340px;
-    margin-top: -60px;
-    margin-bottom: 0px;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    -o-border-radius:10px;
-    border-radius:10px;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 30px;
-    align-items: center;
-}
-#mask{ 
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    display:none;
-}
-#overlay:target, #overlay:target + #mask{
-    display:block;
-    opacity:1;
-}
-
-#open-overlay{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 2.5px 5px;
-    gap: 10px;
-    position: absolute;
-    width: 136px;
-    height: 40px;
-    left: 362px;
-    top: 249px;
-    background: #064ACB;
-    border-radius: 8px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    z-index: 1;
-    border: none;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    color: #FFFFFF;
-}
-
-LINKS IN POPUP
-.share {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    width: 120px;
-    height: 43px;
-    left: 0px;
-    top: 13px;
-}
-.share > a {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    color: #043187;
-}
-.copy {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    width: 120px;
-    height: 43px;
-    left: 0px;
-    top: 63px;
-}
-.copy > a {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    color: #043187;
-}
-.export {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    width: 120px;
-    height: 43px;
-    left: 0px;
-    top: 112px;
-}
-.export > a {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    color: #043187;
-}
-.embed {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    width: 120px;
-    height: 43px;
-    left: 0px;
-    top: 162px;
-}
-.embed > a {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #043187;
-}
-.save {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    width: 120px;
-    height: 43px;
-    left: 0px;
-    top: 211px;
-}
-.save > a {
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
-    display: flex;
-    align-items: center;
-    color: #043187;
-} */
 
 .down-btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* padding: 15px 30px; */
     gap: 10px;
-
     position: absolute;
     width: 136px;
     height: 40px;
@@ -918,6 +744,129 @@ LINKS IN POPUP
     order: 0;
     flex-grow: 0;
 }
+
+/* MODAL OVERLAY */
+#overlay{ 
+    color:black;
+    padding:10px;
+    z-index:1000;
+    display:none;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -o-border-radius:10px;
+    border-radius:10px;
+    position: absolute;
+    width: 365px;
+    height: 555px;
+    left: 350px;
+    top: 150px;
+    background: #FAFAFA;
+    border-radius: 10px;
+}
+
+#mask{ 
+    background:rgba(205, 219, 245, 0.9);
+    z-index:500;
+    display:none;
+    position: absolute;
+    width: 1164px;
+    height: 829px;
+    left: -10px;
+    top: 0px;
+}
+/* use of target will look for a link to the overlay then find our mask */
+#overlay:target, #overlay:target + #mask{
+    display:block;
+    opacity:1;
+}
+.overlay-content {
+    width: 285px;
+    height: 487px;
+    margin-left: 40px;
+    margin-top: 30px;
+    border: 1px solid #FAFAFA;
+    justify-content: center;
+}
+.completed {
+    position: absolute;
+    width: 147.5px;
+    height: 147.5px;
+    left: 120px;
+    top: 40px;
+    background-size: cover;
+}
+.overlay-content h2 {
+    position: absolute;
+    width: 194px;
+    height: 76px;
+    left: 90px;
+    top: 250px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #043187;
+}
+.overlay-content p {
+    width: 285px;
+    height: 48px;
+    margin-top: 320px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #2E2E2E;
+}
+.continue {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 160px;
+    height: 66px;
+    margin-left: 60px;
+    margin-top: 54px;
+    background: #064ACB;
+    border-radius: 8px;
+}
+.continue a {
+    width: 100px;
+    height: 36px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7px;
+    margin-top: -1px;
+}
+#open-overlay{ 
+    padding:10px 5px;
+    background:blue;
+    color:white;
+    text-decoration:none;
+    display:inline-block;
+    margin:20px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -o-border-radius:10px;
+    border-radius:10px;
+}
+
  /* TABLE  */
 .table-cont {
     display: flex;

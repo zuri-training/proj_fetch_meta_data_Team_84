@@ -119,7 +119,7 @@
          
             <!-- drag and drop file for upload od click to upload -->
             <div class="upload">
-                <form action="#">
+                <form action="#overlay">
                     <div class="drop-zone">
                         <div class="top">
                             <span class="icon1"></span>
@@ -138,11 +138,20 @@
                         <input type="file" name="myFile" class="drop-zone__input">
                     </div>
                     <input class="send" type="submit">
+                    <div id="overlay">
+                        <div class="overlay-content">
+                            <div class="completed"><img src="img/Vector (7).png" alt=""></div>
+                            <h2>UPLOADING COMPLETED</h2>
+                            <p>your file has been successfully uploaded <br>we have it safe and sound!</p>
+                            <div class="continue">
+                                <a href="">Continue</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mask" onclick="document.location='#';"></div> 
                 </form>
             </div>
 
-            
-            
            <!-- <input type="file" name="myFile" class="drop-zone__input" multiple>
                             Add "multiple" attribute to input to support multiple files -->
             <!-- <div class="drop-zone__thumb" data-label="myfile.txt"></div> -->
@@ -155,20 +164,6 @@
                 <div class="down-btn">
                     <a href="">Download</a>
                 </div>
-
-               <!-- ANOTHER METHOD TO SHARE WITH DIFFERENT OPTIONS -->
-
-                <!-- <a href="#overlay" id="open-overlay">Download</a>
-
-                <div id="overlay">
-                    <div class="share"><a href="">Share</a></div>
-                    <div class="copy"><a href="">Copy</a></div>
-                    <div class="export"><a href="">Export</a></div>
-                    <div class="embed"><a href="">Embed</a></div>
-                    <div class="save"><a href="">Save</a></div>
-                </div>
-
-                <div id="mask" onclick="document.location='#';"></div> -->
             </div>
 
             <!-- table section -->
