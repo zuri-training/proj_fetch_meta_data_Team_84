@@ -2,7 +2,7 @@
 A platform that collects and displays metadata of uploaded file
 
 # FEATURES
-  - User Authentication to proceed to extraction
+  - Require User Authentication to perform extraction of metadata
   - Allows File upload
   - Extract metadata from *PDF, *Images (Jpeg, Jpg, Png etc.), *JSON, *CSV
   - Validate file type
@@ -34,6 +34,7 @@ A platform that collects and displays metadata of uploaded file
        2. Python Magic library
        3. Six
 # FRONTEND FUNCTIONALITIES
+  
 # BACKEND FUNCTIONALITIES
 # GETTING STARTED AND USAGE REQUIREMENTS
   ## ISSUES
@@ -43,11 +44,11 @@ A platform that collects and displays metadata of uploaded file
        1. Fork the main branch of the repository
        2. 
   ## REQUIREMENTS
-      ### KNOWLEDGE OF:
+      KNOWLEDGE OF:
          1. Django Class based views and Function based views, Authentication, Forms
          2. Python
          
-      ### INSTALLATION
+      INSTALLATION
         1. An IDE
         2. Python
         3. Installation of dependencies [See Dependencies above]
