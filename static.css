@@ -588,7 +588,9 @@ display: none;
     flex-direction: column;
     justify-content: space-evenly;  */
 }
-
+.in-touch a, .in-touch a:active, .in-touch a:visited{
+    color: white;
+}
 .touch-heading{
     padding-top:69px
 
