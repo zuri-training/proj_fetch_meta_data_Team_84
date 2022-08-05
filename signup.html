@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static.css">
+    <script src="signup.js" defer></script>
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    <title>84Meta | Sign Up</title>
+</head>
+<body id="SignUpBody" class="sign-up-body">
+    <header class="sign-up-header">
+        <nav class="sign-up-nav">
+            <a href="index.html" title="Back to Home"><img src="images/Logo.png" alt="logo"></a>
+            <div class="sign-up-log-in">
+                <p>
+                    Already have an account?
+                </p>
+                <button class="log-in-nav-btn">
+                    <a href="login.html" class="index-nav-sign-up">Log In</a> 
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="sign-up-main">
+        <h2>Create An Account</h2>
+        <form action="" method="post" id="form" class="sign-up-form">
+            
+            <div class="form-control">
+                <label for="first-name">First name</label>
+                <input type="text" name="first-name" id="firstName" placeholder="First Name">
+                <small>Error message</small>
+            </div>   
+            
+            <div class="form-control">
+                <label for="last-name">Last name</label>
+                <input type="text" name="last-name" id="lastName" placeholder="Last Name">
+                <small>Error message</small>
+            </div>
+           
+            <div class="form-control">
+                <label for="logInEmail">Email Address</label>
+                <input type="email" name="signUp-email" id="signUpEmail" placeholder="Email Address">
+                <small>Error message</small>
+            </div>
+            
+            <div class="form-control">
+                <label for="username">Username</label>
+			    <input type="text" placeholder="User name" id="username" />
+                <small>Error message</small>
+            </div>
+            
+            <div class="form-control">
+                <label for="logInPassword">Create Password</label>
+                <input type="password" name="signUp-password" id="signUpPassword" placeholder="********">
+                <small>Error message</small>
+            </div>
+           
+            <div class="form-control">
+                <label for="logInPassword">Confirm Password</label>
+                <input type="password" name="signUp-password2" id="signUpPassword2" placeholder="********">
+                <small>Error message</small>
+            </div>
+            
+            
+            <p class="terms">By clicking  on sign up, you have agreed to all the <a>Terms and Conditions</a>.</p>
+
+            <button type="submit" class="sign-up-btn">Sign Up</button>
+            <div class="sign-up-continue">
+                <span class="sign-up-line"></span>
+                <p>Or continue with</p>  
+                <span class="sign-up-line"></span>
+            </div>
+            <button type="submit" class="sign-up-social sign-up-google"><img src="images/google-svgrepo-com (1) 1.png" alt=""><a href="">Continue with Google</a></button>
+            <button type="submit" class="sign-up-social sign-up-fb"><img src="images/Facebook.png" alt=""><a href="">Continue with Facebook</a></button>
+        </form>
+    </main>
+</body>
+</html>
