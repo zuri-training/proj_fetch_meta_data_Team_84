@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+  Home Page
+
+{% endblock %}
+
+{% block css %} <link rel="stylesheet" href="{% static 'css/styles.css'%}">{% endblock %}
+
+{% block content %}
+
+<div class="head">
+  <h1> Welcome to our documentation please login or register to see more </h1>
+  <a href="{% url 'core:login' %}">Login </a>
+  <a href="{% url 'core:register' %}">Sign Up</a>
+
+
+</div>
+
+
+{% endblock %}

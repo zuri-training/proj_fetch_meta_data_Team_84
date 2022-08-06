@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+  Dashboard
+
+{% endblock %}
+
+{% block css %} <link rel="stylesheet" href="{% static 'css/styles.css'%}">{% endblock %}
+
+{% block content %}
+
+<div class="head">
+  <h1> Welcome {{ request.user }} </h1>
+  <p>My name is {{ request.user.first_name }}</p>
+  <p>Last logged in: {{ request.user.last_login}}</p>
+  <p>Please upload your data</p>
+  <a href="{% url 'core:logout' %}">Logout </a>
+
+
+</div>
+
+
+{% endblock %}
