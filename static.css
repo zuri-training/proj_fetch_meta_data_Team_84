@@ -458,7 +458,7 @@ input:focus{
 
 .questions {
     height: 34.563rem;
-    background-image: url("/images/customer-service-faq.png");
+    background-image: url("images/customer-service-faq.png");
     background-repeat: no-repeat;
     background-size: cover;
     /* background-color: var(--hero-section-blue); */
@@ -2417,4 +2417,27 @@ display: none;
 
 
 
+/* ############################################################################## */
+.forgot-paragraph {
+    text-align:center;
+    margin-bottom:10px;
+}
 
+
+.resetComplete{
+    text-align: center;
+    margin-top:100px;
+}
+.buttonComplete{
+    width: 402px;
+    height: 54px;
+    background-color: var(--primary-blue-active-focus);
+    color: white;
+    margin: 2% 0%;
+    margin-top: 30px;
+  
+}
+
+.buttonComplete:hover{
+    background-color: var(--primary-blue-hover);
+}
