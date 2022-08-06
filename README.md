@@ -193,6 +193,7 @@
  ### README CONTRIBUTING AUTHORS
   - [Ekwemuka Isioma](https://github.com/Issiedoesit)
   - [Mbugua Wanjiru](https://github.com/mbuguaellen)
+  - [Temitope Osifalujo](https://github.com/topnics)
   
  ### ACKNOWLEDMENTS
  - We'd like to thank the entire [Zuri Team](https://training.zuri.team/) and [Ingressive for Good community](https://ingressive.org/) for this opportunity to learn and grow as developers and designers.
@@ -202,28 +203,29 @@
 ### REFERENCES/FOOTER
   
 [^1]:
-    - https://github.com/mbuguaellen TEAM LEAD and DESIGNER
-    - https://github.com/Issiedoesit ASSISTANT TEAM LEAD and DEVELOPER
-    - https://github.com/topnics ASSISTANT TEAM LEAD and DEVELOPER
-    - https://GitHub.com/samuelgodson55 DEVELOPER
-    - https://github.com/olawoyintosin DESIGNER
-    - http://github.com/Wuraola-Omotoyosi DESIGNER
-    - https://github.com/OreoluwaDahunsi DESIGNER
-    - https://github.com/Nonso-hub DESIGNER
-    - https://github.com/Berseet DESIGNER
-    - https://github.com/ugoostanleyibe DEVELOPER
-    - https://github.com/olamijulo2 DEVELOPER
-    - https://GitHub.com/vic-designs DESIGNER
-    - https://github.com/Ade-Bani/ DESIGNER
-    - https://Github.com/Shalomking DEVELOPER
-    - https://github.com/adesinna DEVELOPER
-    - https://github.com/geonerd777 DESIGNER
-    - http://github.com/Enojay DESIGNER
-    - https://github.com/SirIyanu DEVELOPER
-    - http://GitHub.com/Tarielenz DEVELOPER
-    - https://github.com/sholigezy DESIGNER
-    - https://github.com/preshwhyte DEVELOPER
-    - https://github.com/Lyon689 DEVELOPER
-    - https://github.com/taiyeabiri DEVELOPER
+    - Wanjiru Mbugua https://github.com/mbuguaellen TEAM LEAD and DESIGNER
+    - Isioma Ekwemuka https://github.com/Issiedoesit ASSISTANT TEAM LEAD and DEVELOPER
+    - Temitope Osifalujo https://github.com/topnics ASSISTANT TEAM LEAD and DEVELOPER
+    - Samuel Godson https://GitHub.com/samuelgodson55 DEVELOPER
+    - Olubunmi Olawoyin https://github.com/olawoyintosin DESIGNER
+    - Wuraola Nureni http://github.com/Wuraola-Omotoyosi DESIGNER
+    - Oreoluwa Dahunsi https://github.com/OreoluwaDahunsi DESIGNER
+    - Chinonso Onyekonwu https://github.com/Nonso-hub DESIGNER
+    - Abdulbasit Ajibola https://github.com/Berseet DESIGNER
+    - Stanley Ibe https://github.com/ugoostanleyibe DEVELOPER
+    - Olayinka Olajumilo https://github.com/olamijulo2 DEVELOPER
+    - Victoria Akeju https://GitHub.com/vic-designs DESIGNER
+    - Adelaide Banibensu https://github.com/Ade-Bani/ DESIGNER
+    - Shalom Onyeukwu https://Github.com/Shalomking DEVELOPER
+    - Adesina Aladesae https://github.com/adesinna DEVELOPER
+    - George Ogundokun https://github.com/geonerd777 DESIGNER
+    - John Fadumiye http://github.com/Enojay DESIGNER
+    - Iyanuoluwa Olawoye https://github.com/SirIyanu DEVELOPER
+    - Taribor Ajuesi http://GitHub.com/Tarielenz DEVELOPER
+    - Oluwashola Adeola https://github.com/sholigezy DESIGNER
+    - Precious Nwogu https://github.com/preshwhyte DEVELOPER
+    - Olamilekan Ojebowa https://github.com/Lyon689 DEVELOPER
+    - Taiyelolu Abiri https://github.com/taiyeabiri DEVELOPER
+    - Isaac David https://github.com/Daeveed1 Designer
 
   
