@@ -1,0 +1,340 @@
+
+{% load static %}
+
+{% block css %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        {% endblock %}
+  
+            <!-- navigation bar -->
+            {% block content %}
+            <nav class="nav-bar">
+                <div class="search">
+                    <form action="{% static 'https://www.google.com/search' %}" method="get" class="go">
+                        <button class="go" type="submit"><img src="{% static 'img/Vector (2).png' %}"></button>
+                        <input class="search-input" type="text" placeholder= "Search file names, extensions, folder">
+                    </form>
+                </div>
+                
+                <div class="nav-button">
+                    <a class="home" href="index.html">Home</a>
+                    <a class="faqs" href="faqs.html">FAQs</a>
+                    <a class="res" href="Resources.html">Resources</a>
+                </div>
+
+                <!-- Dark/Light theme -->
+                <div class="toggle">
+                    <button class="light-mode-btn" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                
+                <!-- Profile avatar  -->
+                <div class="profile">
+                    <div class="profile-content">
+                        <div class="content-box">
+                            <div class="content-top">
+                                <div class="avatar"></div>
+                                <div class="user"></div>
+                            </div>
+
+                            <div class="content-bottom">
+                                <div class="link1">
+                                    <a href="">Settings</a>
+                                </div>
+                                <div class="link2">
+                                    <a href="">Review and Suggestions</a>
+                                </div>
+                                <div class="link3">
+                                    <a href="">Support</a>
+                                </div>
+                                <div class="link4">
+                                    <a href="">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- side bar -->
+            <div class="side-bar">
+                <div class="logo"></div>
+            </div>
+
+            <div class="css-treeview">
+                <ul>
+                    <li><input type="checkbox" id="item-dash"/><label class="parent" for="item-dash"><p><img src="{% static 'img/dashboardIcon.png' %}" alt="">  Dashboard</p></label>
+                        <ul>
+                            <li><input type="checkbox" id="item-images"/><label class="child" for="item-images"><p><img src="{% static 'img/Image.png' %}" alt="">  Images</p></label></li>
+                            <!-- <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a> -->
+                            </li>
+
+                            <li><input type="checkbox" id="item-json"/><label class="child" for="item-json"><p><img src="{% static 'img/json.png' %}" alt="">  JSON files</p></label></li>
+                            <!-- <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a> -->
+                            </li>
+                            
+                            <li><input type="checkbox" id="item-csv"/><label class="child" for="item-csv"><p><img src="{% static 'img/csv.png' %}" alt="">  CSV files</p></label></li>
+                            <!-- <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a> -->
+                            </li>
+
+                            <li><input type="checkbox" id="item-pdf"/><label class="child" for="item-pdf"><p><img src="{% static 'img/json.png' %}" alt="">  PDF files</p></label></li>
+                            <!-- <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a> -->
+                            </li>
+
+                            <!-- <li><input type="checkbox" id="item-web"/><label class="child" for="item-web"><p><img src="img/Website.png" alt="">  Web project</p></label></li> -->
+                            <!-- <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a> -->
+                            <!-- </li> -->
+                        </ul>
+                    </li>
+                    <li><input type="checkbox" id="item-saves"/><label class="parent" for="item-saves"><p><img src="{% static 'img/Vector (5).png' %}" alt="">  Saved files</p></label>
+                    <li><input type="checkbox" id="item-new"/><label class="parent" for="item-new"><p><img src="{% static 'img/newFolder.png' %}" alt="">  Create new folder</p></label>
+                    <li><input type="checkbox" id="item-trash"/><label class="parent" for="item-trash"><p><img src="{% static 'img/Delete 2.png' %}" alt="">  Trash</p></label>
+                </ul>
+            </div>
+            
+            <div class="session-box">
+                <div class="session">
+                    <div class="time">
+                        <p>Last session:</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+         
+            <!-- drag and drop file for upload od click to upload -->
+            <div class="upload">
+                <form action="#overlay">
+                    <div class="drop-zone">
+                        <div class="top">
+                            <span class="icon1"></span>
+                            <span class="icon2"></span>
+                            <span class="top-text">Click the upload icon to add a file</span>
+                        </div>
+        
+                        <div class="middle"></div>
+        
+                        <div class="bottom">
+                            <span class="bottom-text1">OR</span>
+                            <span class="bottom-text2">Drag and drop a file</span>
+                            <span class="bottom-text3">only jpg, png, csv, pdf, json files are supported</span>
+                        </div>
+                        
+                        <input type="file" name="myFile" class="drop-zone__input" id="myFile">
+                    </div>
+                    <input class="send" type="submit" name="save" value="Upload" id="save" style="display:none">
+
+                    <div id="overlay">
+                        <div class="overlay-content">
+                            <div class="completed"><img src="{% static 'img/Vector (7).png' %}" alt=""></div>
+                            <h2>UPLOADING COMPLETED</h2>
+                            <p>your file has been successfully uploaded <br>we have it safe and sound!</p>
+                            <div class="continue">
+                                <a href="">Continue</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mask" onclick="document.location='#';"></div> 
+                </form>
+            </div>
+
+           <!-- <input type="file" name="myFile" class="drop-zone__input" multiple>
+                            Add "multiple" attribute to input to support multiple files -->
+            <!-- <div class="drop-zone__thumb" data-label="myfile.txt"></div> -->
+            
+
+            <!-- download, share, export etc.  -->
+            <div class="down">
+                <p>Extracted Metadata</p>
+
+                <div class="down-btn">
+                    <a href="">Save</a>
+                </div>
+            </div>
+
+            <!-- table section -->
+            <div class="table-cont">
+                <div class="files">
+                    <p>Files</p>
+                </div>
+                
+                <table class="table-body">
+                    <tr>
+                        <th>File name</th>
+                        <th>File size</th>
+                        <th>Folder</th>
+                        <th>Date created</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>23456JJ.json <br>JSON</td>
+                        <td>456KB</td>
+                        <td>json folder</td>
+                        <td>02/08/22</td>
+                        <td>
+                            <div class="saved">
+                                <p>Saved</p>
+                            </div>
+                        </td>
+                        <td class="tabs">
+                            <div class="tab">
+                                <input type="radio" id="tab-1" name="tab-group-1" />
+                                <label for="tab-1"><img src="{% static 'img/Vector (6).png' %}" alt=""></label>
+                                <div class="tab close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1" />
+                                    <label for="tab-close"><img src="{% static 'img/Vector (6).png' %}" alt=""></label>
+                                </div>
+                            
+                                <div class="content">
+                                    <div class="shLink">
+                                        <a href="#">Share</a>
+                                    </div>
+                                    <div class="cLink">
+                                        <a href="#">Copy</a>
+                                    </div>
+                                    <div class="eLink">
+                                        <a href="#">Export</a>
+                                    </div>
+                                    <div class="sLink">
+                                        <a href="#">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>23456JJ.png <br>PNG</td>
+                        <td>456KB</td>
+                        <td>image folder</td>
+                        <td>02/08/22</td>
+                        <td>
+                            <div class="trashed">
+                                <p>Trashed</p>
+                            </div>
+                        </td>
+                        <td class="tabs">
+                            <div class="tab">
+                                <input type="radio" id="tab-1" name="tab-group-1" />
+                                <label for="tab-1"><img src="{% static 'img/Vector (6).png' %}" alt=""></label>
+                                <div class="tab close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1" />
+                                    <label for="tab-close"><img src="{% static 'img/Vector (6).png' %}" alt=""></label>
+                                </div>
+                            
+                                <div class="content">
+                                    <div class="shLink">
+                                        <a href="#">Share</a>
+                                    </div>
+                                    <div class="cLink">
+                                        <a href="#">Copy</a>
+                                    </div>
+                                    <div class="eLink">
+                                        <a href="#">Export</a>
+                                    </div>
+                                    <div class="sLink">
+                                        <a href="#">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>23456JJ.csv <br>CSV</td>
+                        <td>456KB</td>
+                        <td>csv folder</td>
+                        <td>02/08/22</td>
+                        <td>
+                            <div class="not-saved">
+                                <p>Not Saved</p>
+                            </div>
+                        </td>
+                        <td class="tabs">
+                            <div class="tab">
+                                <input type="radio" id="tab-1" name="tab-group-1" />
+                                <label for="tab-1"><img src="{% static 'img/Vector (6).png' %}" alt=""></label>
+                                <div class="tab close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1" />
+                                    <label for="tab-close"><img src="{% static 'img/Vector (6).png' %}" alt=""></label>
+                                </div>
+                            
+                                <div class="content">
+                                    <div class="shLink">
+                                        <a href="#">Share</a>
+                                    </div>
+                                    <div class="cLink">
+                                        <a href="#">Copy</a>
+                                    </div>
+                                    <div class="eLink">
+                                        <a href="#">Export</a>
+                                    </div>
+                                    <div class="sLink">
+                                        <a href="#">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>23456JJ.pdf <br>PDF</td>
+                        <td>456KB</td>
+                        <td>pdf folder</td>
+                        <td>02/08/22</td>
+                        <td>
+                            <div class="saved">
+                                <p>Saved</p>
+                            </div>
+                        </td>
+                        <td class="tabs">
+                            <div class="tab">
+                                <input type="radio" id="tab-1" name="tab-group-1" />
+                                <label for="tab-1"><img src="{% static 'img/Vector (6).png' %}" alt=""></label>
+                                <div class="tab close-tab">
+                                    <input type="radio" id="tab-close" name="tab-group-1" />
+                                    <label for="tab-close"><img src="{% static 'img/Vector (6).png' %}" alt=""></label>
+                                </div>
+                            
+                                <div class="content">
+                                    <div class="shLink">
+                                        <a href="#">Share</a>
+                                    </div>
+                                    <div class="cLink">
+                                        <a href="#">Copy</a>
+                                    </div>
+                                    <div class="eLink">
+                                        <a href="#">Export</a>
+                                    </div>
+                                    <div class="sLink">
+                                        <a href="#">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- display remaining content in table -->
+            <div class="disp-all">
+                <a href="">Show all</a>
+            </div>
+        <main>
+
+        <footer></footer>
+        {% block js %}
+        <script src="{% static 'js/main.js' %}"></script>
+        {% endblock %}
+    
+{% endblock content %}

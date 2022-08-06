@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css'%}">
+    <script src="{% static 'js/login.js' %}" defer></script>
+    <title>Document</title>
+</head>
+<body id="logInBody" class="log-in-body">
+    <header class="log-in-header">
+        <nav class="log-in-nav">
+            
+            <img src=" {% static 'images/loginimages/Logo.png' %} " alt="">
+            <div class="log-in-sign-up">
+                <p>
+                    Are you a new user?
+                </p>
+                <a href=" {% url 'signup' %} "><button class="log-in-nav-btn">
+                    Sign Up
+                </button></a>
+            </div>
+        </nav>
+    </header>
+    <main class="log-in-main">
+        <h2>Login Account</h2>
+        <div style="text-align: center;">
+        {% for message in messages %}
+<h1>{{message}}</h1>
+{%endfor %}
+</div>
+        <form action="" method="post" class="log-in-form">
+            {% csrf_token %}
+            <label for="logInEmail">Username</label>
+            <input type="text" name="username" id="logInEmail" placeholder="Username">
+            <label for="logInPassword">Enter Password</label>
+            <input type="password" name="login-password" id="logInPassword" placeholder="********">
+            <div class="log-in-forgot-rem">
+                <div>
+                <input type="radio" name="log-in-rem" id="logInRem">
+                <label for="logInRem">Remember Me</label>
+                </div>
+                <a href=" {% url 'password_reset' %} " class="log-in-forgot">Forgot Password?</a>
+            </div>
+            <button type="submit" class="log-in-btn">Login</button>
+            <div class="log-in-continue">
+                <span class="log-in-line"></span>
+                <p>Or continue with</p>  
+                <span class="log-in-line"></span>
+            </div>
+            <button type="submit" class="log-in-social log-in-google"><img src="{% static 'images/loginimages/google-svgrepo-com (1) 1.png' %}" alt=""><a href="">Continue with Google</a></button>
+            <button type="submit" class="log-in-social log-in-fb"><img src="{% static 'images/loginimages/Facebook.png' %}" alt=""><a href="">Continue with Facebook</a></button>
+        </form>
+    </main>
+</body>
+</html>

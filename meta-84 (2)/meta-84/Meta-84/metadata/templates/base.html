@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block css %} <link rel="stylesheet" href="{% static 'css/static.css' %}"> {% endblock %}
+    {% block js%} {% endblock %}
+    <title>Document</title>
+</head>
+<body>
+        <!--
+            Please update nav-link title to match name of url
+            e.g 127:00.5000.(index).html (name = index)
+            so title should be 'index'
+        -->
+        <nav>
+            <img src="{% static 'images/Logo.png' %}" alt="Logo">
+            <div class="nav-links" title="links">
+                <a href="index.html" class="nav-link" title="index">Home</a>
+                <a href="about-us.html" class="nav-link" title="about-us">About Us</a>
+                <a href="faqs.html" class="nav-link" title="faqs">FAQs</a>
+                <a href="contact-us.html" class="nav-link" title="contact-us">Contact Us</a>
+            </div>
+            <div>
+                <a href=" {% url 'signup' %} "><button type="submit" class="nav-btn" title="sign-up">Sign Up</button></a>
+                <a href=" {% url 'signin' %} "><button type="submit" class="nav-btn" title="sign-up"> Login </button></a>
+            </div>
+        </nav>
+    {% block content %}
+
+    {% endblock %}
+
+</body>
+</html>
