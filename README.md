@@ -66,6 +66,8 @@
    - PasswordResetTokenGenerator
    - account_activation_token
    - EmailMessage
+   - Redirect and Render
+   - FileSystemStorage
    
 ## DEPENDENCIES
    - Pillow Library from PIL
@@ -227,5 +229,7 @@
     - Olamilekan Ojebowa https://github.com/Lyon689 DEVELOPER
     - Taiyelolu Abiri https://github.com/taiyeabiri DEVELOPER
     - Isaac David https://github.com/Daeveed1 Designer
+    - Aladesae Adesina https://github.com/adesinna DEVELOPER
+
 
   
