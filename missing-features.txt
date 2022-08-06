@@ -1,0 +1,16 @@
+*****************START LANDING PAGE [ISIOMA]************************
+
+1 - VIDEO
+- Make slide animation equal to video length while video is playing(**not done)
+- Return slide timeOut interval to 5s after video ends or is paused(**done)
+
+* Fix Tool - Javascript
+
+2 - icons
+
+-change img icon to linkable icon from font-awesome
+
+3 - Active and Hover states not yet set
+
+4 - replace video on hero section with picture
+*****************END LANDING PAGE [ISIOMA]************************

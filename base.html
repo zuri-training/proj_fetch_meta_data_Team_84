@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/1f5aa4ec6b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static.css">
+    <script src="static.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+        <!--
+            Please update nav-link title to match name of url
+            e.g 127:00.5000.(index).html (name = index)
+            so title should be 'index'
+        -->
+        <nav class="nav base-nav">
+            <img src="images/Logo.png" alt="Logo">
+            <div class="nav-links" title="links" id="navMenu">
+                <a href="index.html" class="nav-link" title="index">Home</a>
+                <a href="about-us.html" class="nav-link" title="about-us">About Us</a>
+                <a href="faqs.html" class="nav-link" title="faqs">FAQs</a>
+                <a href="contact-us.html" class="nav-link" title="contact-us">Contact Us</a>
+            </div>
+            <div class="nav-btns" id="navBtn">
+                
+                <!--{% if user_isauthenticated %}
+                <button type="submit" class="nav-btn"><a href="" class="index-nav-sign-up">Dashboard</a></button>
+                <button type="submit" class="nav-btn index-log"><a href="login.html" class="index-nav-log-in">Log Out</a></button>
+                {% else %}-->
+                <button type="submit" class="nav-btn"><a href="signup.html" class="index-nav-sign-up">Sign Up</a></button>
+                <button type="submit" class="nav-btn index-log"><a href="login.html" class="index-nav-log-in">Log In</a></button>
+                <!--{% endif %}-->
+                    
+                
+            </div>
+            <div class="profile-circle">
+                <i class="fa-solid fa-circle-user" id="profile"></i>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div class="toggle-item"></div>
+                <div class="toggle-item"></div>
+                <div class="toggle-item"></div>
+            </div>
+        </nav>
+        <footer>
+            <section class="footer-icons">
+                <div>
+                    <p>Copyright of I4GXZURI project team 84 2022</p>
+                    <img src="images/bi_c-circle.png" alt="copyright">
+                </div>
+                <div>
+                    <img src="images/ci_mail.png" alt="">
+                    <img src="images/twitter-vector.png" alt="">
+                    <img src="images/insta-vector.png" alt="">
+                    <img src="images/facebook-vector.png" alt="">
+                </div>
+                <div>
+                    <p>Terms and Condition</p>
+                    <p>Privacy Policy</p>
+                </div>
+            </section>
+        </footer>
+    
+</body>
+</html>
