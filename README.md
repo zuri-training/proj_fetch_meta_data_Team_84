@@ -1,7 +1,7 @@
 # proj_fetch_meta_data_Team_84
 # ABOUT THE PROJECT
   A platform that allows authenticated users to upload files, so as to extract the metadata of the uploaded file and the metadata is displayed 
-### Working Team Nam
+### Working Team Name
   - 84Meta
 ### Team Logo
   ![Logo](https://res.cloudinary.com/issie/image/upload/v1659619070/Logo_1_eeynk2.png)
