@@ -196,6 +196,7 @@
   - [Ekwemuka Isioma](https://github.com/Issiedoesit)
   - [Mbugua Wanjiru](https://github.com/mbuguaellen)
   - [Temitope Osifalujo](https://github.com/topnics)
+  - [Adesina Aladesae](https://github.com/adesinna)
   
  ### ACKNOWLEDMENTS
  - We'd like to thank the entire [Zuri Team](https://training.zuri.team/) and [Ingressive for Good community](https://ingressive.org/) for this opportunity to learn and grow as developers and designers.
@@ -229,7 +230,6 @@
     - Olamilekan Ojebowa https://github.com/Lyon689 DEVELOPER
     - Taiyelolu Abiri https://github.com/taiyeabiri DEVELOPER
     - Isaac David https://github.com/Daeveed1 Designer
-    - Aladesae Adesina https://github.com/adesinna DEVELOPER
 
 
   
