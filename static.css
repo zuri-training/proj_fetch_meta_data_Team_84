@@ -45,7 +45,7 @@ html,body{
 }
 
 .index-body{
-    color: var(--primary-blue-active-focus);
+    color: var(--black);
 }
 .index-header{
     background-color:var(--hero-section-blue); 
@@ -510,7 +510,7 @@ input:focus{
 
 
 .frequent-question h1{
-        color: var(--primary-blue-active-focus);
+        color: var(--black);
         font-weight: 600;
         font-size:32px;
 }
@@ -529,7 +529,7 @@ input:focus{
 }
 
 .meta-question{
-    color: var(--primary-blue-active-focus);
+    color: var(--black);
     font-weight: 700;
     font-size: 1.2em;
     margin-top:17px;
@@ -540,7 +540,7 @@ input:focus{
 .open{
     width: 24px;
     height: 24px;
-    color: var(--primary-blue-active-focus);
+    color: var(--black);
     margin: 17px 10px 0 30px;
 }
 
@@ -552,7 +552,7 @@ input:focus{
     height: 24px;
     opacity: 0;
     transition: all 500ms;
-    color: var(--primary-blue-active-focus);
+    color: var(--black);
     margin: 17px 10px 0 30px;
 }
 .answer-question .metadata .open.f-active,
@@ -565,6 +565,7 @@ font-weight: 400;
 font-size: 1.2em;
 padding:16px 0 0 70px;
 display: none;
+color: var(--black);
 }
 
 .content.f-active {
@@ -583,7 +584,8 @@ display: none;
     background-color: var(--hero-section-blue);
     text-align: center; 
     margin-top: 80px;
-    margin-bottom: 10vh;  
+    margin-bottom: 10vh; 
+    color: var(--black); 
     /* display: flex;
     flex-direction: column;
     justify-content: space-evenly;  */
@@ -612,6 +614,7 @@ display: none;
     margin-top: 36px;
     background-color: var(--primary-blue-active-focus);
     color: var(--white);
+    border-radius: var(--border-radius);
     font-weight: var(--heavy-font-weight);
     font-size: var(--regular-font-size);
 }
@@ -694,6 +697,7 @@ display: none;
     .content{
         padding-left:50px;
         font-size:15px;
+       
     }
     .touch-button{
         color: white;
@@ -717,7 +721,7 @@ display: none;
     html,body{
         width: 100%;
         font-family: var(--font-family);
-        color: var(--primary-blue-active-focus);
+        color: var(--black);
     }
     .profile-circle{
         z-index: 40;
@@ -1107,7 +1111,7 @@ display: none;
     .index-body{
         width: 100%;
         font-weight: var(--regular-font-weight);
-        color:var(--primary-blue-active-focus);
+        color:var(--black);
         font-family: var(--font-family);
         font-size: var(--regular-font-size);
         
@@ -1608,7 +1612,7 @@ display: none;
         justify-content: space-evenly;
         background-color: var(--footer-background);
         font-size: .9em;
-        color: var(--primary-blue-active-focus);
+        color: var(--black);
     }
     .footer-icons > *{
         width: 50%;
@@ -1780,7 +1784,7 @@ display: none;
     html,body{
         width: 100%;
         font-family: var(--font-family);
-        color: var(--primary-blue-active-focus);
+        color: var(--black);
     }
     .nav{
         height: 10vh;
@@ -1871,7 +1875,7 @@ display: none;
     }
     .contact-us-body footer, .about-us-body footer, .faq-body footer{
         font-size: .9em;
-        color: var(--primary-blue-active-focus);
+        color: var(--black);
     }
     .active{
         opacity: 1;
@@ -2429,13 +2433,14 @@ display: none;
     margin-top:100px;
 }
 .buttonComplete{
-    width: 402px;
+    width: 50vw;
     height: 54px;
     background-color: var(--primary-blue-active-focus);
     color: white;
     margin: 2% 0%;
     margin-top: 30px;
-  
+    border: none;
+    border-radius: var(--border-radius);
 }
 
 .buttonComplete:hover{

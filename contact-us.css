@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --font-family: 'Jost', sans-serif;
+    --primary-blue:#064acb;
+    --primary-blue-hover:#053ea9;
+    --primary-blue-active-focus:#043187;
+    --secondary-brown:#f3a953;
+    --secondary-brown-hover:#ca8d45;
+    --secondary-brown-active-focus:#a27137;
+    --success-green:#00d400;
+    --success-green-hover:#00aa00;
+    --success-green-active-focus:#008000;
+    --error-red:#ff0000;
+    --error-red-hover:#d40000;
+    --error-red-active-focus:#aa0000;
+    --border-radius:10px;
+    --login-border-radius:8px;
+    --hero-section-blue:#cddbf5;
+    --regular-font-size:24px;
+    --large-font-size:56px;
+    --regular-font-weight:400;
+    --heavy-font-weight:700;
+    --border-width: 1px;
+    --white:white;
+    --black:black;
+    --index-hero-text-background:linear-gradient(180deg, #5986dc, #043187);
+    --box-shadow-gray:2px 2px 6px dimgray;
+    --transparent:transparent;
+    --index-hero-circle:#5986dc;
+    --decoration-border: solid 3px var(--secondary-brown);
+    --footer-background:#82a4e5;
+}
+
 *,
 ::after,
 ::before {
