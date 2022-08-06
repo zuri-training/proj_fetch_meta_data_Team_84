@@ -1612,7 +1612,7 @@ color: var(--black);
         justify-content: space-evenly;
         background-color: var(--footer-background);
         font-size: .9em;
-        color: var(--black);
+        color: var(--white);
     }
     .footer-icons > *{
         width: 50%;
@@ -1875,7 +1875,7 @@ color: var(--black);
     }
     .contact-us-body footer, .about-us-body footer, .faq-body footer{
         font-size: .9em;
-        color: var(--black);
+        color: var(--white);
     }
     .active{
         opacity: 1;
