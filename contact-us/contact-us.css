@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *,
 ::after,
@@ -19,7 +19,7 @@ html {
     -webkit-text-size-adjust: 100%;
     -moz-tab-size: 4;
     tab-size: 4;
-    font-family: Lato, sans-serif
+    font-family: Jost, sans-serif
 }
 
 body {
@@ -576,10 +576,6 @@ select {
     margin: auto
 }
 
-.mt-4 {
-    margin-top: 1rem
-}
-
 .mt-\[61px\] {
     margin-top: 61px
 }
@@ -738,8 +734,8 @@ select {
     padding-right: 1.5rem
 }
 
-.pt-\[63px\] {
-    padding-top: 63px
+.pt-\[73px\] {
+    padding-top: 73px
 }
 
 .pb-\[70px\] {
@@ -759,6 +755,11 @@ select {
     font-size: 32px
 }
 
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem
+}
+
 .font-bold {
     font-weight: 700
 }
@@ -775,16 +776,12 @@ select {
     text-transform: capitalize
 }
 
-.leading-7 {
-    line-height: 1.75rem
+.leading-\[38px\] {
+    line-height: 38px
 }
 
 .leading-5 {
     line-height: 1.25rem
-}
-
-.leading-\[38px\] {
-    line-height: 38px
 }
 
 .text-greyish-1100 {
@@ -797,12 +794,8 @@ select {
     color: rgb(255 255 255 / var(--tw-text-opacity))
 }
 
-.placeholder\:text-2xl::placeholder {
-    font-size: 1.5rem;
-    line-height: 2rem
-}
-
-.placeholder\:leading-7::placeholder {
+.placeholder\:text-xl::placeholder {
+    font-size: 1.25rem;
     line-height: 1.75rem
 }
 
@@ -848,29 +841,19 @@ select {
         padding-bottom: 140px
     }
 
-    .md\:text-\[64px\] {
-        font-size: 64px
-    }
-
-    .md\:text-\[32px\] {
-        font-size: 32px
-    }
-
     .md\:text-5xl {
         font-size: 3rem;
         line-height: 1
     }
 
-    .md\:leading-\[76px\] {
-        line-height: 76px
+    .md\:text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem
     }
 
-    .md\:leading-\[38px\] {
-        line-height: 38px
-    }
-
-    .md\:leading-\[58px\] {
-        line-height: 58px
+    .md\:text-4xl {
+        font-size: 2.25rem;
+        line-height: 2.5rem
     }
 }
 
@@ -912,12 +895,12 @@ select {
         margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)))
     }
 
-    .xl\:pt-\[189px\] {
-        padding-top: 189px
+    .xl\:pt-\[200px\] {
+        padding-top: 200px
     }
 
-    .xl\:pb-\[212px\] {
-        padding-bottom: 212px
+    .xl\:pb-\[224px\] {
+        padding-bottom: 224px
     }
 }
 
