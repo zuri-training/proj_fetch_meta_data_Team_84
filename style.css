@@ -549,8 +549,6 @@ a:active {
     color: #cccccc;
     border: 1.5px dashed #064ACB;
     background: #FFFFFF;
-    /* left: 287px; */
-    /* top:px; */
     border-radius: 24px;
     box-sizing: border-box;
     position: absolute;
@@ -714,7 +712,7 @@ a:active {
     background: transparent;
 }
 
-/* DOWNLOAD METADATA */
+/* SAVE METADATA */
 .down {
     box-sizing: border-box;
     display: flex;
@@ -732,8 +730,6 @@ a:active {
     border: 1.5px solid #064ACB;
     border-radius: 24px;
 }
-
-
 
 .down-btn {
     display: flex;
@@ -1258,44 +1254,17 @@ tr:nth-child(odd) {
     border: 1px solid #043187;
     border-radius: 8px;
 }
-/* .file-btn {
-    width: 100px;
-    height: 24px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    border: none;
-    background: transparent;
-} */
+
 .disp-all > a {
     width: 62px;
     height: 24px;
-    
-    /* Body/Paragraph_1: Regular */
-    
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    /* identical to box height, or 150% */
-    
     letter-spacing: 0.5px;
-    
-    /* Primary/ 800 */
-    
     color: #043187;
-    
-    
-    /* Inside auto layout */
-    
     flex: none;
     order: 0;
     flex-grow: 0;

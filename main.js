@@ -110,16 +110,7 @@ window.addEventListener(
 );
 
 
-
-
-
-
-
-
-
-
-
-
+// SLIDING/COLLAPSIBLE SIDEBAR 
 
 {
   let sideBar = document.querySelector('.side-bar');
