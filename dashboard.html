@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://kit.fontawesome.com/49736e1bab.js" crossorigin="anonymous"></script>
+
         <title>Team 84 | Dashboard</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
@@ -63,60 +66,86 @@
 
         <main>
             <!-- side bar -->
-            <div class="side-bar">
+            <!-- <div class="side-bar">
                 <div class="logo"></div>
-            </div>
+            </div> -->
 
-            <div class="css-treeview">
-                <ul>
-                    <li><input type="checkbox" id="item-dash"/><label class="parent" for="item-dash"><p><img src="img/dashboardIcon.png" alt="">  Dashboard</p></label>
-                        <ul>
-                            <li><input type="checkbox" id="item-images"/><label class="child" for="item-images"><p><img src="img/Image.png" alt="">  Images</p></label></li>
-                            <!-- <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a> -->
-                            </li>
+            <div class="side-bar">
+                <div class="logo-name-wrapper">
+                    <div class="logo-name">
+                        <img
+                        src="img/LogoNew.png"
+                        class="logo"
+                        alt="logo"
+                        />
+                    </div>
+                    
+                </div>
+                
 
-                            <li><input type="checkbox" id="item-json"/><label class="child" for="item-json"><p><img src="img/json.png" alt="">  JSON files</p></label></li>
-                            <!-- <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a> -->
-                            </li>
-                            
-                            <li><input type="checkbox" id="item-csv"/><label class="child" for="item-csv"><p><img src="img/csv.png" alt="">  CSV files</p></label></li>
-                            <!-- <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a> -->
-                            </li>
+                <button class="logo-name__button">
+                    <i 
+                    class="fa-solid fa-angle-right"
+                    id="logo-name__icon"
+                    ></i>
+                </button>
 
-                            <li><input type="checkbox" id="item-pdf"/><label class="child" for="item-pdf"><p><img src="img/json.png" alt="">  PDF files</p></label></li>
-                            <!-- <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a> -->
-                            </li>
+                <!-- Nested folders -->
+                <div class="css-treeview">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="item-dash"/>
+                            <label class="parent" for="item-dash"><img src="img/dashboardIcon.png" alt="" style="width: 17px; height: 17px;"><span>    Dashboard</span></label>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="item-images"/>
+                                    <label class="child" for="item-images"><img src="img/Image.png" alt="" style="width: 17px; height: 17px;"><span>    Images</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item-json"/>
+                                    <label class="child" for="item-json"><img src="img/json.png" alt="" style="width: 17px; height: 17px;"><span>    JSON files</span></label>
+                                </li>
 
-                            <!-- <li><input type="checkbox" id="item-web"/><label class="child" for="item-web"><p><img src="img/Website.png" alt="">  Web project</p></label></li> -->
-                            <!-- <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a> -->
-                            <!-- </li> -->
-                        </ul>
-                    </li>
-                    <li><input type="checkbox" id="item-saves"/><label class="parent" for="item-saves"><p><img src="img/Vector (5).png" alt="">  Saved files</p></label>
-                    <li><input type="checkbox" id="item-new"/><label class="parent" for="item-new"><p><img src="img/newFolder.png" alt="">  Create new folder</p></label>
-                    <li><input type="checkbox" id="item-trash"/><label class="parent" for="item-trash"><p><img src="img/Delete 2.png" alt="">  Trash</p></label>
-                </ul>
-            </div>
-            
-            <div class="session-box">
-                <div class="session">
-                    <div class="time">
-                        <p>Last session:</p>
-                        <p></p>
+                                <li>
+                                    <input type="checkbox" id="item-csv"/>
+                                    <label class="child" for="item-csv"><img src="img/csv.png" alt="" style="width: 17px; height: 17px;"><span>    CSV files</span></label>
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" id="item-pdf"/>
+                                    <label class="child" for="item-pdf"><img src="img/json.png" alt="" style="width: 17px; height: 17px;"><span>    PDF files</span></label>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="item-saves"/>
+                            <label class="parent" for="item-saves"><img src="img/Vector (5).png" alt="" style="width: 17px; height: 17px;"><span>    Saved files</span></label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="item-new"/>
+                            <label class="parent" for="item-new"><img src="img/newFolder.png" alt="" style="width: 17px; height: 17px;"><span>    Create new folder</span></label>
+                        </li>
+
+                        <li>
+                            <input type="checkbox" id="item-trash"/>
+                            <label class="parent" for="item-trash"><img src="img/Delete 2.png" alt="" style="width: 17px; height: 17px;"><span>    Trash</span></label>
+                        </li>   
+                    </ul>
+                </div>
+
+                <!-- Last login -->
+                <div class="session-box">
+                    <div class="session">
+                        <div class="time">
+                            <p>Last session:</p>
+                            <p></p>
+                        </div>
                     </div>
                 </div>
             </div>
-         
+
             <!-- drag and drop file for upload od click to upload -->
             <div class="upload">
                 <form action="#overlay">
@@ -142,7 +171,8 @@
                     <div id="overlay">
                         <div class="overlay-content">
                             <div class="completed"><img src="img/Vector (7).png" alt=""></div>
-                            <h2>UPLOADING COMPLETED</h2>
+                            <h2 class="h21">UPLOAD</h2>
+                            <h2 class="h22">COMPLETED</h2>
                             <p>your file has been successfully uploaded <br>we have it safe and sound!</p>
                             <div class="continue">
                                 <a href="">Continue</a>

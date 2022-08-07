@@ -260,8 +260,12 @@ a:active {
 }
 
 /* SIDE BAR  */
+
 .side-bar {
-    display: flex;
+    padding: 2.1rem 1.2rem;
+ 
+    transition: all 0.5s ease;
+   
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
@@ -273,11 +277,18 @@ a:active {
     border-right: 1px solid #EAEAEA;
     z-index: -1;
 }
-.logo {
-    background: url(img/LogoNew.png);
-    margin-left: 69.84px;
+  
+.logo-name-wrapper {
+    position: relative;
+    margin-bottom: 2.1rem;
+    display: flex;
+    font-size: 1.2rem;
+}
+  
+.logo-name {
+    margin-left: 6.84px;
     margin-right: 69.84px;
-    margin-top: 64px;
+    margin-top: 104px;
     width: 91px;
     height: 50px;
     flex: none;
@@ -285,6 +296,54 @@ a:active {
     flex-grow: 0;
     border: none;
 }
+  
+.logo-name__button {
+    position: absolute;
+    top: 20%;
+    right: 3%;
+    font-size: 1.8rem;
+    transform: translateY(-50%);
+    /* background-color: transparent; */
+    border: none;
+    border: 1px solid #f9f9f9;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+}
+.logo-name__button i {
+    color: #043187;
+}
+.side-bar.collapse {
+    width: 6.4rem;
+}
+  
+.side-bar.collapse .logo-name__button {
+    right: 0.5rem;
+}
+  
+.parent span, 
+.child span,
+.session-box p {
+    transition:  1.5s ease;
+    opacity: 1;
+}
+
+  /* .side-bar.collapse .logo-name, */
+.side-bar.collapse .parent span,
+.side-bar.collapse .child span,
+.side-bar.collapse .session-box p {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.side-bar.collapse {
+    transition:  3s ease;
+}
+.side-bar {
+    transition:  0.6s ease;
+}
+
+
 /* NESTED FOLDERS */
 .css-treeview {
     display: flex;
@@ -293,7 +352,7 @@ a:active {
     padding: 0px;
     width: 276px;
     height: 488px;
-    margin-top: 239.5px;
+    margin-top: 100.5px;
     flex: none;
     order: 1;
     align-self: stretch;
@@ -305,7 +364,7 @@ a:active {
     align-items: flex-start;
     padding: 16px 32px;
     gap: 10px;
-    width: 276px;
+    width: 200px;
     height: 56px;
     background: #FAFAFA;
     flex: none;
@@ -313,8 +372,9 @@ a:active {
     align-self: stretch;
     flex-grow: 0;
 }
-.parent > p {
-    width: 150px;
+
+.css-treeview label {
+    width: 187px;
     height: 24px;
     font-family: 'Lato';
     font-style: normal;
@@ -326,7 +386,9 @@ a:active {
     flex: none;
     order: 1;
     flex-grow: 0;
+    margin-left: -50px;
 }
+
 .child {
     display: flex;
     flex-direction: row;
@@ -340,20 +402,7 @@ a:active {
     order: 1;
     flex-grow: 0;
 }
-.child > p {
-    width: 150px;
-    height: 24px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    color: #064ACB;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
+
 .css-treeview ul,
 .css-treeview li {
     padding: 0;
@@ -370,6 +419,7 @@ a:active {
     -webkit-user-select: none;
     user-select: none;
 }
+
 .css-treeview input+label+ul {
     margin: 0 0 0 22px;
 }
@@ -414,6 +464,7 @@ a:active {
     background-position: 0 -16px;
 }
 
+
 /* LAST SEEN  */
 .session {
     display: flex;
@@ -451,28 +502,24 @@ a:active {
 /* DRAG AND DROP TO UPLOAD FILES  */
 .upload {
     width: 526px;
-    /* border: 1.5px solid red; */
     height: 321px;
     left: 287px;
     box-sizing: border-box;
     position: absolute;
     top: 160px;
 }
+
 #save {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* padding: 15px 30px; */
     gap: 10px;
-
     position: absolute;
     width: 136px;
     height: 40px;
     left: 373px;
     top: 238px;
-    /* top: 317px; */
-    /* background: transparent; */
     background: #064ACB;
     border-radius: 8px;
     flex: none;
@@ -481,7 +528,6 @@ a:active {
     z-index: 1;
     border: none;
     cursor: pointer;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -796,12 +842,27 @@ a:active {
     top: 40px;
     background-size: cover;
 }
-.overlay-content h2 {
+.h21 {
+    position: absolute;
+    width: 194px;
+    height: 76px;
+    left: 95px;
+    top: 250px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #043187;
+}
+.h22 {
     position: absolute;
     width: 194px;
     height: 76px;
     left: 90px;
-    top: 250px;
+    top: 280px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
