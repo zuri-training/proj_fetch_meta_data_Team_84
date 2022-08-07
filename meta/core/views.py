@@ -44,3 +44,11 @@ class Core(LoginRequiredMixin, View):  # must log in before viewing this page!
     def get(self, request):
         context = {}
         return render(request, 'core.html', context)
+
+class dashboard():
+    dashboard_url = '/dashboard/'
+
+    def get(self, request):
+        context = {}
+        return render(request, 'dashboard.html', context)
+     
