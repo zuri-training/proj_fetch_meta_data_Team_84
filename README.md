@@ -96,7 +96,7 @@
    - Communication with frontend using Django Templates
    
  ### DATABASE SCHEMA
- - Link to [Schema](https://www.figma.com/file/aI8937bo1V25WH5bRGaBZx/Team-84_fetch-metadata-_schema?node-id=0%3A1)
+ - Link to [Schema](https://miro.com/app/board/uXjVOjcOrRY=/?share_link_id=276742582296)
         
 ## GETTING STARTED AND USAGE REQUIREMENTS
   ### ISSUES
