@@ -60,7 +60,7 @@
    1. SQLite offered by Django
  
 ## SERVER
-   1. Dependent on ZURI
+   1. Digital Ocean provided by Zuri
    
 ## MODULES
    - PasswordResetTokenGenerator
