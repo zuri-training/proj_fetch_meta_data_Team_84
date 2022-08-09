@@ -8,7 +8,12 @@
         <script src="https://kit.fontawesome.com/49736e1bab.js" crossorigin="anonymous"></script>
 
         <title>Team 84 | Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+        <link rel="stylesheet" type="text/css" href="media-min1200px.css">
+        <link rel="stylesheet" type="text/css" href="media-min992px.css">
+        <link rel="stylesheet" type="text/css" href="media-min768px.css">
+        <!-- <link rel="stylesheet" type="text/css" href="media-min600px.css"> -->
+        <!-- <link rel="stylesheet" type="text/css" href="media-max600px.css"> -->
     </head>
     <body>
         <header>
@@ -146,55 +151,58 @@
             </div>
 
             <!-- drag and drop file for upload od click to upload -->
-            <div class="upload">
-                <form action="#overlay">
-                    <div class="drop-zone">
-                        <div class="top">
-                            <span class="icon1"></span>
-                            <span class="icon2"></span>
-                            <span class="top-text">Click the upload icon to add a file</span>
+            <div class="firstContent">
+                <div class="upload">
+                    <form action="#overlay">
+                        <div class="drop-zone">
+                            <div class="top">
+                                <span class="icon1"></span>
+                                <span class="icon2"></span>
+                                <span class="top-text">Click the upload icon to add a file</span>
+                            </div>
+            
+                            <div class="middle"></div>
+            
+                            <div class="bottom">
+                                <span class="bottom-text1">OR</span>
+                                <span class="bottom-text2">Drag and drop a file</span>
+                                <span class="bottom-text3">only jpg, png, csv, pdf, json files are supported</span>
+                            </div>
+                            
+                            <input type="file" name="myFile" class="drop-zone__input" id="myFile">
                         </div>
-        
-                        <div class="middle"></div>
-        
-                        <div class="bottom">
-                            <span class="bottom-text1">OR</span>
-                            <span class="bottom-text2">Drag and drop a file</span>
-                            <span class="bottom-text3">only jpg, png, csv, pdf, json files are supported</span>
-                        </div>
-                        
-                        <input type="file" name="myFile" class="drop-zone__input" id="myFile">
-                    </div>
-                    <input class="send" type="submit" name="save" value="Upload" id="save" style="display:none">
-
-                    <div id="overlay">
-                        <div class="overlay-content">
-                            <div class="completed"><img src="img/Vector (7).png" alt=""></div>
-                            <h2 class="h21">UPLOAD</h2>
-                            <h2 class="h22">COMPLETED</h2>
-                            <p>your file has been successfully uploaded <br>we have it safe and sound!</p>
-                            <div class="continue">
-                                <a href="">Continue</a>
+                        <input class="send" type="submit" name="save" value="Upload" id="save" style="display:none">
+    
+                        <div id="overlay">
+                            <div class="overlay-content">
+                                <div class="completed"><img src="img/Vector (7).png" alt=""></div>
+                                <h2 class="h21">UPLOAD</h2>
+                                <h2 class="h22">COMPLETED</h2>
+                                <p>your file has been successfully uploaded <br>we have it safe and sound!</p>
+                                <div class="continue">
+                                    <a href="">Continue</a>
+                                </div>
                             </div>
                         </div>
+                        <div id="mask" onclick="document.location='#';"></div> 
+                    </form>
+                </div>
+    
+               <!-- <input type="file" name="myFile" class="drop-zone__input" multiple>
+                                Add "multiple" attribute to input to support multiple files -->
+                <!-- <div class="drop-zone__thumb" data-label="myfile.txt"></div> -->
+                
+    
+                <!-- download, share, export etc.  -->
+                <div class="down">
+                    <p>Extracted Metadata</p>
+    
+                    <div class="down-btn">
+                        <a href="">Save</a>
                     </div>
-                    <div id="mask" onclick="document.location='#';"></div> 
-                </form>
-            </div>
-
-           <!-- <input type="file" name="myFile" class="drop-zone__input" multiple>
-                            Add "multiple" attribute to input to support multiple files -->
-            <!-- <div class="drop-zone__thumb" data-label="myfile.txt"></div> -->
-            
-
-            <!-- download, share, export etc.  -->
-            <div class="down">
-                <p>Extracted Metadata</p>
-
-                <div class="down-btn">
-                    <a href="">Save</a>
                 </div>
             </div>
+            
 
             <!-- table section -->
             <div class="table-cont">

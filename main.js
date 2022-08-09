@@ -83,6 +83,7 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
 // LIGHT/DARK MODE 
 function toggle_light_mode() {
     var app = document.getElementsByTagName("BODY")[0];
+    // var app = document.getElementsById("overlay")[0];
     if (localStorage.lightMode == "dark") {
         localStorage.lightMode = "light";
         app.setAttribute("light-mode", "light");
@@ -92,6 +93,7 @@ function toggle_light_mode() {
     }
 
     var app = document.getElementsByTagName("BODY")[0];
+    // var app = document.getElementsById("overlay")[0];
     if (localStorage.lightMode == "dark") {
         app.setAttribute("light-mode", "dark");
     }
