@@ -1,5 +1,5 @@
-Name:   Stanley Ibe (Flutterist)
-Track:  Full Stack
+Name: Stanley Ibe (Flutterist)
+Track: Full Stack
 
 Task: Contact Page (Responsive Desktop + Mobile View)
 
