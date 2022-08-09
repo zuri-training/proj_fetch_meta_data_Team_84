@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/1f5aa4ec6b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block css %}<link rel="stylesheet" href= "{% static "css/static.css" %}">{% endblock %}
+    <script src="static.js" defer></script>
+    {% block title %}<title>Document </title>{% endblock %}
+</head>
+<body>
+        <!--
+            Please update nav-link title to match name of url
+            e.g 127:00.5000.(index).html (name = index)
+            so title should be 'index'
+        -->
+        {% include 'partials/_navigation.html' %}
+
+        {% block content %}{% endblock  %}
+        <footer>
+            <section class="footer-icons">
+                <div>
+                    <p>Copyright of I4GXZURI project team 84 2022</p>
+                    <img src="{% static 'images/bi_c-circle.png' %}" alt="copyright">
+                </div>
+                <div>
+                    <img src="images/ci_mail.png" alt="">
+                    <img src="images/twitter-vector.png" alt="">
+                    <img src="images/insta-vector.png" alt="">
+                    <img src="images/facebook-vector.png" alt="">
+                </div>
+                <div>
+                    <p>Terms and Condition</p>
+                    <p>Privacy Policy</p>
+                </div>
+            </section>
+        </footer>
+    
+</body>
+</html>

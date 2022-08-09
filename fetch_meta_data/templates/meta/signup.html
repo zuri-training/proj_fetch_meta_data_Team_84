@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block css %}<link rel="stylesheet" href="{% static 'css/static.css' %}">{% endblock  %}
+    {% block js %}<script src="{% static 'js/signup.js' %}" defer></script>{% endblock  %}
+    <link rel="shortcut icon" href= "{% static "images/favicon.png" %}" />
+    {% block title %}<title>84Meta | Sign Up</title>{% endblock %}
+</head>
+<body id="SignUpBody" class="sign-up-body">
+    <header class="sign-up-header">
+        <nav class="sign-up-nav">
+            <a href="home" title="Back to Home"><img src="{% static 'images/Logo.png' %}" alt="logo"></a>
+            <div class="sign-up-log-in">
+                <p>
+                    Already have an account?
+                </p>
+                <button class="log-in-nav-btn">
+                    <a href="login" class="index-nav-sign-up">Log In</a> 
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="sign-up-main">
+        <h2>Create An Account</h2>
+
+        {% include 'partials/_messages.html' %}
+
+        <form action="/signup" method="post" id="form" class="sign-up-form">
+            {% csrf_token %}
+            
+            <div class="form-control">
+                <label for="first-name">First name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                <small>Error message</small>
+            </div>   
+            
+            <div class="form-control">
+                <label for="last-name">Last name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                <small>Error message</small>
+            </div>
+           
+            <div class="form-control">
+                <label for="logInEmail">Email Address</label>
+                <input type="email" name="signUpEmail" id="signUpEmail" placeholder="Email Address">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="logInUser">Username</label>
+                <input type="text" name="username" id="username" placeholder="Username">
+                <small>Error message</small>
+            </div>
+            
+            <div class="form-control">
+                <label for="logInPassword">Create Password</label>
+                <input type="password" name="signUpPassword" id="signUpPassword" placeholder="********">
+                <small>Error message</small>
+            </div>
+           
+            <div class="form-control">
+                <label for="logInPassword">Confirm Password</label>
+                <input type="password" name="signUpPassword2" id="signUpPassword2" placeholder="********">
+                <small>Error message</small>
+            </div>
+            
+            <p class="terms">By clicking  on sign up, you have agreed to all the <a>Terms and Conditions</a>.</p>
+
+            <button type="submit" class="sign-up-btn">Sign Up</button>
+            <div class="sign-up-continue">
+                <span class="sign-up-line"></span>
+                <p>Or continue with</p>  
+                <span class="sign-up-line"></span>
+            </div>
+            <button type="#" class="sign-up-social sign-up-google"><img src="{% static 'images/google-svgrepo-com (1) 1.png' %}" alt=""><a href="">Continue with Google</a></button>
+            <button type="#" class="sign-up-social sign-up-fb"><img src="{% static 'images/Facebook.png' %}" alt=""><a href="">Continue with Facebook</a></button>
+        </form>
+    </main>
+</body>
+</html>

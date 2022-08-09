@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block css %}<link rel="stylesheet" href="{% static 'css/static.css' %}">{% endblock  %}
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}"/>
+    {% block js %}<script src="{% static 'js/static.js' %}" defer></script>{% endblock  %}
+    {% block title %}<title>84Meta | Log In</title>{% endblock  %}
+</head>
+<body id="logInBody" class="log-in-body">
+    <header class="log-in-header">
+        <nav class="log-in-nav">
+            <a href="home" title="Back to Home"><img src="{% static 'images/Logo.png' %}" alt="logo"></a>
+            <div class="log-in-sign-up">
+                <p>
+                    Are you a new user?
+                </p>
+                <button class="log-in-nav-btn">
+                    <a href="signup" class="index-nav-sign-up">Sign Up</a> 
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="log-in-main">
+        <h2>Login Account</h2>
+        {% include 'partials/_messages.html' %}
+        <form action="" method="post" class="log-in-form">
+            {% csrf_token %}
+            <label for="logInEmail">Email Address</label>
+            <input type="email" name="login-email" id="logInEmail" placeholder="Email Address">
+            <label for="logInPassword">Enter Password</label>
+            <input type="password" name="login-password" id="logInPassword" placeholder="********">
+            <div class="log-in-forgot-rem">
+                <div>
+                <input type="radio" name="log-in-rem" id="logInRem">
+                <label for="logInRem">Remember Me</label>
+                </div>
+                <a href="" class="log-in-forgot">Forgot Password?</a>
+            </div>
+            <button type="submit" class="log-in-btn">Login</button>
+            <div class="log-in-continue">
+                <span class="log-in-line"></span>
+                <p>Or continue with</p>  
+                <span class="log-in-line"></span>
+            </div>
+            <button type="submit" class="log-in-social log-in-google"><img src="{% static 'images/google-svgrepo-com (1) 1.png' %}" alt=""><a href="">Continue with Google</a></button>
+            <button type="submit" class="log-in-social log-in-fb"><img src="{% static 'images/Facebook.png' %}" alt=""><a href="">Continue with Facebook</a></button>
+        </form>
+    </main>
+</body>
+</html>
