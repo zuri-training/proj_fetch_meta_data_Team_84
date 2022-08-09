@@ -1332,7 +1332,7 @@ body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
 
 
 
-@media screen and (min-width:200px) and (max-width:599px) {
+@media screen and (min-width:200px) and (max-width:457px) {
     .nav-bar {
         width: 290px;
         left: 110px;
@@ -1364,7 +1364,7 @@ body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
     
     .side-bar {
         width: 180px;
-        height: 1380px;
+        height: 1420px;
         /* opacity: 5; */
         /* transform: translateX(-25px); */
         z-index: 10;
@@ -1505,7 +1505,7 @@ body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
    
     .disp-all {
         left: 275px;
-        top: 1330px;
+        top: 1380px;
     }
     
     .toggle {
@@ -1515,7 +1515,8 @@ body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
 
 
 
-@media screen and (min-width:600px) and (max-width:768px){
+/* @media screen and (min-width:600px) and (max-width:768px){ */
+    @media screen and (min-width:458px) and (max-width:768px){
     /* NAVIGATION BAR */
     .nav-bar {
         width: 560px;
@@ -1550,6 +1551,7 @@ body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
     
     .side-bar {
         width: 180px;
+        height: 1420px;
     }
       
     /* LAST SEEN  */
@@ -1616,7 +1618,7 @@ body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
     /* SHOW ALL BUTTON  */
     .disp-all {
         left: 640px;
-        top: 1420px;
+        top: 1380px;
     }
     
     /* DARK/LIGHT MODE  */
