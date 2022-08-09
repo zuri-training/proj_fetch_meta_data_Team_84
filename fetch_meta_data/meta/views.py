@@ -24,25 +24,26 @@ def signup(request):
         pass1 = request.POST['signUpPassword']
         pass2 = request.POST['signUpPassword2']
 
-        # if User.objects.filter(username=username):
-        #     messages.error(request, "Username already exists, try another")
-        #     return redirect('home')
+        #more conditions will be added
+        if User.objects.filter(username=username):
+            messages.error(request, "Username already exists, try another")
+            return redirect('home')
 
-        # if User.objects.filter(email=email).exists():
-        #     messages.error(request, "Email already registered")
-        #     return redirect('home')
+        if User.objects.filter(email=email).exists():
+            messages.error(request, "Email already registered")
+            return redirect('home')
         
-        # if len(username)>20:
-        #     messages.error(request, "Username must be under 20 characters")
-        #     return redirect('home')
+        if len(username)>20:
+            messages.error(request, "Username must be under 20 characters")
+            return redirect('home')
 
-        # if pass1 != pass2:
-        #     messages.error(request, "Passwords do not match")
-        #     return redirect('home')
+        if pass1 != pass2:
+            messages.error(request, "Passwords do not match")
+            return redirect('home')
 
-        # if not username.isalnum():
-        #     messages.error(request, "User must be Alpha-numeric!")
-        #     return redirect('home')
+        if not username.isalnum():
+            messages.error(request, "User must be Alpha-numeric!")
+            return redirect('home')
 
         user = User.objects.create_user(username, email, pass1)
         user.first_name = fname
@@ -64,8 +65,9 @@ def signup(request):
 
         email_body = 'Hi '+ user.first_name + ' Please make use of this link to activate your account\n' + activate_url
 
+        #Precious smtp configs should be integrated in settings.py
         send_mail(
-            'Welcome to this page',
+            'Welcome to this page', #you can change the subject here
             email_body,
             settings.EMAIL_HOST_USER,
             [user.email],
@@ -95,7 +97,7 @@ def login(request):
 
     return render(request, "meta/login.html")
 
-
+# This the view for and if the signout is created
 # def signout(request):
 #     logout(request)
 #     messages.success(request, "Logged Out Successfully!!")
