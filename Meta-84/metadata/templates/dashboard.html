@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/static.css' %}">
+{% endblock %}
+
+{% block js %}
+  <script src="{% static 'js/static.js' %}" defer></script>
+{% endblock %}
+
+
+{% block content %}
+<div style="text-align: center;">
+{% for message in messages %}
+<p>{{message}}</p>
+{%endfor %}
+ {{username}}
+<h1>
+    NOT THE MAIN  DASHBOARD..... BUT YOU CAN SEE THE LOGIN WORKS
+    ...THANKS
+</h1>
+</div>
+      <section class="service-team">
+          <div>
+              <h1>24/7 Support Team Readily Available</h1>
+              <h4>84 Meta team is here to answer your questions and assist you every step of the way</h4>
+              <a><img src="{% static 'images/call-calling.png' %}" alt=""> 186-1623-813</a>
+              <br>
+              <a><img src="{%  static 'images/SMS 1.png' %}" alt="">  support@84meta.com</a>
+              <h3>Find out why we have a 90% customer rating.</h3>
+          </div>
+          <div >
+              <img class="service-img" src="{% static 'images/customer-support.png' %}" alt="">
+          </div>
+      </section>
+      <section class="start">
+          <div>
+              <h1>Start 84 Meta Today  </h1>
+              <h3>Get started for free and experience the amazing treats we offer.</h3>
+              <button class="start-btn-left" type="submit">Get Started</button>
+          </div>
+          <div  class="start-btns-right">
+              <button class="start-btn-right" type="submit">Get In Touch</button>
+              <button class="start-btn-right" type="submit">Join A webinar</button>
+          </div>
+      </section>
+  </main>
+  <footer class="index-footer">
+      <section class="footer-links">
+          <div class="footer-link">
+              <h2>COMPANY</h2>
+              <ul>
+                  <li>Product Features</li>
+                  <li>Brand Intelligence</li>
+                  <li>Whats's New</li>
+                  <li>Leadership</li>
+              </ul>
+          </div>
+          <div class="footer-link">
+              <h2>RESOURCES</h2>
+              <ul>
+                  <li>Workbench</li>
+                  <li>Chat</li>
+                  <li>Reviews</li>
+                  <li>API</li>
+              </ul>
+          </div>
+          <div class="footer-link">
+              <h2>COMMUNITY</h2>
+              <ul>
+                  <li>Events</li>
+                  <li>Partnerships</li>
+                  <li>Documentation</li>
+              </ul>
+          </div>
+          <div class="footer-link">
+              <h2>LEARN MORE</h2>
+              <ul>
+                  <li>About Us</li>
+                  <li>Security</li>
+                  <li>Get in Touch</li>
+              </ul>
+          </div>
+
+      </section>
+      <section class="footer-icons">
+          <div>
+              <p>Copyright of I4GXZURI project team 84 2022</p>
+              <img src="{% static 'images/ci_mail.png' %}" alt="copyright">
+          </div>
+          <div>
+              <img src="{% static 'images/ci_mail.png' %}" alt="">
+              <img src="{% static 'images/twitter-vector.png' %}" alt="">
+              <img src="{%  static 'images/insta-vector.png' %}" alt="">
+              <img src="{% static 'images/facebook-vector.png' %}" alt="">
+          </div>
+          <div>
+              <p>Terms and Condition</p>
+              <p>Privacy Policy</p>
+          </div>
+      </section>
+  </footer>
+
+
+  {% endblock %}

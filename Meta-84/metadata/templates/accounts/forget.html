@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {% static 'css/styles.css' %} ">
+
+    <title>Forgot Password</title>
+</head>
+<body id="SignUpBody" class="sign-up-body">
+    <header class="sign-up-header">
+        <nav class="sign-up-nav">
+            <img src=" {% static 'images/Logo.png' %} " alt="">
+            <div class="sign-up-log-in">
+                <p>
+                    Are you a new user?
+                </p>
+                <button class="sign-up-nav-btn">
+                    Sign up
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="sign-up-main">
+        <h2>Forget your password?</h2>
+        <p class="forgot-paragraph">Please enter the email address you used to register</p>
+        
+        <form action="" method="post" id"form" class="sign-up-form">
+
+            {%csrf_token%}
+            {{form}}
+
+
+            <input type="submit" name="Send email" value="Send">
+
+               
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {% static 'css/styles.css' %} ">>
+
+    <title>Forgot Password</title>
+</head>
+<body id="SignUpBody" class="sign-up-body">
+    <header class="sign-up-header">
+        <nav class="sign-up-nav">
+            <img src=" {% static 'images/Logo.png' %} " alt="">
+            <div class="sign-up-log-in">
+                <p>
+                    Are you a new user?
+                </p>
+                <button class="sign-up-nav-btn">
+                    Sign up
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="sign-up-main">
+        <div class="resetComplete">
+            <h2>Password reset completed</h2>
+            <p class="forgot-paragraph">You new password has been set, you may go ahead and log in now.</p>
+            <a href=" {% url 'signin' %} "><button type="submit" class="nav-btn" title="sign-up"> Login </button></a>
+        </div>
+       
+    </main>
+</body>
+</html>
