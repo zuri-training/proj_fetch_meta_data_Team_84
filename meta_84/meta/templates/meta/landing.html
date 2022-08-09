@@ -1,0 +1,278 @@
+{% extends "base.html" %}
+{% load static %}
+    {% block content %}
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/1f5aa4ec6b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}"/>
+    {% block title %} <title>84Meta | Home</title> {% endblock %}
+    {% block css %} <link rel="stylesheet" href="{% static 'css/static.css' %}"> {% endblock %}
+    {% block js %} <script src="{% static 'js/static.js' %}" defer></script> {% endblock %}
+
+
+
+</head>
+<body title="index" class="index-body" id="indexBody">
+    <header class="index-header" id='indexHeader'>
+        <section class="index-hero-container">
+            <section class="index-hero-main" id="slideOne">
+                <div class="index-hero-text">
+                    <h1>Get All Metadata Information Of Your Files</h1>
+                    <p>Uncover hidden information from your files, with just a simple upload, sign up and started.</p>
+                    {% if not user.is_authenticated %}
+                    <button type="submit" class="index-hero-btn"><a href="{% url 'meta:register' %}" class="index-nav-sign-up">Sign Up</a></button>
+                    {% else %}
+                    <button type="submit" class="index-hero-btn"><a href="{% url 'meta:register' %}" class="index-nav-sign-up">Dashboard</a></button>
+                    {% endif %}
+                </div>
+                <div class="index-hero-media">
+                    <img src="{% static 'images/hero-thumbnail-play.png' %}" alt="demo-video-thumbnail"  id="vidHero">
+                </div>
+            </section>
+            <section class="index-hero-main" id="slideTwo">
+                <div class="index-hero-text">
+                    <h1>Easy Forensic tool</h1>
+                    <p>Your entire data forensic journey starts with a simple click & drop</p>
+                </div>
+                <div class="index-hero-media">
+                    <img src="{% static 'images/mouse.png' %}" alt="" class="index-hero-img" >
+                </div>
+            </section>
+            <section class="index-hero-main" id="slideThree">
+                <div class="index-hero-text">
+                    <h1>Metadata extraction made easy</h1>
+                    <p>Extract Metadata easily in 3 simple steps, Upload data, download metadata and share metadata.</p>
+                </div>
+                <div class="index-hero-media">
+                    <img src="{% static 'images/boyonchair.png' %}" alt="" class="index-hero-img">
+                </div>
+            </section>
+            <section class="index-hero-main"id="slideFour">
+                <div class="index-hero-text">
+                    <h1>#1 Metadata Extraction tool</h1>
+                    <p>2023 Digital Forensic tool award winner, 84 meta gives you absolute control on data, providing you with information on data of data </p>
+                </div>
+                <div class="index-hero-media">
+                    <img src="{% static 'images/trophy_img.png' %}" alt="" class="index-hero-img">
+                </div>
+            </section>
+            <div class="circles">
+                <div class="circle" id="dotone" onclick="myCurrent(1)"></div>
+                <div class="circle" id="dottwo" onclick="myCurrent(2)"></div>
+                <div class="circle" id="dotthree" onclick="myCurrent(3)"></div>
+                <div class="circle" id="dotfour" onclick="myCurrent(4)"></div>
+            </div>
+        </section>
+    </header>
+    <section class="vid-popup-wrapper" id="vidWrap">
+        <button id="close">Close video</button>
+        <div class="vid-popup-container" id="vidPop">
+            <video  width="400" controls id="videoPop"  poster="{% static 'images/Site walk-through.png' %}">
+                <source src="{% static 'images/metadata-demo.MP4' %}" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <main id="indexMain">
+        <section class="why-use">
+            <h1>Why Use 84 Meta?</h1>
+            <div class="why-use-body">
+                <div class="why-use-content"><img src="{% static 'images/Folder.png' %}" alt="Folder icon" class="why-use-img"><p>Upload ranging file sizes</p></div>
+                <div class="why-use-content"><img src="{% static 'images/Uploading.png' %}" alt="Upload icon" class="why-use-img"><p>Extract metadata of files and images </p></div>
+                <div class="why-use-content"><img src="{% static 'images/File transfer.png' %}" alt="File Transfer icon" class="why-use-img"><p>Multiple File Format</p></div>
+            </div>
+        </section>
+        <section class="what-is">
+            <h1>What is EXIF Metadata?</h1>
+            <article class="what-is-upper-content">
+                <div class="upper-what-is">
+                    <p>EXIF stands for Exchangeable Image File Format.  a standard for storing supplemental metadata in digital photos. </p>
+                    <p>Each time you take a picture, your phone or camera saves a file (typically a JPEG) to your device's storage.</p>
+                    <p> This file contains all the data dedicated to the actual picture (pixels which you can see). Such metadata can hold date, time, camera settings, copyright information.</p>
+                </div>
+                <div class="lower-what-is">
+                    <h3>File Formats we work with</h3>
+                   <div class="lower-what-is-content">
+                        <img src="{% static 'images/exifimage.png' %}" alt="">
+                        <ul>
+                            <li>JPEG</li>
+                            <li>JPG</li>
+                            <li>PNG</li>
+                            <li>HEIC</li>
+                            <li>DOCX</li>
+                            <li>PDF</li>
+                            <li>CSV</li>
+                            <li>JSON</li>
+                        </ul>
+                   </div>
+                </div>
+            </article>
+            <article class="what-is-lower-content">
+                <div class="exif-what-is">
+                    <h3><img src="{% static 'images/bi_camera-fill.png' %}" alt=""> Camera Info</h3>
+                    <ul>
+                        <li>Make and model</li>
+                        <li>Lens</li>
+                        <li>Focal length</li>
+                        <li>Aperture</li>
+                        <li>Exposure</li>
+                        <li>ISO Speed</li>
+                        <li>Flash</li>
+                        <li>Shutter count</li>
+                    </ul>
+                </div>
+                <div class="exif-what-is">
+                    <h3><img src="{% static 'images/bi_camera-fill.png' %}" alt="">Image Properties</h3>
+                    <ul>
+                        <li>File name</li>
+                        <li>File size</li>
+                        <li>Date created</li>
+                        <li>Date modified</li>
+                        <li>Time</li>
+                    </ul>
+                </div>
+                <div class="exif-what-is">
+                    <h3><img src="{% static 'images/bi_camera-fill.png' %}" alt="">GPS Data</h3>
+                    <ul>
+                        <li>Latitude</li>
+                        <li>Longitude</li>
+                        <li>Altitude</li>
+                        <li>Direction</li>
+                        <li>Speed</li>
+                    </ul>
+                </div>
+                <div class="exif-what-is">
+                    <h3><img src="{% static 'images/bi_camera-fill.png' %}" alt="">Copyright Info</h3>
+                    <ul>
+                        <li>Creator</li>
+                        <li>Copyright</li>
+                        <li>Right holder</li>
+                        <li>Legal notice</li>
+                        <li>Permission</li>
+                    </ul>
+                </div>
+                <div class="exif-what-is">
+                    <h3><img src="{% static 'images/bi_camera-fill.png' %}" alt="">Other Data</h3>
+                    <ul>
+                        <li>Thumbnail</li>
+                        <li>Processing softwares</li>
+                        <li>Resolution unit</li>
+                        <li>X Resolution</li>
+                        <li>Y Resolution</li>
+                        <li>and many more</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="how-to-view">
+            <h1>How to view Metadata from your Files</h1>
+            <article class="how-to-view-content">
+                <div>
+                    <h2>1</h2>
+                    <h3>Upload a file</h3>
+                    <p>Upload the URL of your file or drag and drop the file, we'll read its metadata and show you</p>
+                </div>
+                <div>
+                    <h2>2</h2>
+                    <h3>View the metadata</h3>
+                    <p>See the metadata recorded in the files such as date created, file name, file size, file type, file type extension and much more.</p>
+                </div>
+                <div>
+                    <h2>3</h2>
+                    <h3>Export, Save, Download</h3>
+                    <p>Upload the URL of your file or drag and drop the file. We'll read it's metadata and show you</p>
+                </div>
+            </article>
+        </section>
+        <section class="reviews-and-awards">
+            <article class="reviews">
+                <h1>Reviews</h1>
+                <div class="review-content">
+                    <div class="review" onclick="myPresentDiv(1)"><img src="{% static 'images/Profile Squarevictoria.png' %}" alt="customer review" class="review-image"><h3>Victoria Justice</h3><h4>Data Forensicist</h4><p>84 Meta has been the easiest platform.</p></div>
+                    <div class="review" onclick="myPresentDiv(2)"><img src="{% static 'images/Profile Square.png' %}" alt="customer review" class="review-image"><h3>George Banks</h3><h4>Digital Manager</h4><p>84 Meta has the best Tool to View Metadata Information of all images that i work with.</p></div>
+                    <div class="review" onclick="myPresentDiv(3)"><img src="{% static 'images/Profile Squarejohn.png' %}" alt="customer review" class="review-image"><h3>John Doe</h3><h4>Product Manager</h4><p>With little to no skill you can use the platform and do magic</p></div>
+                </div>
+            </article>
+            <article class="awards">
+                <h1>Awards</h1>
+                <div class="awards-content">
+                    <img src="{% static 'images/award-1.png' %}" alt="awards" class="awards-img">
+                    <img src="{% static 'images/award-2.png' %}" alt="awards" class="awards-img">
+                    <img src="{% static 'images/award-3.png' %}" alt="awards" class="awards-img">
+                </div>
+            </article>
+        </section>
+        <section class="service-team">
+            <div class="service-team-text">
+                <h1>24/7 Support Team Readily Available</h1>
+                <h4>84 Meta team is here to answer your questions and assist you every step of the way</h4>
+                <a><img src="{% static 'images/call-calling.png' %}" alt=""> 186-1623-813</a>
+                <br>
+                <a><img src="{% static 'images/SMS 1.png' %}" alt="">  support@84meta.com</a>
+                <h3>Find out why we have a 90% customer rating.</h3>
+            </div>
+            <div class="service-team-img-container">
+                <img class="service-img" src="{% static 'images/customer-support.png' %}" alt="">
+            </div>
+        </section>
+        <section class="start">
+            <div class="start-text">
+                <h1>Start 84 Meta Today  </h1>
+                <h3>Get started for free and experience the amazing treats we offer.</h3>
+                {% if not user.is_authenticated %}
+                <button class="start-btn-left" type="submit"><a href="{% url 'meta:register' %}">Get Started</a></button>
+                {% else %}
+                <button class="start-btn-left" type="submit"><a href="#">Dashboard</a></button>
+                {% endif %}
+
+            </div>
+            <div  class="start-btns-right">
+                <button class="start-btn-right" type="submit"><a href="{% url 'meta:contact-us' %}">Get In Touch</a></button>
+                <button class="start-btn-right" type="submit"><a href="{% url '#">Documentation</a></button>
+            </div>
+        </section>
+    </main>
+        <section class="footer-links">
+            <div class="footer-link">
+                <h2>COMPANY</h2>
+                <ul>
+                    <li>Product Features</li>
+                    <li>Brand Intelligence</li>
+                    <li>What's New</li>
+                    <li>Leadership</li>
+                </ul>
+            </div>
+            <div class="footer-link">
+                <h2>RESOURCES</h2>
+                <ul>
+                    <li>Workbench</li>
+                    <li>Chat</li>
+                    <li>Reviews</li>
+                    <li>API</li>
+                </ul>
+            </div>
+            <div class="footer-link">
+                <h2>COMMUNITY</h2>
+                <ul>
+                    <li>Events</li>
+                    <li>Partnerships</li>
+                    <li>Documentation</li>
+                </ul>
+            </div>
+            <div class="footer-link">
+                <h2>LEARN MORE</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Security</li>
+                    <li>Get in Touch</li>
+                </ul>
+            </div>
+
+        </section>
+
+</body>
+</html>
+    {% endblock content %}

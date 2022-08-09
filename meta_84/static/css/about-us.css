@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --font-family: 'Jost', sans-serif;
+    --primary-blue:#064acb;
+    --primary-blue-hover:#053ea9;
+    --primary-blue-active-focus:#043187;
+    --secondary-brown:#f3a953;
+    --secondary-brown-hover:#ca8d45;
+    --secondary-brown-active-focus:#a27137;
+    --success-green:#00d400;
+    --success-green-hover:#00aa00;
+    --success-green-active-focus:#008000;
+    --error-red:#ff0000;
+    --error-red-hover:#d40000;
+    --error-red-active-focus:#aa0000;
+    --border-radius:10px;
+    --hero-section-blue:#cddbf5;
+    --regular-font-size:24px;
+    --large-font-size:56px;
+    --regular-font-weight:400;
+    --heavy-font-weight:700;
+    --border-width: 1px;
+    --white:white;
+    --black:black;
+    --index-hero-text-background:linear-gradient(180deg, #5986dc, #043187);
+    --box-shadow-gray:2px 2px 6px dimgray;
+    --transparent:transparent;
+    --index-hero-circle:#5986dc;
+    --decoration-border: solid 3px var(--secondary-brown);;
+}
+
+html,body{
+    width: 100%;
+    font-family: var(--font-family);
+    color: var(--primary-blue-active-focus);
+}
+
+main{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cover{
+    width: 100%;
+}
+.about-intro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+}
+
+.about-intro h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 67px;
+    text-align: center;
+    color: #2E2E2E;
+    max-width: 15em;
+    margin: 0.5em auto 1em auto;
+}
+
+
+
+.our-story,
+.our-mission,
+.our-vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 2em 2em;
+}
+
+.our-story > h6,
+.our-mission > h6,
+.our-vision > h6{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #3D3C3C;
+}
+
+.aboutus-container > img{
+    position: absolute;
+    width: 15em;
+}
+
+.image1{
+    margin: 2em 0 0 -1em;
+    overflow: hidden;
+}
+
+.image2{
+    right: 0;
+    overflow: hidden;
+    margin: 10em 0 0 0;
+}
+
+.team-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theteam{
+    margin: 2em auto;
+    font-size: 25px;
+    color: #A27137;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.team-members{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+.team-members img{
+    width: 5em;
+}
+
+.profile h4{
+    font-size: 12px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 4em;
+}
+
+
+
+
+
+
+

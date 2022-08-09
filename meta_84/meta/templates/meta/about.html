@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1f5aa4ec6b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/about-us.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}"/>
+    <script src="{% static 'js/static.js' %}" defer></script>
+    <title>84Meta | About Us</title>
+</head>
+<body title="about-us" class="about-us-body">
+    <header>
+    </header>
+    <main>
+        <div class="about-us">
+            <div class="about-intro">
+                <div>
+                    <h2> We're changing the whole Game </h2>
+                </div>
+
+                <div>
+                    <img class="cover" src= "{% static 'Images/1.png' %}" alt="section" class="section-img">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="aboutus-container">
+            <img class="image1" src="{% static 'Images/Tech support.png' %}" alt="Tech Support" class="tech-support">
+            <img class="image2" src= "{% static 'Images/6671 1.png' %}" alt="random" class="random">
+            <div class="our-story">
+                <h2>Our story</h2>
+                <h6>Meta84 Extractor is a metadata extraction company that helps businesses discover, analyze and utilize their data. We specialize in extracting information from documents and databases for use in your business.
+                </h6>
+            </div>
+
+            <div class="our-mission">
+                <h2>Our mission</h2>
+                <h6>Our mission is to provide an easy-to-use, flexible metadata extraction service for content owners and publishers.
+                    We are committed to ensuring our users get accurate metadata of their uploaded files at all time.
+                </h6>
+            </div>
+
+            <div class="our-vision">
+                <h2>Our vision</h2>
+                <h6>At Meta84, we believe that metadata is the most important part of any business.
+                    Our team is dedicated to making sure that you have all of the information you need and that it's as good as it can be.
+                    We work hard to extract metadata from images, video, audio, written content, and more. You'll get a complete set of data from every asset you upload—and we'll do it quickly and efficiently so that you can use it immediately.
+                </h6>
+            </div>
+        </div>
+
+        <div class="team-container">
+            <div class="theteam">
+                <h6>Meet the team</h6>
+            </div>
+
+            <div class="team-members">
+                <div class="profile">
+                    <img src="{% static 'Images/Ellipse 34.png' %}" alt="Ellipse-34">
+                    <h4>Jane Cooper</h4>
+                </div>
+
+                <div class="profile">
+                    <img src="{% static 'Images/Ellipse 35.png' %}" alt="Ellipse-35">
+                    <h4>Esther Howard</h4>
+                </div>
+
+                <div class="profile">
+                    <img src="{% static 'Images/Ellipse 36.png' %}" alt="Ellipse-36">
+                    <h4>Jerome Bell</h4>
+                </div>
+
+                <div class="profile">
+                    <img src="{% static 'Images/Ellipse 37.png' %}" alt="Ellipse-37">
+                    <h4>Floyd Miles</h4>
+                </div>
+
+                <div class="profile">
+                    <img src="{% static 'Images/Ellipse 38.png' %}" alt="Ellipse-38">
+                    <h4>Arlene McCoy</h4>
+                </div>
+
+                <div class="profile">
+                    <img src="{% static 'Images/Ellipse 39.png' %}" alt="Ellipse-39">
+                    <h4>Theresa Webb</h4>
+                </div>
+            </div>
+    </main>
+
+</body>
+</html>
+
+{% endblock content %}
