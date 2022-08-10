@@ -1,1 +1,3 @@
+I connected the dashboard designed by the frontend to the backend
+when you click on this link, it displays the dashboard page
 http://127.0.0.1:8000/dashboard/
