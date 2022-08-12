@@ -199,6 +199,7 @@
     height: 43px;
     left: 14px;
     top: 186.62px;
+    white-space: nowrap;
 }
 .link3 {
     flex-direction: row;
