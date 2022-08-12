@@ -384,7 +384,7 @@ a:active {
 }
 
 .css-treeview label {
-    width: 187px;
+    /* width: 187px; */
     height: 24px;
     font-family: 'Lato';
     font-style: normal;
@@ -1270,7 +1270,7 @@ tr:nth-child(odd) {
 }
 
 .disp-all > a {
-    width: 62px;
+    /* width: 42px; */
     height: 24px;
     font-family: 'Lato';
     font-style: normal;
