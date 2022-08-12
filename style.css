@@ -182,7 +182,7 @@
 .link1 {
     flex-direction: row;
     align-items: center;
-    padding: 10px;
+    /* padding: -10px; */
     /* gap: 10px; */
     /* position: absolute; */
     /* width: 210px; */
@@ -190,7 +190,7 @@
     /* left: 14px; */
     /* top: 134px; */
     /* border: 1px solid red; */
-    margin-top: 15px;
+    margin-top: 10px;
     /* white-space: nowrap; */
     /* border: 1px solid red; */
 
@@ -226,7 +226,7 @@
     top: 291px;
 } */
 .content-bottom a {
-    padding: 15px 16px;
+    padding: 20px 16px;
     padding-left: 0;
     /* width: 171px;
     height: 23px; */
