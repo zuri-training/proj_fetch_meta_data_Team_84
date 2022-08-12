@@ -1254,14 +1254,8 @@ tr:nth-child(odd) {
 /* SHOW ALL BUTTON  */
 .disp-all {
     box-sizing: border-box;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: center;
-    align-items: center; */
     padding-top: 5px;
-    /* padding: 15px 30px; */
     text-align: center;
-    /* gap: 10px; */
     position: absolute;
     width: 150px;
     height: 40px;
@@ -1522,8 +1516,10 @@ body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
     }
     .saved p, .trashed p, .not-saved p {
         font-size: 10px;
-        width: 100%;
+        /* width: 100%; */
         justify-content: center;
+        gap: 10px;
+        line-height: 10px;
     }
     
     .content {
