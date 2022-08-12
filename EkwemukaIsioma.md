@@ -1,6 +1,6 @@
-Ekwemuka Isioma (Issiedoesit)
-Student ID: I4G014550DI0
-Full stack developer
+- Ekwemuka Isioma (Issiedoesit)
+- Student ID: I4G014550DI0
+- Full stack developer
 
 Tasks
 1. Landing page frontend 
