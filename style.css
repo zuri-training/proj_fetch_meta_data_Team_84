@@ -1254,12 +1254,14 @@ tr:nth-child(odd) {
 /* SHOW ALL BUTTON  */
 .disp-all {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: center;
+    align-items: center; */
+    padding-top: 5px;
     /* padding: 15px 30px; */
-    gap: 10px;
+    text-align: center;
+    /* gap: 10px; */
     position: absolute;
     width: 150px;
     height: 40px;
@@ -1282,7 +1284,9 @@ tr:nth-child(odd) {
     flex: none;
     order: 0;
     flex-grow: 0;
-    justify-content: center;
+    /* justify-content: center; */
+    /* text-align: center; */
+
 }
 
 /* DARK/LIGHT MODE  */
