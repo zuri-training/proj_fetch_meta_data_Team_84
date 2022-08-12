@@ -191,6 +191,8 @@
     /* top: 134px; */
     /* border: 1px solid red; */
     margin-top: 15px;
+    white-space: nowrap;
+
 }
 .link2 {
     flex-direction: row;
