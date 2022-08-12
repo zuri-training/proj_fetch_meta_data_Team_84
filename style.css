@@ -182,20 +182,20 @@
     flex-direction: row;
     align-items: center;
     padding: 10px;
-    gap: 10px;
+    /* gap: 10px; */
     position: absolute;
-    width: 73px;
+    /* width: 73px; */
     height: 43px;
     left: 14px;
     top: 134px;
 }
 .link2 {
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     padding: 10px;
-    gap: 10px;
+    /* gap: 10px; */
     position: absolute;
-    width: 191px;
+    /* width: 100px; */
     height: 43px;
     left: 14px;
     top: 186.62px;
@@ -204,9 +204,9 @@
     flex-direction: row;
     align-items: center;
     padding: 10px;
-    gap: 10px;
+    /* gap: 10px; */
     position: absolute;
-    width: 74px;
+    /* width: 74px; */
     height: 43px;
     left: 14px;
     top: 238.88px;
@@ -215,9 +215,9 @@
     flex-direction: row;
     align-items: center;
     padding: 10px;
-    gap: 10px;
+    /* gap: 10px; */
     position: absolute;
-    width: 67px;
+    /* width: 67px; */
     height: 43px;
     left: 14px;
     top: 291px;
