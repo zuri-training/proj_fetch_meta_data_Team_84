@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <!-- <script src="https://kit.fontawesome.com/49736e1bab.js" crossorigin="anonymous"></script> -->
         <script src="https://kit.fontawesome.com/49736e1bab.js" crossorigin="anonymous"></script>
-
         <title>Team 84 | Dashboard</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <!-- <link rel="stylesheet" type="text/css" href="style200.css"> -->
@@ -17,8 +17,7 @@
             <nav class="nav-bar">
                 <div class="search">
                     <form action="https://www.google.com/search" method="get" class="go">
-                        <a href="" class="shoot" type="submit"><img src="img/Vector (2).png"></a>
-                        <!-- <button class="go" type="submit"><img src="img/Vector (2).png"></button> -->
+                        <a href="" class="shoot" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #cccccc;"></i></a>
                         <input class="search-input" type="text" placeholder= "Search file names, extensions, folder">
                     </form>
                 </div>
@@ -96,42 +95,67 @@
                     <ul>
                         <li>
                             <input type="checkbox" id="item-dash"/>
-                            <label class="parent" for="item-dash"><img src="img/dashboardIcon.png" alt="" style="width: 17px; height: 17px;"><span>    Dashboard</span></label>
+                            <label class="parent" for="item-dash">
+                                <i class="fa-solid fa-grip"></i>
+                                <span>Dashboard</span>
+                            </label>
                             <ul>
                                 <li>
                                     <input type="checkbox" id="item-images"/>
-                                    <label class="child" for="item-images"><img src="img/Image.png" alt="" style="width: 17px; height: 17px;"><span>    Images</span></label>
+                                    <label class="child" for="item-images">
+                                        <i class="fa-regular fa-images"></i>
+                                        <span>Images</span>
+                                    </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" id="item-json"/>
-                                    <label class="child" for="item-json"><img src="img/json.png" alt="" style="width: 17px; height: 17px;"><span>    JSON files</span></label>
+                                    <label class="child" for="item-json">
+                                        <i class="fa-solid fa-file-lines"></i>
+                                        <span>JSON files</span>
+                                    </label>
                                 </li>
 
                                 <li>
                                     <input type="checkbox" id="item-csv"/>
-                                    <label class="child" for="item-csv"><img src="img/csv.png" alt="" style="width: 17px; height: 17px;"><span>    CSV files</span></label>
+                                    <label class="child" for="item-csv">
+                                        <i class="fa-solid fa-file-csv"></i>
+                                        <span>CSV files</span>
+                                    </label>
                                 </li>
 
                                 <li>
                                     <input type="checkbox" id="item-pdf"/>
-                                    <label class="child" for="item-pdf"><img src="img/json.png" alt="" style="width: 17px; height: 17px;"><span>    PDF files</span></label>
+                                    <label class="child" for="item-pdf">
+                                        <i class="fa-regular fa-file-pdf"></i>
+                                        <span>PDF files</span>
+                                    </label>
                                 </li>
                             </ul>
                         </li>
 
                         <li>
                             <input type="checkbox" id="item-saves"/>
-                            <label class="parent" for="item-saves"><img src="img/Vector (5).png" alt="" style="width: 17px; height: 17px;"><span>    Saved files</span></label>
+                            <label class="parent" for="item-saves">
+                                <i class="fa-solid fa-folder-minus"></i>
+                                <span>Saved files</span>
+                            </label>
                         </li>
 
                         <li>
                             <input type="checkbox" id="item-new"/>
-                            <label class="parent" for="item-new"><img src="img/newFolder.png" alt="" style="width: 17px; height: 17px;"><span>    Create new folder</span></label>
+                            
+                            <label class="parent" for="item-new">
+                                <i class="fa-solid fa-folder-plus"></i>
+                                <span>Create new folder</span>
+                            </label>
                         </li>
 
                         <li>
                             <input type="checkbox" id="item-trash"/>
-                            <label class="parent" for="item-trash"><img src="img/Delete 2.png" alt="" style="width: 17px; height: 17px;"><span>    Trash</span></label>
+                            <label class="parent" for="item-trash">
+                                <i class="fa-solid fa-trash"></i>
+                                <span>Trash</span>
+                            </label>
                         </li>   
                     </ul>
                 </div>

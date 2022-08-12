@@ -120,7 +120,9 @@
     order: 1;
     flex-grow: 0;
     border: none;
+    outline:none;
 }
+
 ::placeholder {
     width: 223px;
     height: 16px;
@@ -323,8 +325,16 @@ a:active {
 .parent span, 
 .child span,
 .session-box p {
-    transition:  1.5s ease;
+    transition:  2s ease;
     opacity: 1;
+}
+
+
+.side-bar.collapse .parent span,
+.side-bar.collapse .child span,
+.side-bar.collapse .session-box p {
+    transition:  0.1s ease;
+
 }
 
   /* .side-bar.collapse .logo-name, */
@@ -336,10 +346,10 @@ a:active {
 }
 
 .side-bar.collapse {
-    transition:  3s ease;
+    transition:  1s ease;
 }
 .side-bar {
-    transition:  0.6s ease;
+    transition:  1s ease;
 }
 
 
@@ -370,6 +380,7 @@ a:active {
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+    /* border: 1px solid red; */
 }
 
 .css-treeview label {
@@ -749,7 +760,7 @@ a:active {
     z-index: 1;
 }
 
-.down>p {
+.down p {
     position: absolute;
     width: 120px;
     height: 16px;
@@ -896,40 +907,6 @@ a:active {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-/* .continue {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 160px;
-    height: 66px;
-    margin-left: 60px;
-    margin-top: 54px;
-    background: #064ACB;
-    border-radius: 8px;
-} */
-
-/* .continue a {
-    width: 100px;
-    height: 36px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 0.5px;
-    color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    justify-content: center;
-    align-items: center;
-    margin-left: 50px;
-    margin-top: -1px;
-} */
-
-
 .continue a {
     width: 100px;
     height: 36px;
@@ -940,7 +917,6 @@ a:active {
     line-height: 36px;
     letter-spacing: 0.5px;
     color: red;
-    /* color: #FFFFFF; */
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -949,10 +925,6 @@ a:active {
     margin-left: 83px;
     margin-top: -1px;
 }
-
-
-
-
 
 #open-overlay{ 
     padding:10px 5px;
@@ -1286,12 +1258,12 @@ tr:nth-child(odd) {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 15px 30px;
+    /* padding: 15px 30px; */
     gap: 10px;
     position: absolute;
-    width: 122px;
+    width: 150px;
     height: 40px;
-    left: 1220px;
+    left: 1190px;
     top: 995px;
     border: 1px solid #043187;
     border-radius: 8px;
@@ -1310,6 +1282,7 @@ tr:nth-child(odd) {
     flex: none;
     order: 0;
     flex-grow: 0;
+    justify-content: center;
 }
 
 /* DARK/LIGHT MODE  */
@@ -1477,7 +1450,13 @@ body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
         gap: 30px;
         width: 285px;
         margin-left: -15px;
+        margin-top: 5px;
     }
+
+    .bottom-text2, .bottom-text3 {
+        margin-top: 1px;
+    }
+
 
     .down {
         left: 115px;
@@ -1524,6 +1503,7 @@ body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
         gap: 96px;
         font-weight: 400;
         font-size: 10px;
+        color: white;
     }
     .table-body td {
         border: none;
@@ -1539,6 +1519,7 @@ body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
     .saved p, .trashed p, .not-saved p {
         font-size: 10px;
         width: 100%;
+        justify-content: center;
     }
     
     .content {
@@ -1547,7 +1528,7 @@ body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
     }
    
     .disp-all {
-        left: 275px;
+        left: 245px;
         top: 1380px;
     }
     
@@ -1558,8 +1539,7 @@ body[light-mode="dark"] .light-mode-btn span:nth-child(2) {
 
 
 
-/* @media screen and (min-width:600px) and (max-width:768px){ */
-    @media screen and (min-width:458px) and (max-width:768px){
+@media screen and (min-width:458px) and (max-width:768px){
     /* NAVIGATION BAR */
     .nav-bar {
         width: 560px;
