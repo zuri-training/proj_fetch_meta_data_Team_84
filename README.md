@@ -17,6 +17,7 @@
     - [FRONTEND FUNCTIONALITIES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#frontend-functionalities)
     - [BACKEND FUNCTIONALITIES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#backend-functionalities)
       - [DJANGO](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#django)
+      - [ARCHITECTURE](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#architecture) 
       - [DATABASE SCHEMA](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#database-schema)
   - [GETTING STARTED AND USAGE REQUIREMENTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#getting-started-and-usage-requirements)
     - [ISSUES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#issues)
@@ -97,7 +98,10 @@
    - File type and size validation
    - File metadata extraction
    - Communication with frontend using Django Templates
-   
+
+ ### ARCHITECTURE 
+  - Monolith (Django templating)
+
  ### DATABASE SCHEMA
  - Link to [Schema](https://miro.com/app/board/uXjVOjcOrRY=/?share_link_id=276742582296)
         
