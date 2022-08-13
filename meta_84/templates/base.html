@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/1f5aa4ec6b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}"/>
+    {% block title %} <title> Base </title> {% endblock %}
+    {% block css %} <link rel="stylesheet" href="{% static 'css/static.css' %}"> {% endblock %}
+    {% block js %} <script src="{% static 'js/static.js' %}" defer></script> {% endblock %}
+
+</head>
+<body>
+<nav class="nav base-nav">
+    <img src="{% static 'images/Logo.png' %}" alt="Logo">
+    <div class="nav-links" title="links" id="navMenu">
+        <a href="{% url 'meta:index'%}" class="nav-link" title="index">Home</a>
+        <a href="{% url 'meta:about-us'%}" class="nav-link" title="about-us">About Us</a>
+        <a href="{% url 'meta:faqs'%}" class="nav-link" title="faqs">FAQs</a>
+        <a href="{% url 'meta:contact-us'%}" class="nav-link" title="contact-us">Contact Us</a>
+    </div>
+    <div class="nav-btns" id="navBtn">
+
+        {% if user.is_authenticated %}
+        <button type="submit" class="nav-btn"><a href="{% url 'meta:dashboard' %}" class="index-nav-sign-up">Dashboard</a></button>
+        <button type="submit" class="nav-btn index-log"><a href="{% url 'meta:logout' %}" class="index-nav-log-in">Log Out</a></button>
+        {% else %}
+        <button type="submit" class="nav-btn"><a href="{% url 'meta:register' %}" class="index-nav-sign-up">Sign Up</a></button>
+        <button type="submit" class="nav-btn index-log"><a href="{% url 'meta:login'%}" class="index-nav-log-in">Log In</a></button>
+        {% endif %}
+
+
+    </div>
+    <div class="profile-circle">
+        <i class="fa-solid fa-circle-user" id="profile"></i>
+    </div>
+    <div class="hamburger" id="hamburger">
+        <div class="toggle-item"></div>
+        <div class="toggle-item"></div>
+        <div class="toggle-item"></div>
+    </div>
+</nav>
+
+{% block content %} {% endblock content %}
+<footer>
+    <section class="footer-icons">
+        <div>
+            <p>Copyright of I4GXZURI project team 84 2022</p>
+            <img src="{% static 'images/bi_c-circle.png' %}" alt="copyright">
+        </div>
+        <div>
+            <img src="{% static 'images/ci_mail.png' %}" alt="">
+            <img src="{% static 'images/twitter-vector.png' %}" alt="">
+            <img src="{% static 'images/insta-vector.png' %}" alt="">
+            <img src="{% static 'images/facebook-vector.png' %}" alt="">
+        </div>
+        <div>
+            <p>Terms and Condition</p>
+            <p>Privacy Policy</p>
+        </div>
+    </section>
+</footer>
+</body>
+</html>
