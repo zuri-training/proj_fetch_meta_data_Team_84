@@ -27,6 +27,9 @@
       - [PULL REQUESTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#pull-requests)
       - [CHECKLIST](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#checklist)
       - [REQUIREMENTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#requirements)
+    - [DEPLOYMENT](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#deployment)
+       - [REQUIRED PACKAGES](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#required-packages)
+       - [RUNNING ON LOCAL MACHINE](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#running-on-local-machine)
    - [ACKNOWLEDGEMENTS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#acknowledments)
    - [README CONTRIBUTING AUTHORS](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#readme-contributing-authors)
    - [REFERENCES/FOOTER](https://github.com/zuri-training/proj_fetch_meta_data_Team_84/#referencesfooter)
@@ -191,6 +194,32 @@
     
     Windows versions are for 64bit
     ****
+
+   ## DEPLOYMENT
+  ### Required packages
+  - asgiref==3.5.2
+  - crispy-bootstrap5==0.6
+  - Django==4.1
+  - django-crispy-forms==1.14.0
+  - django-social-share==2.3.0
+  - filetype==1.1.0
+  - lxml==4.9.1
+  - Pillow==9.2.0
+  - PyPDF2==2.10.0
+  - python-decouple==3.6
+  - python-docx==0.8.11
+  - python-dotenv==0.20.0
+  - sqlparse==0.4.2
+  - tinytag==1.8.1
+
+  ### Running on local machine
+  *** current working branch is the master branch***
+  - Create a virtual environment
+  - Install the required packages (pip install <package>)
+  - Make migrations (python manage.py makemigrations)
+  - Migrate (python manage.py migrate)
+  - Run the server (python manage.py runserver)
+
   
  ### README CONTRIBUTING AUTHORS
   - [Ekwemuka Isioma](https://github.com/Issiedoesit)
@@ -230,6 +259,3 @@
     - Olamilekan Ojebowa https://github.com/Lyon689 DEVELOPER
     - Taiyelolu Abiri https://github.com/taiyeabiri DEVELOPER
     - Isaac David https://github.com/Daeveed1 Designer
-
-
-  
