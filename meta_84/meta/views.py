@@ -228,7 +228,7 @@ def upload(request):
 class RegisterPage(FormView):
     template_name = 'signup.html'
     form_class = RegisterForm  # django form
-    success_url = reverse_lazy('meta:index')
+    success_url = reverse_lazy('meta:dashboard')
 
     def form_valid(self, form):
         user = form.save()
@@ -251,4 +251,4 @@ class CustomLoginView(LoginView):
     redirect_authenticated_user = True  # if user is authenticated they should not be allowed to be in the login page
 
     def get_success_url(self):  # use this function whenever you need success url in login
-        return reverse_lazy('meta:index')
+        return reverse_lazy('meta:dashboard')
